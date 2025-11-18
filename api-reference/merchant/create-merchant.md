@@ -25,17 +25,18 @@ Create a legal individual or business entity (Merchant) to operate under Velafi'
 The request body should include the following fields:**For New Merchant (KYC/KYB)**
 
 ```json
-{     
-    "merchantName": "Tom", //(required, string: Merchant Name (Unique))
-    "email": "tom@gmail.com", //(required, string: Email (Unique))
-    "merchantType": "INDIVIDUAL", //(required, string: Merchant Type [INDIVIDUAL, BUSINESS])
-    "callbackUrl": "https://localhost", //(required, string: URL for KYC/KYB completion callback)
-    "languageCode": "en", //(optional, string: Interface language (en(default)/es/pt/zh))
-    "flow": "PROFESSIONALS", //(optional, string: The KYC process is applicable only to INDIVIDUAL. enum [PROFESSIONALS(default), CONSUMERS])
-    "remark": "test" //(optional, string: Remark)
-    "industryType": "", //(required, string: [payment_psp/fintech/lending/fx_or_otc/e-commerce/gaming_or_entertainment/crypto_or_web3/supply_chain/import_or_export/payroll_or_hr/media_or_advertising/remittance_or_money_transfer/treasury_or_asset_management/wholesale_or_b2b_marketplace/logistics_and_courier/digital_content_or_streaming/travel_or_booking/online_marketplace/investment_and_crowdfunding/real_estate_and_proptech/accounting_or_billing/freelancer_platform/saas_or_api/online_education/outsourcing_agency/other])
-    "industryTypeRemark": "" //(optional, string: When the industry selection is "other", it must be filled in.)
+{
+    "merchantName": "Tom",                // (required, string: Merchant Name (Unique))
+    "email": "tom@gmail.com",            // (required, string: Email (Unique))
+    "merchantType": "INDIVIDUAL",        // (required, string: Merchant Type [INDIVIDUAL, BUSINESS])
+    "callbackUrl": "https://localhost",  // (required, string: URL for KYC/KYB completion callback)
+    "languageCode": "en",                // (optional, string: Interface language (en(default)/es/pt/zh))
+    "flow": "PROFESSIONALS",             // (optional, KYC flow for INDIVIDUAL only: [PROFESSIONALS(default), CONSUMERS])
+    "remark": "test",                    // (optional, string: Remark)
+    "industryType": "",                  // (required, enum: payment_psp/fintech/lending/fx_or_otc/e-commerce/gaming_or_entertainment/crypto_or_web3/supply_chain/import_or_export/payroll_or_hr/media_or_advertising/remittance_or_money_transfer/treasury_or_asset_management/wholesale_or_b2b_marketplace/logistics_and_courier/digital_content_or_streaming/travel_or_booking/online_marketplace/investment_and_crowdfunding/real_estate_and_proptech/accounting_or_billing/freelancer_platform/saas_or_api/online_education/outsourcing_agency/other)
+    "industryTypeRemark": ""             // (optional, required if industryType = "other")
 }
+
 ```
 
 **For Unverified Merchant**
