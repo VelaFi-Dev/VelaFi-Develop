@@ -52,27 +52,12 @@ The response will include the following fields:
                 
                 //-------------------------------
                 // Added limit fields from Java
-                //-------------------------------
-
-                "dayBuyLimit": "0",            // (decimal: daily buy fiat limit)
-                "dayBuyUsed": "0",             // (decimal: daily buy fiat used amount)
-                "daySellLimit": "0",           // (decimal: daily sell fiat limit)
-                "daySellUsed": "0",            // (decimal: daily sell fiat used amount)
+                //-------------------------------              
 
                 "monthBuyLimit": "0",          // (decimal: monthly buy fiat limit)
                 "monthBuyUsed": "0",           // (decimal: monthly buy fiat used amount)
                 "monthSellLimit": "0",         // (decimal: monthly sell fiat limit)
-                "monthSellUsed": "0",          // (decimal: monthly sell fiat used amount)
-
-                "hardDayBuyLimit": "0",        // (decimal: HARD daily buy fiat limit)
-                "hardDayBuyUsed": "0",         // (decimal: HARD daily buy fiat used amount)
-                "hardDaySellLimit": "0",       // (decimal: HARD daily sell fiat limit)
-                "hardDaySellUsed": "0",        // (decimal: HARD daily sell fiat used amount)
-
-                "hardMonthBuyLimit": "0",      // (decimal: HARD monthly buy fiat limit)
-                "hardMonthBuyUsed": "0",       // (decimal: HARD monthly buy fiat used amount)
-                "hardMonthSellLimit": "0",     // (decimal: HARD monthly sell fiat limit)
-                "hardMonthSellUsed": "0",      // (decimal: HARD monthly sell fiat used amount)
+                "monthSellUsed": "0",          // (decimal: monthly sell fiat used amount)               
 
                 "failReason": ""               // (string: reason of failure, if any)
                 
@@ -106,23 +91,11 @@ The response will include the following fields:
                 "paymentMethodName": "Automated SPEI - Arcus",
                 "createTime": "1737452292000",
                 "updateTime": "1737452344000",
-                "dayBuyLimit": 0,
-                "dayBuyUsed": 0,
-                "daySellLimit": 0,
-                "daySellUsed": 0,
-                "monthBuyLimit": 0,
-                "monthBuyUsed": 0,
-                "monthSellLimit": 0,
-                "monthSellUsed": 0,
-            
-                "hardDayBuyLimit": 0,
-                "hardDayBuyUsed": 0,
-                "hardDaySellLimit": 0,
-                "hardDaySellUsed": 0,
-                "hardMonthBuyLimit": 0,
-                "hardMonthBuyUsed": 0,
-                "hardMonthSellLimit": 0,
-                "hardMonthSellUsed": 0,
+              
+                "monthBuyLimit": "0", 
+                "monthBuyUsed": "0", 
+                "monthSellLimit": "0", 
+                "monthSellUsed": "0", 
             
                 "failReason": "",
             },
@@ -139,23 +112,11 @@ The response will include the following fields:
                 "paymentMethodName": "Automated Bank Transfer",
                 "createTime": "1737452292001",
                 "updateTime": "1737452344001",
-                                "dayBuyLimit": 0,
-                "dayBuyUsed": 0,
-                "daySellLimit": 0,
-                "daySellUsed": 0,
-                "monthBuyLimit": 0,
-                "monthBuyUsed": 0,
-                "monthSellLimit": 0,
-                "monthSellUsed": 0,
-            
-                "hardDayBuyLimit": 0,
-                "hardDayBuyUsed": 0,
-                "hardDaySellLimit": 0,
-                "hardDaySellUsed": 0,
-                "hardMonthBuyLimit": 0,
-                "hardMonthBuyUsed": 0,
-                "hardMonthSellLimit": 0,
-                "hardMonthSellUsed": 0,
+                
+                "monthBuyLimit": "0", 
+                "monthBuyUsed": "0", 
+                "monthSellLimit": "0", 
+                "monthSellUsed": "0", 
             
                 "failReason": "",
             }

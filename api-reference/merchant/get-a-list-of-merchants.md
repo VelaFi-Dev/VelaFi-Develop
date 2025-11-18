@@ -42,7 +42,10 @@ The response will include the following fields:
                 "merchantName": "Rrturo Tellez", // (string: name of the merchant)
                 "email": "tellez@gmail.com", // (string: email of the merchant)
                 "merchantType": 1,          // (number: merchant type [1: INDIVIDUAL, 2: BUSINESS])
-                "status": 1,                 // (enum: status of the merchant [1: authenticating, 2: normal, 3: authentication failed, 4: incomplete])                "rejectReason": "",      // (string: lv1 reject reason)
+                "status": 1,                 // (enum: status of the merchant [1: authenticating, 2: normal, 3: authentication failed, 4: incomplete])                
+                "rejectReason": "",          // (string: reject reason)             
+                "upgradeMerchantLimitStatus": 1,   //(enum: status of the upgrade merchant limit[1: authenticating, 2: normal, 3: authentication failed, 4: incomplete])
+                "upgradeMerchantLimitRejectReason": "",  // (string: reject reason of upgrade merchant limit)             
                 "dayFiatLimit": 25000.0,      // (number: fiat day amount limit)
                 "dayFiatUsed": 0.0,           // (number: fiat day amount used) 
                 "monthFiatLimit": 25000.0,    // (number: fiat month amount limit)
@@ -77,8 +80,8 @@ The response will include the following fields:
                 "merchantType": 1,
                 "status": 1,
                 "rejectReason": "",
-                "lv3Status": 1,
-                "lv3RejectReason": "",
+                "upgradeMerchantLimitStatus": 1,
+                "upgradeMerchantLimitStatusRejectReason": "",  
                 "dayFiatLimit": 25000.0,
                 "dayFiatUsed": 0.0,
                 "monthFiatLimit": 25000.0,
