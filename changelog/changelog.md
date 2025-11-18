@@ -10,9 +10,70 @@ metaLinks:
 
 ### VelaFi API Documentation V2
 
+***
 
+**Release Date: 2025-11-18**
+
+***
+
+**Guides**
+
+#### **1. Step-by-Step Guide**
+
+* Updated the onboarding workflow description to improve clarity and reflect the latest merchant setup process.
+
+#### **2. Creating Your Merchant**
+
+* Updated the KYC/KYB merchant creation process, including clearer guidance on verification steps and requirements.
+
+#### **3. Activate Merchant Account**
+
+* Updated the merchant account activation flow, with clearer explanation of fiat account activation requirements.
+
+#### **4. Limits (New Guide)**
+
+* Added a new guide introducing merchant limit levels, approval criteria, and instructions on requesting limit upgrades.
+
+***
+
+**API Reference**
+
+#### **5. Account – Get Account Details**
+
+* Updated the API response structure to include merchant limit information and related fields.
+
+#### **6. Merchant – Create Merchant**
+
+* Updated the KYC/KYB workflow for merchant creation.
+* Added improved API request and response examples.
+
+#### **7. Merchant – Get a List of Merchants**
+
+* Updated API fields related to merchant limits, including limit status and approval/rejection reasons.
+
+#### **8. Merchant – Activate Merchant Account (Individual)**
+
+* Updated the activation flow for individual merchants’ fiat accounts.
+
+#### **9. Merchant – Activate Merchant Account (Business)**
+
+* Updated the activation flow for business merchants’ fiat accounts with refined workflow requirements.
+
+#### **10. Merchant – Get a List of Merchant Accounts**
+
+* Updated API response fields related to merchant account limits and limit status tracking.
+
+#### **11. Merchant – Upgrade Merchant Limit**
+
+* Updated the merchant limit upgrade process with revised approval logic and enhanced parameter definitions.\
+  \
+
+
+***
 
 **Release Date: 2025-06-13**
+
+***
 
 #### 1. Workflow Update: Merchant Creation Process
 
