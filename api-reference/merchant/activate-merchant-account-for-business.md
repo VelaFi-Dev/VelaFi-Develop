@@ -14,7 +14,7 @@ This endpoint is used to activate a merchant's fiat currency payment account. Su
 * **Request Path**: `/v2/merchant/accounts`
 * **Authorization Required**: Yes
 
-####
+
 
 #### **Example Requests (For Business)**
 
@@ -23,7 +23,7 @@ This endpoint is used to activate a merchant's fiat currency payment account. Su
 ```json
 {    
     "merchantId": "15126673", // (required, number: id of the merchant)
-    "fiat": "MXN", // (required, string: name of the fiat currency [MXN/ARS/COP/BRL/PEN/USD/EUR])   
+    "fiat": "MXN", // (required, string: name of the fiat currency [MXN])   
     "trench": "ARCUS FI", //"trench": "Account_Lead Bank", //(required, string: trench [Account_Lead Bank/Wire - Standard Charted Bank]) 
 }
 ```
@@ -33,7 +33,7 @@ This endpoint is used to activate a merchant's fiat currency payment account. Su
 ```json
 {    
     "merchantId": "15126673", // (required, number: id of the merchant)
-    "fiat": "MXN", // (required, string: name of the fiat currency [MXN/ARS/COP/BRL/PEN/USD/EUR])   
+    "fiat": "MXN", // (required, string: name of the fiat currency [MXN])   
     "trench": "FINCO PAY" //(required, string: trench [FINCO PAY])    
 }
 ```
@@ -43,7 +43,7 @@ This endpoint is used to activate a merchant's fiat currency payment account. Su
 ```json
 {
     "merchantId": "15126673", // (required, number: id of the merchant)
-    "fiat": "ARS" // (required, string: name of the fiat currency [MXN/ARS/COP/BRL/PEN/USD/EUR])
+    "fiat": "ARS" // (required, string: name of the fiat currency [ARS])
 }
 ```
 
@@ -52,7 +52,7 @@ This endpoint is used to activate a merchant's fiat currency payment account. Su
 ```json
 {
     "merchantId": "15126673", // (required, number: id of the merchant)
-    "fiat": "COP", // (required, string: name of the fiat currency [MXN/ARS/COP/BRL/PEN/USD/EUR])
+    "fiat": "COP", // (required, string: name of the fiat currency [COP])
 }
 ```
 
@@ -61,7 +61,7 @@ This endpoint is used to activate a merchant's fiat currency payment account. Su
 ```json
 {
     "merchantId": "15126673", // (required, number: id of the merchant)
-    "fiat": "BRL", // (required, string: name of the fiat currency [MXN/ARS/COP/BRL/PEN/USD/EUR])   
+    "fiat": "BRL", // (required, string: name of the fiat currency [BRL])   
 }
 ```
 
@@ -70,7 +70,7 @@ This endpoint is used to activate a merchant's fiat currency payment account. Su
 ```json
 {
     "merchantId": "15126673", // (required, number: id of the merchant)
-    "fiat": "PEN"
+    "fiat": "PEN", // (required, string: name of the fiat currency [PEN])
 }
 ```
 
@@ -81,7 +81,7 @@ After the EUR currency account is activated, it can be used for both EUR and USD
 ```json
 {
     "merchantId": "15126673", // (required, number: id of the merchant)
-    "fiat": "EUR", // (required, string: name of the fiat currency [MXN/ARS/COP/BRL/USD/EUR]) 
+    "fiat": "EUR", // (required, string: name of the fiat currency [USD/EUR]) 
     "trench": "Account_Lead Bank", //(required, string: trench [Account_Lead Bank/Wire - Standard Charted Bank]) 
     "fieldList": { // List of channel fields
         "email": "rturo@gmail.com", // (optional, string: Email, if the merchant information is not provided, it must be filled in)
@@ -97,7 +97,7 @@ After the EUR currency account is activated, it can be used for both EUR and USD
 ```json
 { 
   "merchantId": "15126673", // (required, number: id of the merchant)
-  "fiat": "USD", // (required, string: name of the fiat currency [MXN/ARS/COP/BRL/USD/EUR])
+  "fiat": "USD", // (required, string: name of the fiat currency [USD])
   "trench": "Wire - Standard Charted Bank", //(required, string: trench [Account_Lead Bank/Wire - Standard Charted Bank]) 
   "callbackUri": "https://localhost/home", //(string: callback address after accepting the agreement)
   "fieldList": { // List of channel fields  
@@ -166,10 +166,7 @@ After the EUR currency account is activated, it can be used for both EUR and USD
 \
 
 
-**Example Responses**
-
-\
-
+#### **Example Responses**
 
 **Example Response (MXN/ARS/COP/BRL/PEN)**
 
