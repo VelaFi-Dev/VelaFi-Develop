@@ -20,6 +20,7 @@ This API retrieves a list of merchants based on optional query parameters.
 
 * **merchantName**: (string) The name of the merchant (optional).
 * **email**: (string) The email of the merchant (optional).
+* **status**: (int) The status of the merchant \[-1:all, 1: authenticating, 2: normal(default), 3: authentication failed, 4: incomplete] (optional).
 * **currentPage**: (int) The current page number (optional).
 * **pageSize**: (int) The number of results per page (default is 10, maximum is 1000).
 
