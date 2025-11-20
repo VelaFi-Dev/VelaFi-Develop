@@ -151,7 +151,7 @@ After the EUR currency account is activated, it can be used for both EUR and USD
 {
   "merchantId": "15126673", // (required, number: id of the merchant)
   "fiat": "USD", // (required, string: name of the fiat currency [USD])
-  "trench": "Account_Standard Charted Bank", //(required, string: trench [Account_Lead Bank/Wire - Standard Charted Bank]) 
+  "trench": "Wire - Standard Charted Bank", //(required, string: trench [Account_Lead Bank/Wire - Standard Charted Bank]) 
   "callbackUri": "https://localhost/home", //(string: callback address after accepting the agreement)
   "fieldList": { // List of channel fields  
     "personalInfo": { // Personal information (required when when Merchant Type INDIVIDUAL)
