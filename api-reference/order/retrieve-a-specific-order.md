@@ -126,6 +126,7 @@ When the order type is `fiat_to_fiat`, the response will include the following f
         "offRampPaymentId": 134,
         "offRampFiat": "ARS",
         "offRampFiatAmount": "6156.3",
+        "offArriveRampFiatAmount": "6155.3",
         "offRampFiatFee": "1",
         "orderPrice": "55.9664",
         "orderStatus": 31,
