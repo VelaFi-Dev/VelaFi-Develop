@@ -99,6 +99,7 @@ When the order type is `fiat_to_fiat`, the response will include the following f
 * offRampCountry: (string) name of the country
 * offRampFiat: (string) name of the fiat currency
 * offRampFiatAmount: (string) amount of fiat currency
+* offArriveRampFiatAmount: (string) arrive amount of fiat currency
 * offRampFiatFee: (string) fee of the order
 * orderPrice: (string) exchange rate when create order
 * orderStatus: (int) status of the order(10: pending, 11: request for information, 12: uploaded RFI Information, 30: approved, 31: support documents pending, 41: payin pending, 51: payout pending, 60: released, 71: payin canceled, 72: payout canceled)
