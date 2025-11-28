@@ -51,6 +51,7 @@
   * [Get Transfer Pending Funds Fee](api-reference/merchant/get-transfer-pending-funds-fee.md)
   * [Transfer Pending Funds](api-reference/merchant/transfer-pending-funds.md)
   * [Retrieve Funding Records](api-reference/merchant/retrieve-funding-records.md)
+  * [Get a List Merchant Fiat Flow](api-reference/merchant/get-a-list-merchant-fiat-flow.md)
   * [Get Crypto Assets Balance](api-reference/merchant/get-crypto-assets-balance.md)
   * [Get Crypto Deposit Address](api-reference/merchant/get-crypto-deposit-address.md)
   * [Crypto Transfer](api-reference/merchant/crypto-transfer.md)
