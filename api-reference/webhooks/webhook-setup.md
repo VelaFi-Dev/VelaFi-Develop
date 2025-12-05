@@ -9,11 +9,11 @@ metaLinks:
 
 **Receiving Webhook Events**
 
-TruBit Business API will send webhooks to your designated URL as a HTTP POST request with a JSON payload. You can provide your URLs via the webhook subscription endpoint, and retrieve, modify, or delete later them as you wish.
+VelaFi API will send webhooks to your designated URL as a HTTP POST request with a JSON payload. You can provide your URLs via the webhook subscription endpoint, and retrieve, modify, or delete later them as you wish.
 
 **Validation**
 
-TruBit Business signs the webhook payload that is sent to your endpoint, and you can validate it by verifying the `signature` attached in the request header:
+VelaFi signs the webhook payload that is sent to your endpoint, and you can validate it by verifying the `signature` attached in the request header:
 
 1. Extract the `signature` from the header, uses hexadecimal encoding.
 2. Compute the hash with `RSA-SHA256` using the payload and the public key.
