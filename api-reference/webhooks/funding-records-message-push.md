@@ -16,7 +16,7 @@ TruBit uses webhooks to notify merchants of funding-related events in real time,
 * **Request Method:** POST
 * **Request Path:** _(Specify the appropriate path for your webhook notifications)_
 * **Requesst** **Headers**: Requires signature
-  * `signature` (string: To verify that a webhook request is coming from trubit, you can use the signature header. The value of the header is a RSA-SHA256 signature of the request body, Use hexadecimal encoding.)
+  * `signature` (string: To verify that a webhook request is coming from VelaFi, you can use the signature header. The value of the header is a RSA-SHA256 signature of the request body, Use hexadecimal encoding.)
 
 **Request Body Parameters**
 
