@@ -7,7 +7,7 @@ metaLinks:
 
 # Funding Records Message Push
 
-TruBit uses webhooks to notify merchants of funding-related events in real time, such as deposits, withdrawals, crypto purchases, and refunds. When triggered, a POST request with detailed transaction data is sent to your configured webhook URL.
+VelaFi uses webhooks to notify merchants of funding-related events in real time, such as deposits, withdrawals, crypto purchases, and refunds. When triggered, a POST request with detailed transaction data is sent to your configured webhook URL.
 
 
 
