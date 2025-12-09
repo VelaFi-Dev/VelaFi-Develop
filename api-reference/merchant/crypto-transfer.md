@@ -7,7 +7,7 @@ metaLinks:
 
 # Crypto Transfer
 
-### This API allows you to transfer crypto assets internally between merchants.
+This API allows you to transfer crypto assets internally between merchants.
 
 #### Endpoint Information
 
