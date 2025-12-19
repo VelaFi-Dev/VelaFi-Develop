@@ -15,8 +15,7 @@ This section walks you through the complete onboarding process with VelaFi, incl
 
 
 1. [**Creating VelaFi Account**](creating-velafi-account.md)\
-   Begin by registering an account on the VelaFi Platform. Upon successful registration, the system will assign a unique **User ID (UID)**, which serves as the identifier for managing all your transactions, merchants, API, and account-level operations.\
-
+   Begin by registering an account on the VelaFi Platform. Upon successful registration, the system will assign a unique **User ID (UID)**, which serves as the identifier for managing all your transactions, merchants, API, and account-level operations.<br>
 2.  [**Create a Merchant & Complete Compliance Verification (KYC/KYB)**](creating-your-merchant.md)
 
     To operate under VelaFi’s compliance framework, you must create a legal individual or business entity (Merchant).
@@ -69,14 +68,12 @@ Submit the required documents and information for the target countries where you
 
 Review the following Support articles to see our supported currencies and regions for on-ramp:
 
-[View supported cryptocurrencies & fiat currencies](pair.md)\
-
+[View supported cryptocurrencies & fiat currencies](pair.md)<br>
 
 #### 1. Ensure [Merchant Fiat Account Activation](../api-reference/merchant/activate-merchant-account-for-individual.md)
 
 Before initiating a transaction, please ensure that the merchant has successfully activated their fiat account.\
-For example, if Merchant **Alice** wants to perform an **ARS → USDT** transaction, she must first activate her **ARS fiat account**.\
-
+For example, if Merchant **Alice** wants to perform an **ARS → USDT** transaction, she must first activate her **ARS fiat account**.<br>
 
 #### 2. [Create Fiat to Crypto Order](../api-reference/order/create-a-fiat-to-crypto-order.md)
 
@@ -110,13 +107,11 @@ Once the payment is confirmed, your account will instantly receive the correspon
 
 Review the following Support articles to see our supported currencies and regions for off-ramp:
 
-[View supported cryptocurrencies & fiat currencies](pair.md)\
-
+[View supported cryptocurrencies & fiat currencies](pair.md)<br>
 
 Before initiating a transaction, please ensure that the merchant has successfully activated their fiat account.\
 For example, if Merchant Alice wants to perform an **USDT → ARS** transaction, she must first activate her **ARS fiat account And added** [**payment methods**](../api-reference/payment-method/add-payment-method.md)**.**\
-\
-
+<br>
 
 #### 1.[ Create a Crypto to Fiat Order](../api-reference/order/create-a-crypto-to-fiat-order.md)
 
@@ -140,8 +135,7 @@ Review the following Support articles to see our supported currencies and region
 \
 \
 **Before initiating a transaction, please ensure that the merchant has successfully activated their fiat accounts.**\
-For example, if merchant **Alice** intends to perform a **USD → ARS** transaction, she must first activate both her **USD** and **ARS** fiat accounts and add the required payment method.\
-
+For example, if merchant **Alice** intends to perform a **USD → ARS** transaction, she must first activate both her **USD** and **ARS** fiat accounts and add the required payment method.<br>
 
 1. Confirm transfer details:
    * Sender fiat currency & amount

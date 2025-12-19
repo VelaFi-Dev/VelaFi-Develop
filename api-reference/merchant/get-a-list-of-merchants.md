@@ -99,8 +99,7 @@ The response will include the following fields:
 }
 ```
 
-\
-
+<br>
 
 #### Notes
 

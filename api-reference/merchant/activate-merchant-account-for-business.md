@@ -163,8 +163,7 @@ After the EUR currency account is activated, it can be used for both EUR and USD
 }
 ```
 
-\
-
+<br>
 
 #### **Example Responses**
 

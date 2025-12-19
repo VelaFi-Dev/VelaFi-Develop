@@ -91,4 +91,4 @@ For example, to get the exchange rate from Argentine Pesos (ARS) to Mexican Peso
 * Ensure that valid authorization tokens are included in the request headers for successful execution.
 *   This `price` is for reference only and does not guarantee consistency with the order price.
 
-    \
+    <br>

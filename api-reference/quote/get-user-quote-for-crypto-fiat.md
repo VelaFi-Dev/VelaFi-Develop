@@ -88,4 +88,4 @@ For example, to get the price of Mexican Pesos (MXN) in USDT:
 * Ensure that valid authorization tokens are included in the request headers for successful execution.
 *   This `price` is for reference only and does not guarantee consistency with the order price.
 
-    \
+    <br>

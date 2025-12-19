@@ -13,8 +13,7 @@ metaLinks:
 
 * Click the “**Creat**e **API Key**” button to generate your **API key**.&#x20;
 
-<mark style="color:green;background-color:green;">**Note:**</mark> <mark style="color:green;background-color:green;"></mark><mark style="color:green;background-color:green;">If two-factor authentication (2FA) is not enabled on your account, the system will prompt you to enable it for enhanced security.</mark>\
-
+<mark style="color:green;background-color:green;">**Note:**</mark> <mark style="color:green;background-color:green;"></mark><mark style="color:green;background-color:green;">If two-factor authentication (2FA) is not enabled on your account, the system will prompt you to enable it for enhanced security.</mark><br>
 
 * Please enter Notes here, after verification is complete, click **"Continue"**
 

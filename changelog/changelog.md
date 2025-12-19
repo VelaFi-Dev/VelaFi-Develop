@@ -66,8 +66,7 @@ metaLinks:
 #### **11. Merchant – Upgrade Merchant Limit**
 
 * Updated the merchant limit upgrade process with revised approval logic and enhanced parameter definitions.\
-  \
-
+  <br>
 
 ***
 
@@ -96,8 +95,7 @@ A new step has been added to allow users to **activate fiat accounts** once a me
 
 #### 4. New API Endpoint: Activate Merchant Account
 
-[API Reference – Activate Merchant Account\
-](../api-reference/merchant/activate-merchant-account-for-individual.md)Introduces a new API endpoint that enables merchants to **activate their fiat account** after the initial merchant setup is complete. This ensures the merchant is fully operational in terms of fiat transactions.
+[API Reference – Activate Merchant Account<br>](../api-reference/merchant/activate-merchant-account-for-individual.md)Introduces a new API endpoint that enables merchants to **activate their fiat account** after the initial merchant setup is complete. This ensures the merchant is fully operational in terms of fiat transactions.
 
 ***
 

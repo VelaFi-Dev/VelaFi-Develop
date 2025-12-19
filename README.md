@@ -25,23 +25,22 @@ The VelaFi API uses [RESTful](https://en.wikipedia.org/wiki/REST) architecture t
 
 Explore detailed documentation and resources to address your payment and conversion needs:
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="/broken/pages/EOdwnemFEXYcCD5xYT5k" %}
+[Broken link](/broken/pages/EOdwnemFEXYcCD5xYT5k)
 {% endcontent-ref %}
 
 **Step-by-step instructions for managing transfers and conversions.**
 
 
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="/broken/pages/nU8LdsvLdidgiEORkqE6" %}
+[Broken link](/broken/pages/nU8LdsvLdidgiEORkqE6)
 {% endcontent-ref %}
 
-**Detailed descriptions of endpoints, parameters, and responses.**\
-
+**Detailed descriptions of endpoints, parameters, and responses.**<br>
 
 Start building with VelaFi today and unlock the power of seamless financial asset management.&#x20;
 
 
 
-\
+<br>

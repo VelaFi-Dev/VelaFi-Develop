@@ -7,7 +7,6 @@ metaLinks:
 
 # Enable API Access
 
-* Once your configuration is complete, contact the VelaFi team to finalize and activate your API access.\
-
+* Once your configuration is complete, contact the VelaFi team to finalize and activate your API access.<br>
 * Submit your request via the [Contact Form](https://share.hsforms.com/1P1po-MZAThupnwug_qDEEAr8y9l).&#x20;
 
