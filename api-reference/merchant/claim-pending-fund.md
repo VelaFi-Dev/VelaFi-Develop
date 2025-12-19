@@ -2,7 +2,7 @@
 metaLinks:
   alternates:
     - >-
-      https://app.gitbook.com/s/V9hKdCChTHquQ6LtTGc9/api-reference/merchant/claim-pending-fund
+      https://app.gitbook.com/s/kcqCFfOVAdQbR1YyMZUY/api-reference/merchant/claim-pending-fund
 ---
 
 # Claim Pending Fund

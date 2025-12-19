@@ -2,7 +2,7 @@
 metaLinks:
   alternates:
     - >-
-      https://app.gitbook.com/s/V9hKdCChTHquQ6LtTGc9/api-reference/merchant/get-crypto-deposit-address
+      https://app.gitbook.com/s/kcqCFfOVAdQbR1YyMZUY/api-reference/merchant/get-crypto-deposit-address
 ---
 
 # Get Crypto Deposit Address

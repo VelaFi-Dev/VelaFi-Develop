@@ -4,7 +4,7 @@ coverY: 0
 metaLinks:
   alternates:
     - >-
-      https://app.gitbook.com/s/V9hKdCChTHquQ6LtTGc9/guides/a-gentle-introduction-for-developer
+      https://app.gitbook.com/s/kcqCFfOVAdQbR1YyMZUY/guides/a-gentle-introduction-for-developer
 ---
 
 # A Gentle Introduction for Developer

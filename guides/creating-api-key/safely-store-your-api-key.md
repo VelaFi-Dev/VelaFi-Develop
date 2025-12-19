@@ -2,7 +2,7 @@
 metaLinks:
   alternates:
     - >-
-      https://app.gitbook.com/s/V9hKdCChTHquQ6LtTGc9/guides/creating-api-key/safely-store-your-api-key
+      https://app.gitbook.com/s/kcqCFfOVAdQbR1YyMZUY/guides/creating-api-key/safely-store-your-api-key
 ---
 
 # Safely Store Your API Key

@@ -3,7 +3,7 @@ icon: basket-shopping-minus
 metaLinks:
   alternates:
     - >-
-      https://app.gitbook.com/s/V9hKdCChTHquQ6LtTGc9/guides/creating-payment-method
+      https://app.gitbook.com/s/kcqCFfOVAdQbR1YyMZUY/guides/creating-payment-method
 ---
 
 # Creating Payment Method

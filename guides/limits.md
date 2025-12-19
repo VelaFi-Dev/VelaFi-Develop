@@ -1,5 +1,8 @@
 ---
 icon: gauge
+metaLinks:
+  alternates:
+    - https://app.gitbook.com/s/kcqCFfOVAdQbR1YyMZUY/guides/limits
 ---
 
 # Limits

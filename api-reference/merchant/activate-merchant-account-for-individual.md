@@ -2,7 +2,7 @@
 metaLinks:
   alternates:
     - >-
-      https://app.gitbook.com/s/V9hKdCChTHquQ6LtTGc9/api-reference/merchant/activate-merchant-account
+      https://app.gitbook.com/s/kcqCFfOVAdQbR1YyMZUY/api-reference/merchant/activate-merchant-account-for-individual
 ---
 
 # Activate Merchant Account (For Individual)

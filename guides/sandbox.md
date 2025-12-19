@@ -2,7 +2,7 @@
 icon: box
 metaLinks:
   alternates:
-    - https://app.gitbook.com/s/V9hKdCChTHquQ6LtTGc9/guides/sandbox
+    - https://app.gitbook.com/s/kcqCFfOVAdQbR1YyMZUY/guides/sandbox
 ---
 
 # Sandbox

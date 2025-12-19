@@ -2,7 +2,7 @@
 metaLinks:
   alternates:
     - >-
-      https://app.gitbook.com/s/V9hKdCChTHquQ6LtTGc9/api-reference/basic-configuration/get-crypto-fiat-pairs
+      https://app.gitbook.com/s/kcqCFfOVAdQbR1YyMZUY/api-reference/basic-configuration/get-crypto-fiat-pairs
 ---
 
 # Get Crypto/Fiat Pairs

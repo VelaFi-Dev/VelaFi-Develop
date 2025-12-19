@@ -2,7 +2,7 @@
 metaLinks:
   alternates:
     - >-
-      https://app.gitbook.com/s/V9hKdCChTHquQ6LtTGc9/guides/creating-api-key/configure-whitelisted-ips
+      https://app.gitbook.com/s/kcqCFfOVAdQbR1YyMZUY/guides/creating-api-key/configure-whitelisted-ips
 ---
 
 # Configure Whitelisted IPs

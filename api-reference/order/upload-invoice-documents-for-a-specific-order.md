@@ -2,7 +2,7 @@
 metaLinks:
   alternates:
     - >-
-      https://app.gitbook.com/s/V9hKdCChTHquQ6LtTGc9/api-reference/order/upload-invoice-documents-for-a-specific-order
+      https://app.gitbook.com/s/kcqCFfOVAdQbR1YyMZUY/api-reference/order/upload-invoice-documents-for-a-specific-order
 ---
 
 # Upload Invoice Documents For a Specific Order

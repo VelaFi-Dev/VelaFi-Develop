@@ -6,7 +6,7 @@ icon: earth-americas
 metaLinks:
   alternates:
     - >-
-      https://app.gitbook.com/s/V9hKdCChTHquQ6LtTGc9/guides/fiat-to-fiat-global-payment
+      https://app.gitbook.com/s/kcqCFfOVAdQbR1YyMZUY/guides/fiat-to-fiat-global-payment
 ---
 
 # Fiat to Fiat (Global Payment)

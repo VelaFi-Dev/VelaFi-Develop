@@ -3,7 +3,7 @@ icon: receipt
 metaLinks:
   alternates:
     - >-
-      https://app.gitbook.com/s/V9hKdCChTHquQ6LtTGc9/guides/activate-merchant-account
+      https://app.gitbook.com/s/kcqCFfOVAdQbR1YyMZUY/guides/activate-merchant-account
 ---
 
 # Activate Merchant Account

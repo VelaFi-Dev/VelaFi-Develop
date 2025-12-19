@@ -2,7 +2,7 @@
 icon: circle-dollar
 metaLinks:
   alternates:
-    - https://app.gitbook.com/s/V9hKdCChTHquQ6LtTGc9/guides/currencies
+    - https://app.gitbook.com/s/kcqCFfOVAdQbR1YyMZUY/guides/currencies
 ---
 
 # Currencies

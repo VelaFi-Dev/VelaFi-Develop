@@ -3,7 +3,7 @@ icon: circle-exclamation
 metaLinks:
   alternates:
     - >-
-      https://app.gitbook.com/s/V9hKdCChTHquQ6LtTGc9/error-reference/error-and-warning-dictionary
+      https://app.gitbook.com/s/kcqCFfOVAdQbR1YyMZUY/error-reference/error-and-warning-dictionary
 ---
 
 # Error and Warning Dictionary

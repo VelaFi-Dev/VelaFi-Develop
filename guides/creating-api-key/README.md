@@ -2,7 +2,7 @@
 icon: key-skeleton
 metaLinks:
   alternates:
-    - https://app.gitbook.com/s/V9hKdCChTHquQ6LtTGc9/guides/creating-api-key
+    - https://app.gitbook.com/s/kcqCFfOVAdQbR1YyMZUY/guides/creating-api-key
 ---
 
 # Creating API Key

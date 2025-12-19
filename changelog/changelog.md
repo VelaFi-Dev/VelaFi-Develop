@@ -1,7 +1,7 @@
 ---
 metaLinks:
   alternates:
-    - https://app.gitbook.com/s/V9hKdCChTHquQ6LtTGc9/changelog/changelog
+    - https://app.gitbook.com/s/kcqCFfOVAdQbR1YyMZUY/changelog/changelog
 ---
 
 # 🕕 Changelog
