@@ -7,7 +7,7 @@ metaLinks:
 
 # Pair
 
-This section provides information about the various trading pairs supported by the API, including block trade pairs and global payment pairs.
+This section provides information about the various trading pairs supported by the API, including on/off ramp and global payment pairs.
 
 ### **On/Off Ramp Pair**
 
