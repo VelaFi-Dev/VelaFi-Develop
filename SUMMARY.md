@@ -2,7 +2,7 @@
 
 ## 📖  Guides
 
-* [A Gentle Introduction for Developers](README.md)
+* [A Gentle Introduction for Developer](README.md)
 * [Step-by-Step Guide](guides/step-by-step-guide.md)
 * [Creating VelaFi Account](guides/creating-velafi-account.md)
 * [Creating Your Merchant](guides/creating-your-merchant.md)
