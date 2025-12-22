@@ -3,7 +3,7 @@ description: PaymentID
 icon: bars
 metaLinks:
   alternates:
-    - https://app.gitbook.com/s/kcqCFfOVAdQbR1YyMZUY/guides/payment-method-id
+    - https://app.gitbook.com/s/V9hKdCChTHquQ6LtTGc9/guides/payment-method-id
 ---
 
 # Payment Method ID

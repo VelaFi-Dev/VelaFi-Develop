@@ -1,10 +1,3 @@
----
-metaLinks:
-  alternates:
-    - >-
-      https://app.gitbook.com/s/kcqCFfOVAdQbR1YyMZUY/api-reference/merchant/activate-merchant-account-for-business
----
-
 # Activate Merchant Account (For Business)
 
 This endpoint is used to activate a merchant's fiat currency payment account. Supported currencies include MXN, ARS, COP, BRL,PEN,USD, and EUR. Once activated, merchants can send and receive funds through local banking channels with increased flexibility and efficiency.

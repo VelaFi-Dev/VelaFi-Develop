@@ -3,7 +3,7 @@ icon: user
 metaLinks:
   alternates:
     - >-
-      https://app.gitbook.com/s/kcqCFfOVAdQbR1YyMZUY/guides/creating-velafi-account
+      https://app.gitbook.com/s/V9hKdCChTHquQ6LtTGc9/guides/creating-velafi-account
 ---
 
 # Creating VelaFi Account

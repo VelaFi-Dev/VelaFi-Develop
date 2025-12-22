@@ -3,7 +3,7 @@ icon: vector-circle
 metaLinks:
   alternates:
     - >-
-      https://app.gitbook.com/s/kcqCFfOVAdQbR1YyMZUY/guides/creating-webhook-listener
+      https://app.gitbook.com/s/V9hKdCChTHquQ6LtTGc9/guides/creating-webhook-listener
 ---
 
 # Creating Webhook Listener

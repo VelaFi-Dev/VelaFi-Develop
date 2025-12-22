@@ -3,7 +3,7 @@ icon: bitcoin-sign
 metaLinks:
   alternates:
     - >-
-      https://app.gitbook.com/s/kcqCFfOVAdQbR1YyMZUY/guides/fiat-to-crypto-on-ramp
+      https://app.gitbook.com/s/V9hKdCChTHquQ6LtTGc9/guides/fiat-to-crypto-on-ramp
 ---
 
 # Fiat to Crypto (On-Ramp)

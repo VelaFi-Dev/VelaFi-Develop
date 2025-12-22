@@ -3,7 +3,7 @@ icon: people-pants
 metaLinks:
   alternates:
     - >-
-      https://app.gitbook.com/s/kcqCFfOVAdQbR1YyMZUY/guides/creating-your-merchant
+      https://app.gitbook.com/s/V9hKdCChTHquQ6LtTGc9/guides/creating-your-merchant
 ---
 
 # Creating Your Merchant

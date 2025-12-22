@@ -2,7 +2,7 @@
 icon: bagel
 metaLinks:
   alternates:
-    - https://app.gitbook.com/s/kcqCFfOVAdQbR1YyMZUY/guides/pair
+    - https://app.gitbook.com/s/V9hKdCChTHquQ6LtTGc9/guides/pair
 ---
 
 # Pair

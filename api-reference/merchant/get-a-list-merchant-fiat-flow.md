@@ -1,10 +1,3 @@
----
-metaLinks:
-  alternates:
-    - >-
-      https://app.gitbook.com/s/kcqCFfOVAdQbR1YyMZUY/api-reference/merchant/get-a-list-merchant-fiat-flow
----
-
 # Get a List Merchant Fiat Flow
 
 This endpoint will provide you with your fiat transaction history.

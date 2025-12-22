@@ -1,10 +1,3 @@
----
-metaLinks:
-  alternates:
-    - >-
-      https://app.gitbook.com/s/kcqCFfOVAdQbR1YyMZUY/api-reference/merchant/upgrade-merchant-limit
----
-
 # Upgrade Merchant Limit
 
 This API allows merchants to initiate a **merchant limit upgrade verification** process when requesting higher transaction or balance limits.

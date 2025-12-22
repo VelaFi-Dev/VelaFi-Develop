@@ -2,7 +2,7 @@
 metaLinks:
   alternates:
     - >-
-      https://app.gitbook.com/s/kcqCFfOVAdQbR1YyMZUY/api-reference/merchant/get-a-list-of-merchant-accounts
+      https://app.gitbook.com/s/V9hKdCChTHquQ6LtTGc9/api-reference/merchant/get-a-list-of-merchant-accounts
 ---
 
 # Get a List of Merchant Accounts

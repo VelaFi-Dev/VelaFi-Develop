@@ -2,7 +2,7 @@
 metaLinks:
   alternates:
     - >-
-      https://app.gitbook.com/s/kcqCFfOVAdQbR1YyMZUY/api-reference/webhooks/fiat-fiat-order-message-push
+      https://app.gitbook.com/s/V9hKdCChTHquQ6LtTGc9/api-reference/webhooks/fiat-fiat-order-message-push
 ---
 
 # Fiat/Fiat Order Message Push

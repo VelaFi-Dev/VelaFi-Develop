@@ -1,8 +1,5 @@
 ---
 icon: gauge
-metaLinks:
-  alternates:
-    - https://app.gitbook.com/s/kcqCFfOVAdQbR1YyMZUY/guides/limits
 ---
 
 # Limits
@@ -32,7 +29,7 @@ VelaFi classifies individual users into two categories — **Consumers** and **P
 | 🇧🇷Brazil    | 3,000                     |
 | 🇨🇴Colombia  | 3,000                     |
 | 🇵🇪Peru      | 3,000                     |
-| 🇦🇷Argentina | 1,200                     |
+| 🇦🇷Argentina | 2,400                     |
 
 #### Professionals
 

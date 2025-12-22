@@ -2,7 +2,7 @@
 metaLinks:
   alternates:
     - >-
-      https://app.gitbook.com/s/kcqCFfOVAdQbR1YyMZUY/api-reference/quote/get-user-quote-for-crypto-fiat
+      https://app.gitbook.com/s/V9hKdCChTHquQ6LtTGc9/api-reference/quote/get-user-quote-for-crypto-fiat
 ---
 
 # Get User Quote for Crypto/Fiat

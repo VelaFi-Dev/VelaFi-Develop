@@ -3,7 +3,7 @@ description: Guide
 icon: book-open-reader
 metaLinks:
   alternates:
-    - https://app.gitbook.com/s/kcqCFfOVAdQbR1YyMZUY/guides/step-by-step-guide
+    - https://app.gitbook.com/s/V9hKdCChTHquQ6LtTGc9/guides/step-by-step-guide
 ---
 
 # Step-by-Step Guide

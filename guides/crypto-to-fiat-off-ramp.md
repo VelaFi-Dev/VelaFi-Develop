@@ -3,7 +3,7 @@ icon: money-bill
 metaLinks:
   alternates:
     - >-
-      https://app.gitbook.com/s/kcqCFfOVAdQbR1YyMZUY/guides/crypto-to-fiat-off-ramp
+      https://app.gitbook.com/s/V9hKdCChTHquQ6LtTGc9/guides/crypto-to-fiat-off-ramp
 ---
 
 # Crypto to Fiat (Off-Ramp)

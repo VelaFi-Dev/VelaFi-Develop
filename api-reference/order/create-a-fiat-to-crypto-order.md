@@ -2,7 +2,7 @@
 metaLinks:
   alternates:
     - >-
-      https://app.gitbook.com/s/kcqCFfOVAdQbR1YyMZUY/api-reference/order/create-a-fiat-to-crypto-order
+      https://app.gitbook.com/s/V9hKdCChTHquQ6LtTGc9/api-reference/order/create-a-fiat-to-crypto-order
 ---
 
 # Create a Fiat to Crypto Order

@@ -2,7 +2,7 @@
 metaLinks:
   alternates:
     - >-
-      https://app.gitbook.com/s/kcqCFfOVAdQbR1YyMZUY/api-reference/webhooks/update-a-webhook
+      https://app.gitbook.com/s/V9hKdCChTHquQ6LtTGc9/api-reference/webhooks/update-a-webhook
 ---
 
 # Update a Webhook

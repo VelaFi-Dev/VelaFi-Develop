@@ -2,7 +2,7 @@
 metaLinks:
   alternates:
     - >-
-      https://app.gitbook.com/s/kcqCFfOVAdQbR1YyMZUY/api-reference/payment-method/get-payment-templates
+      https://app.gitbook.com/s/V9hKdCChTHquQ6LtTGc9/api-reference/payment-method/get-payment-templates
 ---
 
 # Get Payment Templates
