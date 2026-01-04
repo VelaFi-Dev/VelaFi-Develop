@@ -18,7 +18,9 @@ This endpoint is used to activate a merchant's fiat currency payment account. Su
 
 #### **Example Requests (For Business)**
 
-**For MXN Account 1**
+**For MXN Account 01 (Mexico)**
+
+Supported payment methods: Automated SPEI - Arcus
 
 ```json
 {    
@@ -28,7 +30,9 @@ This endpoint is used to activate a merchant's fiat currency payment account. Su
 }
 ```
 
-**For MXN Account 2**
+**For MXN Account 02 (Mexico)**
+
+Supported payment methods: SPEI - FINCO PAY
 
 ```json
 {    
@@ -40,6 +44,8 @@ This endpoint is used to activate a merchant's fiat currency payment account. Su
 
 **For ARS Account (Argentina)**
 
+Supported payment methods: Automated Bank Transfer (Argentina)
+
 ```json
 {
     "merchantId": "15126673", // (required, number: id of the merchant)
@@ -48,6 +54,8 @@ This endpoint is used to activate a merchant's fiat currency payment account. Su
 ```
 
 **For COP Account (Colombia)**
+
+Supported payment methods: PSE, ACH, Bre-B
 
 ```json
 {
@@ -58,6 +66,8 @@ This endpoint is used to activate a merchant's fiat currency payment account. Su
 
 **For BRL Account (Brazil)**
 
+Supported payment methods: Automated Pix
+
 ```json
 {
     "merchantId": "15126673", // (required, number: id of the merchant)
@@ -67,6 +77,8 @@ This endpoint is used to activate a merchant's fiat currency payment account. Su
 
 **For PEN Account (Peru)**
 
+Supported payment methods: Automated Bank Transfer(Peru)
+
 ```json
 {
     "merchantId": "15126673", // (required, number: id of the merchant)
@@ -74,9 +86,9 @@ This endpoint is used to activate a merchant's fiat currency payment account. Su
 }
 ```
 
-**For EUR/USD Account 1**
+**For EUR/USD Account 01**
 
-After the EUR currency account is activated, it can be used for both EUR and USD transactions.
+Once activated, the EUR account supports both EUR and USD transactions. Supported payment methods: ACH\_push, ACH\_Virtual Account, WIRE, WIRE\_Virtual Account, SEPA
 
 ```json
 {
@@ -85,14 +97,14 @@ After the EUR currency account is activated, it can be used for both EUR and USD
     "trench": "Account_Lead Bank", //(required, string: trench [Account_Lead Bank/Wire - Standard Charted Bank]) 
     "fieldList": { // List of channel fields
         "email": "rturo@gmail.com", // (optional, string: Email, if the merchant information is not provided, it must be filled in)
-        "companyName": "CAPITAL SA COCOS", // (string: Company Name, required if merchantType is BUSINESS)
-        "firstName": "CAPITAL SA", // (string: First Name, required if merchantType is INDIVIDUAL)
-        "lastName": "COCOS" // (string: Last Name, required if merchantType is INDIVIDUAL)
+        "companyName": "CAPITAL SA COCOS", // (required, string: Company Name)        
     }
 }
 ```
 
-**For USD Account 2**
+**For USD Account 02**
+
+Supported payment methods: ACH Account\_Cross River Bank, WIRE Account\_Cross River Bank, Wire - Standard Charted Bank, SWIFT Account\_Cross River Bank
 
 ```json
 { 
