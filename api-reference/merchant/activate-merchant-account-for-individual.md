@@ -25,13 +25,13 @@ This endpoint is used to activate a merchant's fiat currency payment account. Su
 
 #### **Example Requests (For Individual)**
 
-**For MXN Account (ARCUS FI)**
+**For MXN Account 1**
 
 ```json
 {    
     "merchantId": "15126673", // (required, number: id of the merchant)
     "fiat": "MXN", // (required, string: name of the fiat currency [MXN])   
-    "trench": "ARCUS FI", //"trench": "Account_Lead Bank", //(required, string: trench [Account_Lead Bank/Wire - Standard Charted Bank]) 
+    "trench": "ARCUS FI", //(required, string: trench [ARCUS FI]) 
     "fieldList": { // List of channel fields
         "email": "rturo@gmail.com", // (optional, string: Email, if the merchant information is not provided, it must be filled in)
         "idNoType": "CURP", //(required, enum: type of identification document [CURP/RFC])
@@ -57,7 +57,7 @@ This endpoint is used to activate a merchant's fiat currency payment account. Su
 }
 ```
 
-**For MXN Account (FINCO PAY)**
+**For MXN Account 2**
 
 ```json
 {    
@@ -65,7 +65,7 @@ This endpoint is used to activate a merchant's fiat currency payment account. Su
     "fiat": "MXN", // (required, string: name of the fiat currency [MXN])   
     "trench": "FINCO PAY", //(required, string: trench [FINCO PAY])     
     "fieldList": { // List of channel fields
-        "alias": "rrturo_alias", // (required, string: alias)
+        "alias": "rturo_alias", // (required, string: alias)
     }
 }
 ```
@@ -125,7 +125,7 @@ This endpoint is used to activate a merchant's fiat currency payment account. Su
 }
 ```
 
-**For EUR/USD Account\_Lead Bank**
+**For EUR/USD Account 1**
 
 After the EUR currency account is activated, it can be used for both EUR and USD transactions.
 
@@ -143,9 +143,7 @@ After the EUR currency account is activated, it can be used for both EUR and USD
 }
 ```
 
-
-
-**For USD Individual Wire - Standard Charted Bank**
+**For USD Account 2**
 
 ```json
 {
