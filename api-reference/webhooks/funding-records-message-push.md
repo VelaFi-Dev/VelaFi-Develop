@@ -97,11 +97,12 @@ MXN Detail
 
 ```json
 {
+    "depositAlias": "alias",                        //(alias of The virtual account)
     "sender_account_number": "684180168000000000",  //(the payer cable)
     "description": "Payment",                       //(the description)
     "sender_name": "CENTAURE S.A. DE C.V.",         //(the payer name)
     "tracking_id": "DO1755784299100",               //(the bank tracking id)
-    "sender_id": "CCN2203099WA"                     //(the identity id)
+    "sender_id": "CCN2203099WA"                     //(the identity id)   
 }
 ```
 
@@ -109,6 +110,7 @@ ARS Detail
 
 ```json
 {	
+    "depositAlias": "alias",                          //(alias of The virtual account)
     "id": "98569107",                                 //id
     "idCoelsa": "86VRPQ2GVJEQE70M2GLY0M",             //bank order id
     "titularOriginante": "Alejandro Samuel Alvarez",  //payer name
@@ -127,6 +129,7 @@ COP Detail
 
 ```json
 {
+    "depositAlias": "alias",            //(alias of The virtual account)
     "sender_name": "SUPEFINE SAS",      //(the payer name)
     "sender_id": "9017343700",          //(the identity id)
     "sender_bank_code": "1013",         //(the bank code)
@@ -138,14 +141,14 @@ COP Detail
 
 BRL Detail
 
-```json
-{
-    "payer_tax_id": "51799311002001",           //(the payer tax id)
+<pre class="language-json"><code class="lang-json">{
+<strong>    "depositAlias": "alias",                    //(alias of The virtual account)
+</strong>    "payer_tax_id": "51799311002001",           //(the payer tax id)
     "payer_name": "Tom",                        //(the payer name)
     "payer_bank_account": "570302",             //(the bank last account number)
     "payer_bank_name": "BCO DO BRASIL S.A."     //(the bank name)
 }
-```
+</code></pre>
 
 #### Notes
 

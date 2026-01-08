@@ -31,6 +31,7 @@ This endpoint allows you to retrieve information about your VelaFi Pending Fund 
   * 85 (SEPA) - EUR
   * 95 (Automated Bank Transfer(Peru)) - PEN
 * **fiat:** (string) Name of the fiat currency. Currently supported currencies are MXN/ARS/COP/BRL/PEN/USD/EUR.
+* **depositAlias**: (string) Alias of the virtual account (optional).
 * **amount**: (decimal) The deposit amount. When the currency is PEN, it is mandatory.
 
 **Response Structure**

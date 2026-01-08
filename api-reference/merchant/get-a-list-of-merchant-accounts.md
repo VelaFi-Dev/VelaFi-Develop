@@ -38,7 +38,7 @@ The response will include the following fields:
         "currentPage": 1,                  // (number: current page number)
         "size": 10,                         // (number: number of results per page)
         "total": 100,                       // (number: total number of results)
-        "data": [                           // (array: list of merchant accounts)
+        "record": [                           // (array: list of merchant accounts)
             {   
                 "merchantId": 1,            // (number: id of the merchant)
                 "fiat": "MXN",               // (string: name of the fiat currency)
@@ -47,8 +47,7 @@ The response will include the following fields:
                 "paymentId": 58,             // (number: ID of the payment configuration)
                 "paymentMethodName": "Automated SPEI - Arcus", // (string: name of the payment method)
                 "createTime": "1737452292000", // (string: timestamp of the create time (milliseconds))
-                "updateTime": "1737452344000" // (string: timestamp of the update time (milliseconds))
-                
+                "updateTime": "1737452344000", //(sring: timestamp of the update time (milliseconds))
                 
                 //-------------------------------
                 // Added limit fields from Java

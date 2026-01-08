@@ -31,6 +31,9 @@ The request body should include the following parameters:
 | fiatAmount                                     | decimal | Yes      | Amount of fiat currency to convert (e.g., 1000.00)                               |
 | [paymentId](../../guides/payment-method-id.md) | number  | Yes      | ID of the payment method                                                         |
 | remark                                         | string  | No       | Additional remarks for the order                                                 |
+| depositAlias                                   | string  | No       | Alias of the virtual account                                                     |
+
+
 
 **Request Example**
 
