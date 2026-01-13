@@ -86,6 +86,7 @@ metaLinks:
 | -5041 | ORDER\_UNPAID\_CAN\_UPLOAD           | Only non-payment or pending-document orders can upload supporting documents |
 | -5050 | ORDER\_MIN\_AMOUNT                   | Order does not meet the minimum limit (min {0} {1})                         |
 | -5060 | ORDER\_MAX\_AMOUNT                   | Order does not meet the maximum limit (max {0} {1})                         |
+| -5200 | OTC\_QUOTE\_EXPIRED                  | The quotation has expired or is invalid.                                    |
 
 ***
 
@@ -152,4 +153,11 @@ metaLinks:
 | -5068 | NOT\_RELIANCE\_MODE                        | You are not a Reliance model user; function unavailable               |
 | -5072 | ACCOUNT\_TYPE\_AND\_BANK\_CODE\_NOT\_MATCH | Account type \[{0}] does not support bank code \[{1}]                 |
 
-<br>
+\
+**Bank Errors**
+
+| Code  | Message                               | Description                                     |
+| ----- | ------------------------------------- | ----------------------------------------------- |
+| -7000 | BANK\_ORDER\_CREATE\_FAILED           | Bank order creation failed.                     |
+| -7001 | RECEIVING\_ACCOUNT\_NUMBER\_INCORRECT | Incorrect account number for receiving payment. |
+

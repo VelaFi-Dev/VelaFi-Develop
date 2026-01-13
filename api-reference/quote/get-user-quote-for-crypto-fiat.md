@@ -7,7 +7,7 @@ metaLinks:
 
 # Get User Quote for Crypto/Fiat
 
-This API retrieves the current price quote for a specific cryptocurrency to fiat currency conversion.
+This API retrieves the current price quote for a specific cryptocurrency to fiat currency conversion. The endpoint is limited to a maximum of 60 requests per minute. If a `quoteId` is created, the `quoteId` is valid for 10 seconds.
 
 #### Endpoint Information
 
@@ -18,9 +18,10 @@ This API retrieves the current price quote for a specific cryptocurrency to fiat
 
 #### Query Parameters
 
-* **country**: (string) The country for which the quote is requested.
-* **from**: (string) The cryptocurrency token symbol (e.g., USDT).
-* **to**: (string) The fiat currency symbol (e.g., MXN).
+* **country**: (required, string) The country for which the quote is requested.
+* **from**: (required, string) The cryptocurrency token symbol (e.g., USDT).
+* **to**: (required, string) The fiat currency symbol (e.g., MXN).
+* **createQuoteId**: (optional, bool) Create a quote ID for this transaction. (e.g., false).
 
 #### Authorization
 
@@ -35,7 +36,8 @@ The response will include the following fields:
     "code": 200,
     "msg": "SUCCESS",
     "data": {
-        "price": "0.0"  // (string: price of the cryptocurrency in the specified fiat currency)
+        "price": "8.9", // (string: price of the cryptocurrency in the specified fiat currency)
+        "quoteId": "e46836d68a4a4a6f8f2f609352cffb2f" //(string: quote ID for this transaction, Effective time: 10 seconds)
     }
 }
 ```
@@ -67,6 +69,7 @@ For example, to get the price of Mexican Pesos (MXN) in USDT:
 * **country**: Mexico
 * **from**: MXN
 * **to**: USDT
+* **createQuoteId**: true
 
 #### Example Response
 
@@ -75,7 +78,8 @@ For example, to get the price of Mexican Pesos (MXN) in USDT:
     "code": 200,
     "msg": "SUCCESS",
     "data": {
-        "price": "0.05"
+        "price": "0.05",
+        "quoteId": "e46836d68a4a4a6f8f2f609352cffb2f"
     }
 }
 ```

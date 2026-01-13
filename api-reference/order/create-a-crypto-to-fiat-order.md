@@ -31,6 +31,7 @@ The request body should include the following parameters:
 | cryptoAmount                                       | decimal | Yes      | Amount of fiat currency to convert (e.g., 1000.00)                               |
 | [userPaymentId](../../guides/payment-method-id.md) | number  | Yes      | ID of the user payment method                                                    |
 | remark                                             | string  | No       | Additional remarks for the order                                                 |
+| quoteId                                            | string  | No       | QuoteId of the price                                                             |
 
 **Request Example**
 
@@ -43,7 +44,8 @@ The request body should include the following parameters:
     "fiat": "MXN",
     "cryptoAmount": 1000.00,
     "userPaymentId": 91,
-    "remark": ""
+    "remark": "",
+    "quoteId": "e46836d68a4a4a6f8f2f609352cffb2f"
 }
 ```
 

@@ -32,6 +32,7 @@ The request body should include the following parameters:
 | [paymentId](../../guides/payment-method-id.md) | number  | Yes      | ID of the payment method                                                         |
 | remark                                         | string  | No       | Additional remarks for the order                                                 |
 | depositAlias                                   | string  | No       | Alias of the virtual account                                                     |
+| quoteId                                        | string  | no       | QuoteId of the price                                                             |
 
 
 
@@ -46,7 +47,8 @@ The request body should include the following parameters:
     "fiat": "MXN",
     "fiatAmount": 1000.00,
     "paymentId": 91,
-    "remark": ""
+    "remark": "",   
+    "quoteId": "e46836d68a4a4a6f8f2f609352cffb2f"
 }
 ```
 

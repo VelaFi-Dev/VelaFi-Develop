@@ -6,7 +6,7 @@ icon: gauge
 
 To meet compliance requirements, **VelaFi** applies different transaction and withdrawal limits based on the user’s region and verification level. This ensures that all users operate within the regulatory framework of their respective jurisdictions.
 
-### 1Default Merchant Wallet Limit
+### 1. Default Merchant Wallet Limit
 
 After successfully creating a **Merchant**, VelaFi automatically provisions a **crypto custody wallet** for that merchant.
 

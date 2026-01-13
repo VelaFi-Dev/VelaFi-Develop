@@ -1,6 +1,6 @@
-# Open Merchant Virtual Account
+# Create Multiple Virtual Account
 
-This endpoint enables merchants to open multiple virtual accounts. The prerequisite for this is the already activated merchant's corresponding fiat currency account. Currently, the supported fiat currencies are MXN, ARS, BRL, and COP.
+This endpoint allows merchants to create multiple virtual accounts. A corresponding fiat currency account must be activated beforehand. Supported fiat currencies include MXN, ARS, BRL, and COP.
 
 #### Endpoint Information
 

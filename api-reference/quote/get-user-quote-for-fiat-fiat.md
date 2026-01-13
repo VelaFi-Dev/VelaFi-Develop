@@ -7,7 +7,7 @@ metaLinks:
 
 # Get User Quote for Fiat/Fiat
 
-This API retrieves the current exchange rate for converting one fiat currency to another.
+This API retrieves the current exchange rate for converting one fiat currency to another. The endpoint is limited to a maximum of 60 requests per minute. If a `quoteId` is created, the `quoteId` is valid for 10 seconds.
 
 #### Endpoint Information
 
@@ -18,10 +18,11 @@ This API retrieves the current exchange rate for converting one fiat currency to
 
 #### Query Parameters
 
-* **onRampCountry**: (string) Name of the country (e.g., "Mexico"))
-* **onRampFiat**: (string) Name of the fiat currency (e.g., "MXN"))
-* **offRampCountry**: (string) Name of the country (e.g., "Argentina"))
-* **offRampFiat**: (string) Name of the fiat currency (e.g., "ARS"))
+* **onRampCountry**: (required, string) Name of the country (e.g., "Mexico"))
+* **onRampFiat**: (required, string) Name of the fiat currency (e.g., "MXN"))
+* **offRampCountry**: (required, string) Name of the country (e.g., "Argentina"))
+* **offRampFiat**: (required, string) Name of the fiat currency (e.g., "ARS"))
+* **createQuoteId**: (optional, bool) Create a quote ID for this transaction. (e.g., false).
 
 #### Authorization
 
@@ -36,7 +37,8 @@ The response will include the following fields:
     "code": 200,
     "msg": "SUCCESS",
     "data": {
-        "price": "0.0"  // (string: price of the first fiat currency in terms of the second fiat currency)
+        "price": "0.0",  // (string: price of the first fiat currency in terms of the second fiat currency)
+        "quoteId": "e46836d68a4a4a6f8f2f609352cffb2f" //(string: quote ID for this transaction, Effective time: 10 seconds)
     }
 }
 ```
