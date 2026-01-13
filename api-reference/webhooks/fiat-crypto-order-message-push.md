@@ -36,6 +36,8 @@ The request body should include the following fields:
     "cryptoAmount": "5.00",                          // (decimal: amount of crypto currency)
     "orderPrice": "19.8158",                         // (decimal: order price)
     "orderStatus": "60",                             // (string: order status [10, 30, 40, 50, 60, 70])
+    "failCode": "",                                  // (string: order failed code)
+	  "failReason": "",                                // (string: order failure description)
     "createTime": "1735279907000",                  // (string: timestamp of the create time in milliseconds)
     "updateTime": "1735280582000"                   // (string: timestamp of the update time in milliseconds)
 }

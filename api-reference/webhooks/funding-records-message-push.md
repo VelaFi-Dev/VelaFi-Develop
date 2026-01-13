@@ -42,7 +42,9 @@ The request body should include the following fields:
     "taxId": "5269328432",                           // (string: id of the entity sending tax)
     "payerName": "Matias Alva",                      // (string: name of the entity sending funds)
     "payerAccount": "CH8508843132556121020",         // (string: bank account of the entity sending funds)
-    "bankWebhookInfo": "{}"                          // (json: bank webhook info of the entity sending funds, see Bank Webhook Info Detaials)
+    "bankWebhookInfo": "{}",                         // (json: bank webhook info of the entity sending funds, see Bank Webhook Info Detaials)
+    "failCode": "",                                  // (string: order failed code)
+	  "failReason": ""                                 // (string: order failure description)
 }
 ```
 
