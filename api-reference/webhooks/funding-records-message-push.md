@@ -131,13 +131,22 @@ COP Detail
 
 ```json
 {
+    //common information
+    "description": "Payment In",        //(the description)
+    
+    //payin information
     "depositAlias": "alias",            //(alias of The virtual account)
     "sender_name": "SUPEFINE SAS",      //(the payer name)
     "sender_id": "9017343700",          //(the identity id)
-    "sender_bank_code": "1013",         //(the bank code)
-    "description": "Payment In",        //(the description)
+    "sender_bank_code": "1013",         //(the bank code)    
     "r2p_method": "pse",                //(the method)
-    "tracking_key": "1714319140"        //(the bank tracking key)
+    "tracking_key": "1714319140",       //(the bank tracking key)
+    
+    //payout information
+    "external_id": "612600442085490688", //(the external id)
+    "type": "breb_key",                  //(the method)
+    "key_type": "phone",                 //(the key type)
+    "key_value": "3218911042"            //(the key value) 
 }
 ```
 
