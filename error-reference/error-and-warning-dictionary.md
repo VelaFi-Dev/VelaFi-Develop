@@ -160,4 +160,6 @@ metaLinks:
 | ----- | ------------------------------------- | ----------------------------------------------- |
 | -7000 | BANK\_ORDER\_CREATE\_FAILED           | Bank order creation failed.                     |
 | -7001 | RECEIVING\_ACCOUNT\_NUMBER\_INCORRECT | Incorrect account number for receiving payment. |
+| -7002 | ORDER\_TIMEOUT                        | Order cancelled due to timeout.                 |
+| -7003 | ORDER\_REVIEW\_REJECTION              | Order review rejection.                         |
 
