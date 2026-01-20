@@ -97,8 +97,8 @@ The response will include the following fields:
     "code": 200,
     "msg": "SUCCESS",
     "data": {
-        "CLABE number": "",
-        "Account number/card": "",
+        "Cuenta CLABE": "",
+        "Banco": "",
         "Beneficiary Name": ""
     }
 }
