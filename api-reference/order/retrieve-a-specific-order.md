@@ -31,33 +31,33 @@ When the order type is `fiat_to_crypto` and `crypto_to_fiat`, the response will 
 * cod&#x65;**:** (number)  response code
 * msg: (string) message
 * data: (object) order info
-* orderId: (int) id of the order
-* clientId: (string) a id defined by client
-* merchantId: (int)  id of the merchant settings
-* paymentId: (int)  id of paymenyId (`fiat_to_crypto`)
-* userPaymentId: (int)  id of user paymenyId (`crypto_to_fiat`)
-* country: (string) name of the country
-* crypto: (string) name of the crypto currency&#x20;
-* fiat: (string) name of the fiat currency&#x20;
-* orderType: (string) type of the order
-* orderPrice: (string) exchange rate when create orden
-* cryptoAmount: (string) amount of crypto currency
-* fiatAmount: (string) amount of fiat currency
-* fiatFee: (string) fee of the order
-* orderStatus: (int) status of the order
-  * 10: reviewing — The order has entered the review stage. If approved, the status will be updated to 11, 31, or 40 depending on the outcome.
-  * 11: request for information — An RFI was triggered and supporting documents must be submitted. Once documents are submitted, the status changes to 12.
-  * 12: uploaded RFI Information — RFI documents have been uploaded and are awaiting compliance review. After approval, the status will change to 31 or 40 depending on the result.
-  * 30: approved — This order was created by our system and is waiting for the user to accept. After acceptance, the status will transition to 31 or 40 as applicable.
-  * 31: support documents pending — This status indicates required supporting documents must be provided. Once submitted and accepted, the status becomes 40.
-  * 40: pending payment — The order is awaiting payment. After successful payment, the status will change to 50.
-  * 50: paid — Payment has been completed. For on-ramp orders, the status typically advances to 60 immediately; for off-ramp orders it will normally change to 60 after about 30 minutes, or can be moved to 60 sooner by calling the /v2/order/confirm endpoint.
-  * 60: released — The order is complete.
-  * 70: canceled — The order has been canceled (e.g., due to review rejection or timeout).
-* traceNumber: (string) id of the national central bank order
-* paymentInfo: (object) info of the payment
-* createTime: (string) create time of the order
-* completedTime: (string) completed time of the order
+* **orderId**: (int) id of the order
+* **clientId**: (string) a id defined by client
+* **merchantId**: (int)  id of the merchant settings
+* **paymentId**: (int)  id of paymenyId (`fiat_to_crypto`)
+* **userPaymentId**: (int)  id of user paymenyId (`crypto_to_fiat`)
+* **country**: (string) name of the country
+* **crypto**: (string) name of the crypto currency&#x20;
+* **fiat**: (string) name of the fiat currency&#x20;
+* **orderType**: (string) type of the order
+* **orderPrice**: (string) exchange rate when create orden
+* **cryptoAmount**: (string) amount of crypto currency
+* **fiatAmount**: (string) amount of fiat currency
+* **fiatFee**: (string) fee of the order
+* **orderStatus**: (int) status of the order
+  * **10: reviewing** — The order has entered the review stage. If approved, the status will be updated to 11, 31, or 40 depending on the outcome.
+  * **11: request for information** — An RFI was triggered and supporting documents must be submitted. Once documents are submitted, the status changes to 12.
+  * **12: uploaded RFI Information** — RFI documents have been uploaded and are awaiting compliance review. After approval, the status will change to 31 or 40 depending on the result.
+  * **30: approved** — This order was created by our system and is waiting for the user to accept. After acceptance, the status will transition to 31 or 40 as applicable.
+  * **31: support documents pending** — This status indicates required supporting documents must be provided. Once submitted and accepted, the status becomes 40.
+  * **40: pending payment** — The order is awaiting payment. After successful payment, the status will change to 50.
+  * **50: paid** — Payment has been completed. For on-ramp orders, the status typically advances to 60 immediately; for off-ramp orders it will normally change to 60 after about 30 minutes, or can be moved to 60 sooner by calling the /v2/order/confirm endpoint.
+  * **60: released** — The order is complete.
+  * **70: canceled** — The order has been canceled (e.g., due to review rejection or timeout).
+* **traceNumber**: (string) id of the national central bank order
+* **paymentInfo**: (object) info of the payment
+* **createTime**: (string) create time of the order
+* **completedTime**: (string) completed time of the order
 
 <pre class="language-json"><code class="lang-json">{
 <strong>    "code": 200,
@@ -95,27 +95,27 @@ When the order type is `fiat_to_fiat`, the response will include the following f
 * cod&#x65;**:** (number)  response code
 * msg: (string) message
 * data: (object) order info
-* orderId: (int) id of the order
-* clientId: (string) a id defined by client
-* onRampMerchantId: (int)  id of the merchant
-* onRampPaymentId: (int)  id of user paymenyId
-* onRampCountry: (string) name of the country
-* onRampFiat: (string) name of the fiat currency
-* onRampFiatAmount: (string) amount of fiat currency
-* onRampFiatFee: (string) fee of the order
-* offRampMerchantId: (int)  id of the merchant
-* offRampPaymentId: (int)  id of user paymenyId
-* offRampCountry: (string) name of the country
-* offRampFiat: (string) name of the fiat currency
-* offRampFiatAmount: (string) amount of fiat currency
-* offArriveRampFiatAmount: (string) arrive amount of fiat currency
-* offRampFiatFee: (string) fee of the order
-* orderPrice: (string) exchange rate when create order
-* orderStatus: (int) status of the order(10: pending, 11: request for information, 12: uploaded RFI Information, 30: approved, 31: support documents pending, 41: payin pending, 51: payout pending, 60: released, 71: payin canceled, 72: payout canceled)
-* onRampPaymentInfo: (object) info of the payment
-* offRampPaymentInfo: (object) info of the payment
-* createTime: (string) create time of the order
-* completedTime: (string) completed time of the order
+* **orderId**: (int) id of the order
+* **clientId**: (string) a id defined by client
+* **onRampMerchantId**: (int)  id of the merchant
+* **onRampPaymentId**: (int)  id of user paymenyId
+* **onRampCountry**: (string) name of the country
+* **onRampFiat**: (string) name of the fiat currency
+* **onRampFiatAmount**: (string) amount of fiat currency
+* **onRampFiatFee**: (string) fee of the order
+* **offRampMerchantId**: (int)  id of the merchant
+* **offRampPaymentId**: (int)  id of user paymenyId
+* **offRampCountry**: (string) name of the country
+* **offRampFiat**: (string) name of the fiat currency
+* **offRampFiatAmount**: (string) amount of fiat currency
+* **offArriveRampFiatAmount**: (string) arrive amount of fiat currency
+* **offRampFiatFee**: (string) fee of the order
+* **orderPrice**: (string) exchange rate when create order
+* **orderStatus**: (int) status of the order(10: pending, 11: request for information, 12: uploaded RFI Information, 30: approved, 31: support documents pending, 41: payin pending, 51: payout pending, 60: released, 71: payin canceled, 72: payout canceled)
+* **onRampPaymentInfo**: (object) info of the payment
+* **offRampPaymentInfo**: (object) info of the payment
+* **createTime**: (string) create time of the order
+* **completedTime**: (string) completed time of the order
 
 ```json
 {
