@@ -44,7 +44,16 @@ When the order type is `fiat_to_crypto` and `crypto_to_fiat`, the response will 
 * cryptoAmount: (string) amount of crypto currency
 * fiatAmount: (string) amount of fiat currency
 * fiatFee: (string) fee of the order
-* orderStatus: (int) status of the order(10: pending, 11: request for information, 12: uploaded RFI Information, 30: approved, 31: support documents pending, 40: pending payment, 50: paid, 60: released, 70: canceled)
+* orderStatus: (int) status of the order
+  * 10: reviewing — The order has entered the review stage. If approved, the status will be updated to 11, 31, or 40 depending on the outcome.
+  * 11: request for information — An RFI was triggered and supporting documents must be submitted. Once documents are submitted, the status changes to 12.
+  * 12: uploaded RFI Information — RFI documents have been uploaded and are awaiting compliance review. After approval, the status will change to 31 or 40 depending on the result.
+  * 30: approved — This order was created by our system and is waiting for the user to accept. After acceptance, the status will transition to 31 or 40 as applicable.
+  * 31: support documents pending — This status indicates required supporting documents must be provided. Once submitted and accepted, the status becomes 40.
+  * 40: pending payment — The order is awaiting payment. After successful payment, the status will change to 50.
+  * 50: paid — Payment has been completed. For on-ramp orders, the status typically advances to 60 immediately; for off-ramp orders it will normally change to 60 after about 30 minutes, or can be moved to 60 sooner by calling the /v2/order/confirm endpoint.
+  * 60: released — The order is complete.
+  * 70: canceled — The order has been canceled (e.g., due to review rejection or timeout).
 * traceNumber: (string) id of the national central bank order
 * paymentInfo: (object) info of the payment
 * createTime: (string) create time of the order
