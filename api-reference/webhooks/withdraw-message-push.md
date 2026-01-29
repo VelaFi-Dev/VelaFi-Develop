@@ -25,6 +25,7 @@ The request body should include the following fields:
 	"address": "0xe5fe46b5245d402cexxxxx", 							// (string) Destination on-chain address (partially masked in example)
 	"txHash": "0xa7db36cb901f73a45xxxxx", 							// (string) On-chain transaction hash (partially masked in example)
 	"status": "succeeded",                              // (string) Withdrawal status (possible values: succeeded, failed)
+	"reason": "",																				// (string) Withdrawal failed reason as a string
 	"timestamp": "1769609100165"                        // (string) Push timestamp in milliseconds since Unix epoch
 }
 ```
