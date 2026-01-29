@@ -23,7 +23,7 @@ The request body should include the following fields:
 
 ```json
 {
-    "eventType": "ORDER_WEBHOOK",     // (string: required, event type [ORDER_WEBHOOK, GLOBAL_PAYMENT_WEBHOOK, FUNDING_WEBHOOK])
+    "eventType": "ORDER_WEBHOOK",     // (string: required, event type [ORDER_WEBHOOK, GLOBAL_PAYMENT_WEBHOOK, FUNDING_WEBHOOK, ON_RAMP_WITHDRAW_WEBHOOK])
     "url": "https://localhost/callback"        // (string: required, callback URL)
 }
 ```
