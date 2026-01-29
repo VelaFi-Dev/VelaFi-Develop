@@ -1,6 +1,6 @@
-# OnRamp Withdraw Message Push
+# Withdraw Message Push
 
-This API allows you to push on-ramp to withdraw notifications to a specified webhook.
+This API allows you to push withdraw notifications to a specified webhook.
 
 #### Endpoint Information
 
@@ -18,7 +18,8 @@ The request body should include the following fields:
 	"webhookId": "5a34d2887baf463ca3e1bb3648946e5d",    // (string) Unique identifier for this webhook delivery
 	"eventType": "ON_RAMP_WITHDRAW_WEBHOOK",            // (string) Type of event triggered by the webhook
 	"orderId": "617090742820761600",                    // (string) Platform-internal unique order identifier
-	"clientId": "TEST20260128018",                      // (string) Client or merchant identifier associated with the request
+	"clientId": "20260128018",                          // (string) Client or merchant identifier associated with the request
+	"crypto": "USDT",                                   // (string) Withdrawal crypto as a string
 	"amount": "0.73",                                   // (string) Withdrawal amount as a string to preserve precision
 	"network": "POL",                                   // (string) Blockchain network code (e.g., POL for Polygon)
 	"address": "0xe5fe46b5245d402cexxxxx", 							// (string) Destination on-chain address (partially masked in example)
