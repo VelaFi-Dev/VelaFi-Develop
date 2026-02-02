@@ -84,7 +84,6 @@
   * [Fiat/Crypto Order Message Push](api-reference/webhooks/fiat-crypto-order-message-push.md)
   * [Fiat/Fiat Order Message Push](api-reference/webhooks/fiat-fiat-order-message-push.md)
   * [Funding Records Message Push](api-reference/webhooks/funding-records-message-push.md)
-  * [Withdraw Message Push](api-reference/webhooks/withdraw-message-push.md)
 
 ## 🛠️  Error Reference
 
