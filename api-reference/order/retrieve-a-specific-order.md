@@ -80,9 +80,7 @@ When the order type is `fiat_to_crypto` and `crypto_to_fiat`, the response will 
         "hasRefund": 0,
         "traceNumber": "20241223907069062e51744c4f0e57",
         "paymentInfo": {
-            "CLABE number": "",
-            "Account number/card": "706180304649761358",
-            "Beneficiary Name": ""
+            "Cuenta CLABE": "706180304649761358"
         },
         "createTime": "1740214865000",
         "completedTime": "1740214866000"
@@ -140,14 +138,10 @@ When the order type is `fiat_to_fiat`, the response will include the following f
         "orderPrice": "55.9664",
         "orderStatus": 31,
         "onRampPaymentInfo": {
-            "CLABE number": "",
-            "Account number/card": "706180304649761358",
-            "Beneficiary Name": ""
+            "Cuenta CLABE": "706180304649761358"
         },
         "offRampPaymentInfo": {
-            "CLABE number": "",
-            "Account number/card": "706180304649761359",
-            "Beneficiary Name": ""
+            "Cuenta CLABE": "706180304649761358"
         }
         "createTime": "1740384573000",
         "completedTime": "1740384573000"
