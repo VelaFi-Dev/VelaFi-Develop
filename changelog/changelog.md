@@ -10,6 +10,68 @@ metaLinks:
 
 ### VelaFi API Documentation V2
 
+
+
+***
+
+**Release Date: 2026-3-11**
+
+***
+
+**Guides**
+
+#### New Features - Stablecoin Payments
+
+Added a set of Stablecoin Payment APIs to support merchant payment link creation, order management, and wallet operations.
+
+**Wallet Management**
+
+* Added **Get Wallet List API**
+  * Retrieve all stablecoin wallets under a merchant account.
+* Added **Create Sub-Wallet API**
+  * Allow merchants to create sub wallets for internal accounting and financial categorization.
+
+**Payment Link Management**
+
+* Added **Create Payment Link API**
+  * Generate shareable stablecoin payment links for user payments.
+* Added **Query Payment Links API**
+  * Retrieve payment links with pagination and filtering options.
+
+**Order Management**
+
+* Added **Query Payment Order API**
+  * Retrieve detailed information of a specific payment order.
+* Added **Query Payment Orders API**
+  * Retrieve a paginated list of payment orders for reconciliation and reporting.
+
+**Fund Management**
+
+* Added **Fund Collection API**
+  * Consolidate internal payment records into the merchant’s Primary Wallet for settlement.
+
+**Webhook**
+
+* Added **Stablecoin Payment Webhook**
+  * Merchants can receive real-time notifications when payment order status changes.
+
+#### Supported Stablecoins and Networks
+
+The system currently supports the following stablecoins and blockchain networks:
+
+* **USDT**
+  * Binance Smart Chain (BEP20)
+  * Ethereum (ERC20)
+  * Polygon (POS)
+  * Solana Mainnet
+  * TRON (TRC20)
+* **USDC**
+  * Ethereum (ERC20)
+  * Polygon (POS)
+  * Solana Mainnet
+
+***
+
 ***
 
 **Release Date: 2025-11-18**

@@ -22,6 +22,14 @@
 * [Fiat to Crypto (On-Ramp)](guides/fiat-to-crypto-on-ramp.md)
 * [Crypto to Fiat (Off-Ramp)](guides/crypto-to-fiat-off-ramp.md)
 * [Fiat to Fiat (Global Payment)](guides/fiat-to-fiat-global-payment.md)
+* [Stablecoin Payments](guides/stablecoin-payments/README.md)
+  * [Get Wallet List](guides/stablecoin-payments/get-wallet-list.md)
+  * [Create a Sub-Wallet](guides/stablecoin-payments/create-a-sub-wallet.md)
+  * [Create a Payment Link](guides/stablecoin-payments/create-a-payment-link.md)
+  * [Retrieve Payment Links](guides/stablecoin-payments/retrieve-payment-links.md)
+  * [Retrieve a Payment Order](guides/stablecoin-payments/retrieve-a-payment-order.md)
+  * [Retrieve a List of Payment Order](guides/stablecoin-payments/retrieve-a-list-of-payment-order.md)
+  * [Fund Collection](guides/stablecoin-payments/fund-collection.md)
 
 ## 📗  API Reference
 
@@ -84,6 +92,7 @@
   * [Fiat/Crypto Order Message Push](api-reference/webhooks/fiat-crypto-order-message-push.md)
   * [Fiat/Fiat Order Message Push](api-reference/webhooks/fiat-fiat-order-message-push.md)
   * [Funding Records Message Push](api-reference/webhooks/funding-records-message-push.md)
+  * [Stablecoin Payment Order Message Push](api-reference/webhooks/stablecoin-payment-order-message-push.md)
 
 ## 🛠️  Error Reference
 
