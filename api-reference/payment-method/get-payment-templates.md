@@ -42,6 +42,7 @@ This request requires authorization.
 | 83         | WIRE                                | Automatic |
 | 84         | WIRE\_Virtual Account               | Automatic |
 | 90         | Automated Pix                       | Automatic |
+| 135        | Automated Pix                       | Automatic |
 | 95         | Automated Bank Transfer(Peru)       | Automatic |
 | 111        | ACH Account\_Cross River Bank       | Automatic |
 | 113        | WIRE Account\_Cross River Bank      | Automatic |
@@ -259,6 +260,22 @@ Bank Code: See Colombian Bank Codes, The bank code filled in must be one that is
 Pix Type: enum [CPF:11 digits, CNPJ:14 digits, EMAIL:email, PHONE: 10-11 digits, RANDOM_KEY: with "-"]
 ```
 
+**Brazil Bank (135: Automated Pix)**
+
+```json
+{
+    "code": 200,
+    "msg": "SUCCESS",
+    "data": {
+        "Pix Type": "",
+        "Pix Key": ""
+    }
+}
+
+Pix Type: enum [CPF:11 digits, CNPJ:14 digits, EMAIL:email, PHONE: 10-11 digits, RANDOM_KEY: with "-"]
+```
+
+\
 **Peru Bank (95: Automated Bank Transfer(Peru))**
 
 ```json

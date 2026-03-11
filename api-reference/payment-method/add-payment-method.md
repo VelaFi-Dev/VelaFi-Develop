@@ -131,7 +131,7 @@ The response will include the following fields:
 }
 ```
 
-**Example Request (Brazil - BRL)**
+**Example Request (Brazil - BRL)  90: Automated Pix**
 
 ```json
 {
@@ -147,6 +147,25 @@ The response will include the following fields:
     "remark": "Preferred payment method"
 }
 ```
+
+**Example Request (Brazil - BRL)  135: Automated Pix**
+
+```json
+{
+    "merchantId": 15123,
+    "paymentId": 135,
+    "country": "Brazil",
+    "fiat": "BRL",
+    "realName": "Tom",
+    "fieldJson": {
+        "Pix Type": "EMAIL", //pix type[CPF:11 digits, CNPJ:14 digits, EMAIL:email, PHONE: 10-11 digits, RANDOM_KEY: with "-"]
+        "Pix Key": "tom@gmail.com" //pix key      
+    },
+    "remark": "Preferred payment method"
+}
+```
+
+
 
 **Example Request (Peru - PEN)**
 

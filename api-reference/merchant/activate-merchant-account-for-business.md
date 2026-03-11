@@ -64,7 +64,7 @@ Supported payment methods: PSE, ACH, Bre-B
 }
 ```
 
-**For BRL Account (Brazil)**
+**For BRL Account 01 (Brazil)**
 
 Supported payment methods: Automated Pix
 
@@ -73,6 +73,18 @@ Supported payment methods: Automated Pix
     "merchantId": "15126673", // (required, number: id of the merchant)
     "fiat": "BRL", // (required, string: name of the fiat currency [BRL])
     "trench": "BANCO GENIAL" //(required, string: trench [BANCO GENIAL])
+}
+```
+
+**For BRL Account 02 (Brazil)**
+
+Supported payment methods: Automated Pix
+
+```json
+{
+    "merchantId": "15126673", // (required, number: id of the merchant)
+    "fiat": "BRL", // (required, string: name of the fiat currency [BRL])
+    "trench": "a55" //(required, string: trench [a55])
 }
 ```
 
