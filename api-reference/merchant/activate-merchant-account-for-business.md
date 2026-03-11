@@ -71,7 +71,8 @@ Supported payment methods: Automated Pix
 ```json
 {
     "merchantId": "15126673", // (required, number: id of the merchant)
-    "fiat": "BRL", // (required, string: name of the fiat currency [BRL])   
+    "fiat": "BRL", // (required, string: name of the fiat currency [BRL])
+    "trench": "BANCO GENIAL" //(required, string: trench [BANCO GENIAL])
 }
 ```
 
