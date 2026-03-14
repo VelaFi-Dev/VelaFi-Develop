@@ -39,6 +39,7 @@ The following query parameters can be used:
   * `1`: pending
   * `2`: completed
   * `3`: canceled
+  * `4`: refunded
 * **clientId:** (string) The ID of the client.
 * **currentPage:** (int) The current page number (default is 1).
 * **pageSize:** (int) The number of results per page (default is 10, maximum is 1000).

@@ -35,7 +35,7 @@ The request body should include the following fields:
     "fee": "2.00",                                   // (decimal: amount of the fee)
     "userPaymentId": "91",                           // (number: ID of the user payment method)
     "type": "DEPOSIT",                               // (enum: type [DEPOSIT: The add of the funding record, WITHDRAW: The claim of the funding record, BUY_CRYPTO: The buy crypto of the funding record, REFUND: The refund of the funding record])
-    "status": "1",                                   // (enum: status [1: pending, 2: completed, 3: canceled])
+    "status": "1",                                   // (enum: status [1: pending, 2: completed, 3: canceled, 4: refunded])
     "createTime": "1737452292000",                   // (string: timestamp of the create time in milliseconds)
     "updateTime": "1737452344000",                   // (string: timestamp of the update time in milliseconds)
     "cardNo": "3067212321",                          // (string: id of the entity sending ID number)

@@ -54,6 +54,8 @@ When the order type is `fiat_to_crypto` and `crypto_to_fiat`, the response will 
   * **50: paid** — Payment has been completed. For on-ramp orders, the status typically advances to 60 immediately; for off-ramp orders it will normally change to 60 after about 30 minutes, or can be moved to 60 sooner by calling the /v2/order/confirm endpoint.
   * **60: released** — The order is complete.
   * **70: canceled** — The order has been canceled (e.g., due to review rejection or timeout).
+  * **72: refunded**— The order has been refunded. It is derived from the state changes of 60 or 73.
+  * **73: refunding** — The order has been refunding. It is derived from the state changes of 60.
 * **traceNumber**: (string) id of the national central bank order
 * **paymentInfo**: (object) info of the payment
 * **createTime**: (string) create time of the order

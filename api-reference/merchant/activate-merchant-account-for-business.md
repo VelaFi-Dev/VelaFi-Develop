@@ -20,18 +20,6 @@ This endpoint is used to activate a merchant's fiat currency payment account. Su
 
 **For MXN Account 01 (Mexico)**
 
-Supported payment methods: Automated SPEI - Arcus
-
-```json
-{    
-    "merchantId": "15126673", // (required, number: id of the merchant)
-    "fiat": "MXN", // (required, string: name of the fiat currency [MXN])   
-    "trench": "ARCUS FI", //(required, string: trench [ARCUS FI]) 
-}
-```
-
-**For MXN Account 02 (Mexico)**
-
 Supported payment methods: SPEI - FINCO PAY
 
 ```json

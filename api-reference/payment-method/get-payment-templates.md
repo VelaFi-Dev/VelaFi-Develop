@@ -30,7 +30,6 @@ This request requires authorization.
 
 | Payment ID | Name                                | Type      |
 | ---------- | ----------------------------------- | --------- |
-| 58         | Automated SPEI - Arcus              | Automatic |
 | 105        | SPEI - FINCO PAY                    | Automatic |
 | 63         | Automated Bank Transfer (Argentina) | Automatic |
 | 68         | PSE/ACH                             | Automatic |
@@ -90,20 +89,6 @@ The response will include the following fields:
 #### Example Responses
 
 **Example:**
-
-**Mexico Bank (58: Automated SPEI - Arcus)**
-
-```json
-{
-    "code": 200,
-    "msg": "SUCCESS",
-    "data": {
-        "Cuenta CLABE": "",
-        "Banco": "",
-        "Beneficiary Name": ""
-    }
-}
-```
 
 **Mexico Bank (105: SPEI - FINCO PAY)**
 

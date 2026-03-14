@@ -27,35 +27,6 @@ This endpoint is used to activate a merchant's fiat currency payment account. Su
 
 **For MXN Account 01 (Mexico)**
 
-Supported payment methods: Automated SPEI - Arcus
-
-```json
-{    
-    "merchantId": "15126673", // (required, number: id of the merchant)
-    "fiat": "MXN", // (required, string: name of the fiat currency [MXN])   
-    "trench": "ARCUS FI", //(required, string: trench [ARCUS FI]) 
-    "fieldList": { // List of channel fields
-        "email": "rturo@gmail.com", // (optional, string: Email, if the merchant information is not provided, it must be filled in)
-        "idNoType": "CURP", //(required, enum: type of identification document [CURP/RFC])
-        "idNo": "MACM000502IR6",//(required, string: identity number)
-        "cardIssueDate": "2019-06-01", // (required, string: Card Issue Date (yyyy-MM-dd))
-        "cardExpireDate": "2029-06-01", // (required, string: Card Expiry Date (yyyy-MM-dd))
-        "address": "Celle Lagu Wenner 50", // (required, string: Address)
-        "city": "Ciudad de Mexico", // (required, string: City)
-        "state": "CMX", // (required, string: State)
-        "zipCode": "09060", // (required, string: Zip Code)
-        "phone": "35580481683", // (required, string: Phone)        
-   
-        "birthday": "1988-07-02", // (string: Birthday (yyyy-MM-dd), required if merchantType is INDIVIDUAL)
-        "name": "Tellez", // (string: Name, required if merchantType is INDIVIDUAL)
-        "fatherSurname": "Rrturo", // (string: Father's Surname, required if merchantType is INDIVIDUAL)
-        "motherSurname": "" // (string: Mother's Surname, required if merchantType is INDIVIDUAL)
-    }
-}
-```
-
-**For MXN Account 02 (Mexico)**
-
 Supported payment methods: SPEI - FINCO PAY
 
 ```json

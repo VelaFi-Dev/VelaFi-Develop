@@ -55,24 +55,6 @@ The response will include the following fields:
 }
 ```
 
-#### Example Request (Mexico - MXN)  58: Automated SPEI - Arcus
-
-```json
-{
-  "merchantId": 123,
-  "paymentId": 58,
-  "country": "Mexico",
-  "fiat": "MXN",
-  "realName": "John Doe",
-  "fieldJson": {
-      "Cuenta CLABE": "123456789012345678", //clabe number
-      "Banco": "Banamex", //bank name
-      "Beneficiary Name": "John Doe" //beneficiary name
-  },
-  "remark": "Preferred payment method"
-}
-```
-
 #### Example Request (Mexico - MXN)  105: SPEI - FINCO PAY
 
 ```json

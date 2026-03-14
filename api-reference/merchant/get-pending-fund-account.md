@@ -22,7 +22,6 @@ This endpoint allows you to retrieve information about your VelaFi Pending Fund 
 
 * **merchantId:** (int) The merchant ID.
 * **paymentId:** (int) The payment ID. Currently supported payment IDs are：
-  * 58 (Automated SPEI - Arcus) - MXN
   * 105 (SPEI - FINCO PAY) - MXN
   * 63 (Automated Bank Transfer (Argentina)) - ARS
   * 68 (PSE) - COP

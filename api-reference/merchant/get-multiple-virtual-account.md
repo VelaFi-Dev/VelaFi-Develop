@@ -1,4 +1,4 @@
-# Get Merchant Virtual Accounts
+# Get Multiple Virtual Account
 
 This endpoint allows you to retrieve information about your VelaFi Virtual Accounts,  With this information, you can pre-load funds into the Pending Fund account in advance. Pre-funding your account enables faster transactions, as you won't need to wait for external transfers to be confirmed at the time of trading.
 
@@ -15,7 +15,6 @@ This endpoint allows you to retrieve information about your VelaFi Virtual Accou
 
 * **merchantId:** (int) The merchant ID.
 * **paymentId:** (int) The payment ID. Currently supported payment IDs are：
-  * 58 (Automated SPEI - Arcus) - MXN
   * 105 (SPEI - FINCO PAY) - MXN
   * 63 (Automated Bank Transfer (Argentina)) - ARS
   * 68 (PSE) - COP
