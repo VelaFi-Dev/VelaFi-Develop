@@ -22,12 +22,22 @@ This API allows you to retrieve the balances of cryptocurrency assets in a user'
 * **chainType** (String) - Type of the blockchain (default: "")
 * **merchantId**: (int) The ID of the merchant.
 
-| tokenId | ChainType | Chain Full Name |
-| ------- | --------- | --------------- |
-| USDT    | TRC20     | Tron            |
-| USDT    | ERC20     | Ethereum        |
-| USDT    | BEP20     | BNB Smart Chain |
-| USDT    | POL       | Polygon         |
+| tokenId | ChainType | Chain Full Name  |
+| ------- | --------- | ---------------- |
+| USDT    | TRC20     | Tron             |
+| USDT    | ERC20     | Ethereum         |
+| USDT    | BEP20     | BNB Smart Chain  |
+| USDT    | POL       | Polygon          |
+| USDT    | SPL20     | Solana Mainnet   |
+| USDC    | ERC20     | Ethereum         |
+| USDC    | POL       | Polygon          |
+| USDC    | SPL20     | Solana Mainnet   |
+| BTC     | BTC       | Bitcoin          |
+| COPM    | POL       | Polygon (POS)    |
+| BRL1    | POL       | Polygon (POS)    |
+| MXNB    | Arbitrum  | Arbitrum Network |
+| MMXN    | ERC20     | Ethereum (ERC20) |
+| MMXN    | TRC20     | TRON (TRC20)     |
 
 #### Response Structure
 
