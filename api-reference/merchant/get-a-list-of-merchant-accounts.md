@@ -44,7 +44,7 @@ The response will include the following fields:
                 "fiat": "MXN",               // (string: name of the fiat currency)
                 "balance": "100.00",         // (decimal: amount of Merchant balance)
                 "status": 1,                 // (enum: status of the merchant [1: authenticating, 2: normal, 3: authentication failed, 4: incomplete])   
-                "paymentId": 58,             // (number: ID of the payment configuration)
+                "paymentId": 105,             // (number: ID of the payment configuration)
                 "paymentMethodName": "Automated SPEI - Arcus", // (string: name of the payment method)
                 "createTime": "1737452292000", // (string: timestamp of the create time (milliseconds))
                 "updateTime": "1737452344000", //(sring: timestamp of the update time (milliseconds))

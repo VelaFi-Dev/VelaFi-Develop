@@ -74,6 +74,25 @@ The response will include the following fields:
 }
 ```
 
+#### Example Request (Mexico - MXN)  72: SPEI
+
+```json
+{
+  "merchantId": 123,
+  "paymentId": 72,
+  "country": "Mexico",
+  "fiat": "MXN",
+  "realName": "John Doe",
+  "fieldJson": {
+      "Account Type":"clabe", //account type enum [clabe: VA account, spei_card: card account]
+      "Full Name": "John Doe", //beneficiary name
+      "Bank Account Number": "123456789012345678", //account number
+      "Bank Code": "" //bank code, Only fill in when the account type is "spei_card", The list is shown in https://docs.velafi.com/api-reference/payment-method/get-payment-templates#mexico-tesored-bank-codes
+  },
+  "remark": "Preferred payment method"
+}
+```
+
 #### Example Request (Argentina - ARS)
 
 ```json

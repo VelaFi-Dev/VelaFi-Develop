@@ -18,7 +18,7 @@ This endpoint allows merchants to create multiple virtual accounts. A correspond
 {     
     "merchantId": 151209, //(required, string: Merchant id)  
     "fiat": "MXN", // (required, string: name of the fiat currency [MXN,ARS,BRL,COP])  
-    "paymentId": 58,  // (required, number: id of the payment [58=MXN/105=MXN,63=ARS,68=COP,90=BRL]) 
+    "paymentId": 72,  // (required, number: id of the payment [72=MXN/105=MXN,63=ARS,68=COP,90=BRL]) 
     "alias": "alias" //(required, string: alias, The combination of merchantId, fiat, paymentId and alias is unique. 
                      //The value of alias can only consist of letters and numbers.) 
 }

@@ -27,20 +27,33 @@ This endpoint is used to activate a merchant's fiat currency payment account. Su
 
 **For MXN Account 01 (Mexico)**
 
-Supported payment methods: SPEI - FINCO PAY
+Supported payment methods: SPEI
 
 ```json
 {    
     "merchantId": "15126673", // (required, number: id of the merchant)
     "fiat": "MXN", // (required, string: name of the fiat currency [MXN])   
-    "trench": "FINCO PAY", //(required, string: trench [FINCO PAY])     
+    "trench": "CLABE - FINCO PAY", //(required, string: trench [CLABE - FINCO PAY])     
     "fieldList": { // List of channel fields
         "alias": "rturo_alias", // (required, string: alias)
     }
 }
 ```
 
+**For MXN Account 02 (Mexico)**
 
+Supported payment methods: SPEI
+
+```json
+{    
+    "merchantId": "15126673", // (required, number: id of the merchant)
+    "fiat": "MXN", // (required, string: name of the fiat currency [MXN])   
+    "trench": "CLABE - TESORED", //(required, string: trench [CLABE - TESORED])     
+    "fieldList": { // List of channel fields
+        "alias": "rturo_alias", // (required, string: alias)
+    }
+}
+```
 
 **For ARS Account (Argentina)**
 
