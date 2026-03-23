@@ -28,50 +28,50 @@ This request requires authorization.
 
 #### Payment ID Lists
 
-| Payment ID | Name                                | Type      |
-| ---------- | ----------------------------------- | --------- |
-| 105        | SPEI - FINCO PAY                    | Automatic |
-| 72         | SPEI                                | Automatic |
-| 63         | Automated Bank Transfer (Argentina) | Automatic |
-| 68         | PSE/ACH                             | Automatic |
-| 77         | SWIFT (HK)                          | Automatic |
-| 78         | CHATS                               | Automatic |
-| 79         | FPS                                 | Automatic |
-| 81         | ACH\_push                           | Automatic |
-| 82         | ACH\_Virtual Account                | Automatic |
-| 83         | WIRE                                | Automatic |
-| 84         | WIRE\_Virtual Account               | Automatic |
-| 90         | Automated Pix                       | Automatic |
-| 135        | Automated Pix                       | Automatic |
-| 95         | Automated Bank Transfer(Peru)       | Automatic |
-| 111        | ACH Account\_Cross River Bank       | Automatic |
-| 113        | WIRE Account\_Cross River Bank      | Automatic |
-| 115        | SWIFT Account\_Cross River Bank     | Automatic |
-| 19         | Pix                                 | Manual    |
-| 27         | Bank Transfer (Brazil)              | Manual    |
-| 28         | Bank Transfer (Argentina)           | Manual    |
-| 29         | Manual Bank Transfer (Mexico)       | Manual    |
-| 36         | Mercantil                           | Manual    |
-| 37         | Bank Transfer (Venezuela)           | Manual    |
-| 38         | Banco De Venezuela                  | Manual    |
-| 39         | Ubii Pagos                          | Manual    |
-| 40         | Banesco                             | Manual    |
-| 41         | Pago Movil                          | Manual    |
-| 42         | BNC Banco National De Credito       | Manual    |
-| 43         | BBVA Provincial (Venezuela)         | Manual    |
-| 44         | Bancamiga                           | Manual    |
-| 45         | Bancaribe                           | Manual    |
-| 46         | Banplus                             | Manual    |
-| 47         | Banco Activo                        | Manual    |
-| 48         | Bank Transfer (Colombia)            | Manual    |
-| 51         | 境內銀行轉賬 (台灣)                         | Manual    |
-| 52         | 街口轉賬                                | Manual    |
-| 53         | LINE Pay                            | Manual    |
-| 59         | Bank Transfer (Perú)                | Manual    |
-| 60         | Bank Transfer (Chile)               | Manual    |
-| 61         | Manual USD Payments (CHATS)         | Manual    |
-| 64         | Banque Msr UAE                      | Manual    |
-| 67         | Bank Transfer (Uruguay)             | Manual    |
+| Payment ID | Name                            | Type      |
+| ---------- | ------------------------------- | --------- |
+| 105        | SPEI (Finco Pay)                | Automatic |
+| 72         | SPEI (Tesored)                  | Automatic |
+| 63         | CBU/CVU (Momentum)              | Automatic |
+| 68         | PSE/ACH                         | Automatic |
+| 77         | SWIFT (HK)                      | Automatic |
+| 78         | CHATS                           | Automatic |
+| 79         | FPS                             | Automatic |
+| 81         | ACH (Reference - Lead Bank)     | Automatic |
+| 82         | ACH (Virtual - Lead Bank)       | Automatic |
+| 83         | Wire (Reference - Lead Bank)    | Automatic |
+| 84         | Wire (Virtual - Lead Bank)      | Automatic |
+| 90         | Pix (Genial)                    | Automatic |
+| 135        | Pix (a55)                       | Automatic |
+| 95         | Bank Transfer                   | Automatic |
+| 111        | Wire (Virtual - CRB)            | Automatic |
+| 113        | ACH (Virtual - CRB)             | Automatic |
+| 115        | SWIFT Account\_Cross River Bank | Automatic |
+| 19         | Pix                             | Manual    |
+| 27         | Bank Transfer (Brazil)          | Manual    |
+| 28         | Bank Transfer (Argentina)       | Manual    |
+| 29         | Manual Bank Transfer (Mexico)   | Manual    |
+| 36         | Mercantil                       | Manual    |
+| 37         | Bank Transfer (Venezuela)       | Manual    |
+| 38         | Banco De Venezuela              | Manual    |
+| 39         | Ubii Pagos                      | Manual    |
+| 40         | Banesco                         | Manual    |
+| 41         | Pago Movil                      | Manual    |
+| 42         | BNC Banco National De Credito   | Manual    |
+| 43         | BBVA Provincial (Venezuela)     | Manual    |
+| 44         | Bancamiga                       | Manual    |
+| 45         | Bancaribe                       | Manual    |
+| 46         | Banplus                         | Manual    |
+| 47         | Banco Activo                    | Manual    |
+| 48         | Bank Transfer (Colombia)        | Manual    |
+| 51         | 境內銀行轉賬 (台灣)                     | Manual    |
+| 52         | 街口轉賬                            | Manual    |
+| 53         | LINE Pay                        | Manual    |
+| 59         | Bank Transfer (Perú)            | Manual    |
+| 60         | Bank Transfer (Chile)           | Manual    |
+| 61         | Manual USD Payments (CHATS)     | Manual    |
+| 64         | Banque Msr UAE                  | Manual    |
+| 67         | Bank Transfer (Uruguay)         | Manual    |
 
 #### Response Structure
 
@@ -134,7 +134,7 @@ Bank Code: Bank code is required to be filled in only when the account type is "
     "code": 200,
     "msg": "SUCCESS",
     "data": {
-        "CVU number": "",
+        "CVU/CBU Number": "",
         "cuit": "",
         "Bank name": ""
     }

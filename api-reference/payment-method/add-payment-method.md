@@ -103,9 +103,9 @@ The response will include the following fields:
   "fiat": "ARS",
   "realName": "John Doe",
   "fieldJson": {
-      "Bank Name": "Banco Galicia",
-      "CVU Number": "0000775900000000000041",
-      "CUIT": "20339698693"
+      "Bank Name": "Banco Galicia", //optional, bank name
+      "CVU/CBU Number": "0000775900000000000041", //cvu/cbu account number
+      "CUIT": "20339698693" //cuit
   },
   "remark": "Preferred payment method"
 }
