@@ -1,10 +1,6 @@
 # Stablecoin Payment Order Message Push
 
-我按照你前面统一的 **API 文档结构风格**，把这部分整理成 **Webhook 文档格式**，保持与你其他接口一致。
-
-***
-
-## Stablecoin Payment Webhook - 稳定币支付回调通知
+## Stablecoin Payment Webhook
 
 When the status of a stablecoin payment order changes, the system sends an event notification to the merchant’s pre-configured endpoint via **Webhook**.
 
