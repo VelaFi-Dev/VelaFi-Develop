@@ -33,6 +33,7 @@ The request body should include the following fields:
     "totalAmount": "22.00",                          // (decimal: total fiat amount)
     "amount": "20.00",                               // (decimal: actual fiat amount)
     "fee": "2.00",                                   // (decimal: amount of the fee)
+    "paymentId": "63",                               // (number: ID of the payment ID)
     "userPaymentId": "91",                           // (number: ID of the user payment method)
     "type": "DEPOSIT",                               // (enum: type [DEPOSIT: The add of the funding record, WITHDRAW: The claim of the funding record, BUY_CRYPTO: The buy crypto of the funding record, REFUND: The refund of the funding record])
     "status": "1",                                   // (enum: status [1: pending, 2: completed, 3: canceled, 4: refunded])
