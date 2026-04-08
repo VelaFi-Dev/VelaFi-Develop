@@ -22,13 +22,14 @@ This endpoint allows you to retrieve information about your VelaFi Pending Fund 
 
 * **merchantId:** (int) The merchant ID.
 * **paymentId:** (int) The payment ID. Currently supported payment IDs are：
-  * 105 (SPEI - FINCO PAY) - MXN
-  * 63 (Automated Bank Transfer (Argentina)) - ARS
+  * 105 (SPEI (Finco Pay)) - MXN
+  * 63 (CBU/CVU (Momentum)) - ARS
   * 68 (PSE) - COP
-  * 90 (Automated Pix) - BRL
+  * 90 (Pix (Genial)) - BRL
+  * 135 (Pix (a55)) - BRL
   * 81/82/83/84 (ACH\_push/ACH\_Virtual Accoun/WIRE/WIRE\_Virtual Account) - USD
-  * 85 (SEPA) - EUR
-  * 95 (Automated Bank Transfer(Peru)) - PEN
+  * 85 (SEPA (Bridge)) - EUR
+  * 95 (Bank Transfer) - PEN
 * **fiat:** (string) Name of the fiat currency. Currently supported currencies are MXN/ARS/COP/BRL/PEN/USD/EUR.
 * **depositAlias**: (string) Alias of the virtual account (optional).
 * **amount**: (decimal) The deposit amount. When the currency is PEN, it is mandatory.
