@@ -41,12 +41,21 @@ This request requires authorization.
 | 82         | ACH (Virtual - Lead Bank)       | Automatic |
 | 83         | Wire (Reference - Lead Bank)    | Automatic |
 | 84         | Wire (Virtual - Lead Bank)      | Automatic |
+| 85         | SEPA (Bridge)                   | Automatic |
 | 90         | Pix (Genial)                    | Automatic |
 | 135        | Pix (a55)                       | Automatic |
 | 95         | Bank Transfer                   | Automatic |
 | 111        | Wire (Virtual - CRB)            | Automatic |
 | 113        | ACH (Virtual - CRB)             | Automatic |
 | 115        | SWIFT Account\_Cross River Bank | Automatic |
+| 120        | Wire (CPN)                      | Automatic |
+| 121        | CIPS (CPN)                      | Automatic |
+| 122        | FPS (CPN)                       | Automatic |
+| 123        | CHATS (CPN)                     | Automatic |
+| 124        | SEPA(CPN)                       | Automatic |
+| 125        | BANK-TRANSFER(CPN)              | Automatic |
+| 126        | PESONET(CPN)                    | Automatic |
+| 127        | FEDWIRE(CPN)                    | Automatic |
 | 19         | Pix                             | Manual    |
 | 27         | Bank Transfer (Brazil)          | Manual    |
 | 28         | Bank Transfer (Argentina)       | Manual    |
@@ -109,7 +118,7 @@ Account Type: enum [clabe: VA account, debit: card account]
 Bank Code: Bank code is required to be filled in only when the account type is "debit". See Mexico CLABE - FINCO PAY Bank Codes.
 ```
 
-**Mexico Bank (72: SPEI)**
+**Mexico Bank (72: SPEI (Tesored))**
 
 ```json
 {
@@ -127,7 +136,7 @@ Account Type: enum [clabe: VA account, spei_card: card account]
 Bank Code: Bank code is required to be filled in only when the account type is "debit". See Mexico CLABE - TESORED Bank Codes.
 ```
 
-**Argentina Bank (63: Automated Bank Transfer (Argentina))**
+**Argentina Bank (63: CBU/CVU (Momentum))**
 
 ```json
 {
@@ -141,7 +150,7 @@ Bank Code: Bank code is required to be filled in only when the account type is "
 }
 ```
 
-**SEPA (Payment Type 2)**
+**85: SEPA (Bridge)**
 
 ```json
 {
@@ -166,7 +175,7 @@ If Account Owner Type is Individual, firstName and lastName are required.
 Bank Country/Region is ISO 3166-1
 ```
 
-**WIRE/ACH/SWIFT (ES) (Payment Type 2)**
+**81/82/83/84: (ACH (Reference - Lead Bank)/ACH (Virtual - Lead Bank)/Wire (Reference - Lead Bank)/Wire (Virtual - Lead Bank))**
 
 ```json
 {
@@ -197,7 +206,7 @@ Bank Country/Region is ISO 3166-1
 State is ISO 3166-2
 ```
 
-**SWIFT (HK) / CHATS (Payment Type 3)**
+**77/78: SWIFT (HK) / CHATS**
 
 ```json
 {
@@ -249,7 +258,7 @@ ID Document Type: enum [cc: Citizenship ID, nit: Tax Identification Number, ce: 
 Bank Code: See Colombian Bank Codes, The bank code filled in must be one that is supported by the corresponding Account Type.
 ```
 
-**Brazil Bank (90: Automated Pix)**
+**Brazil Bank (90: Pix (Genial))**
 
 ```json
 {
@@ -264,7 +273,7 @@ Bank Code: See Colombian Bank Codes, The bank code filled in must be one that is
 Pix Type: enum [CPF:11 digits, CNPJ:14 digits, EMAIL:email, PHONE: 10-11 digits, RANDOM_KEY: with "-"]
 ```
 
-**Brazil Bank (135: Automated Pix)**
+**Brazil Bank (135: Pix (a55))**
 
 ```json
 {
@@ -280,7 +289,7 @@ Pix Type: enum [CPF:11 digits, CNPJ:14 digits, EMAIL:email, PHONE: 10-11 digits,
 ```
 
 \
-**Peru Bank (95: Automated Bank Transfer(Peru))**
+**Peru Bank (95: Bank Transfer)**
 
 ```json
 {
@@ -299,6 +308,153 @@ Pix Type: enum [CPF:11 digits, CNPJ:14 digits, EMAIL:email, PHONE: 10-11 digits,
     }
 }
 ```
+
+**120/121/125/126: Wire (CPN)/CIPS (CPN)/BANK-TRANSFER(CPN)/PESONET(CPN)**
+
+```json
+{
+    "code": 200,
+    "msg": "SUCCESS",
+    "data": {
+        "beneficiaryName": "",
+				"country": "",
+				"stateProvince": "",
+				"city": "",
+				"street": "",
+				"postalCode": "",
+				"dateOfBirth": "",
+				"idNumber": "",
+				"idExpirationDate": "",
+				"useCase": "",
+				"reasonForPayment": "",
+				"bankName": "",
+				"bankCountry": "",
+				"swiftCode": "",
+				"accountNumber": ""       
+    }
+}
+```
+
+**122: FPS (CPN)**
+
+```json
+{
+    "code": 200,
+    "msg": "SUCCESS",
+    "data": {
+       	"beneficiaryName": "",
+				"country": "",
+				"stateProvince": "",
+				"city": "",
+				"street": "",
+				"postalCode": "",
+				"dateOfBirth": "",
+				"idNumber": "",
+				"idExpirationDate": "",
+				"useCase": "",
+				"reasonForPayment": "",
+				"recipientEmail": "",
+				"recipientPhoneNumber": "",
+				"fpsId": "",
+				"bankCode": "",
+				"accountNumber": ""      
+    }
+}
+```
+
+**123: CHATS (CPN)**
+
+```json
+{
+    "code": 200,
+    "msg": "SUCCESS",
+    "data": {
+       	"beneficiaryName": "",
+				"country": "",
+				"stateProvince": "",
+				"city": "",
+				"street": "",
+				"postalCode": "",
+				"dateOfBirth": "",
+				"idNumber": "",
+				"idExpirationDate": "",
+				"useCase": "",
+				"reasonForPayment": "",
+				"bankCode": "",
+				"bankName": "",
+				"swiftCode": "",
+				"accountNumber": "",
+				"recipientCity": "",
+				"recipientAddressStreet": "",
+				"recipientAddressCity": "",
+				"recipientAddressCountry": "",
+				"recipientAddressStateProvince": "",
+				"recipientAddressPostalCode": ""      
+    }
+}
+```
+
+**124: SEPA(CPN)**
+
+```json
+{
+    "code": 200,
+    "msg": "SUCCESS",
+    "data": {
+       	"beneficiaryName": "",
+				"country": "",
+				"stateProvince": "",
+				"city": "",
+				"street": "",
+				"postalCode": "",
+				"dateOfBirth": "",
+				"idNumber": "",
+				"idExpirationDate": "",
+				"useCase": "",
+				"reasonForPayment": "",
+				"bankName": "",
+				"bankCountry": "",
+				"swiftCode": "",
+				"accountNumber": "" 
+    }
+}
+```
+
+
+
+**127: FEDWIRE(CPN)**
+
+```json
+{
+    "code": 200,
+    "msg": "SUCCESS",
+    "data": {
+       	"beneficiaryName": "",
+				"country": "",
+				"stateProvince": "",
+				"city": "",
+				"street": "",
+				"postalCode": "",
+				"dateOfBirth": "",
+				"idNumber": "",
+				"idExpirationDate": "",
+				"useCase": "",
+				"reasonForPayment": "",
+				"bankName": "",
+				"bankCountry": "",
+				"accountNumber": "",
+				"routingNumber": "",
+				"recipientCity": "",
+				"recipientAddressStreet": "",
+				"recipientAddressCity": "",
+				"recipientAddressCountry": "",
+				"recipientAddressStateProvince": "",
+				"recipientAddressPostalCode": ""
+    }
+}
+```
+
+## &#x20;<a href="#colombian-bank-codes" id="colombian-bank-codes"></a>
 
 ## Colombia Bank Codes <a href="#colombian-bank-codes" id="colombian-bank-codes"></a>
 

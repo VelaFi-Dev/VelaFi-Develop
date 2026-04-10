@@ -74,7 +74,7 @@ The response will include the following fields:
 }
 ```
 
-#### Example Request (Mexico - MXN)  72: SPEI
+#### Example Request (Mexico - MXN)  72: SPEI (Tesored)
 
 ```json
 {
@@ -93,7 +93,7 @@ The response will include the following fields:
 }
 ```
 
-#### Example Request (Argentina - ARS)
+#### Example Request (Argentina - ARS) 63: CBU/CVU (Momentum)
 
 ```json
 {
@@ -111,7 +111,7 @@ The response will include the following fields:
 }
 ```
 
-**Example Request (Colombia - COP)**
+**Example Request (Colombia - COP)** **68: ACH/PSE**
 
 ```json
 {
@@ -132,7 +132,7 @@ The response will include the following fields:
 }
 ```
 
-**Example Request (Brazil - BRL)  90: Automated Pix**
+**Example Request (Brazil - BRL)  90: Pix (Genial)**
 
 ```json
 {
@@ -149,7 +149,7 @@ The response will include the following fields:
 }
 ```
 
-**Example Request (Brazil - BRL)  135: Automated Pix**
+**Example Request (Brazil - BRL)  135: Pix (a55)**
 
 ```json
 {
@@ -168,7 +168,7 @@ The response will include the following fields:
 
 
 
-**Example Request (Peru - PEN)**
+**Example Request (Peru - PEN)  95: Bank Transfer**
 
 ```json
 {
@@ -192,7 +192,7 @@ The response will include the following fields:
 }
 ```
 
-**Example Request (United States - USD)**
+**Example Request (United States - USD) 111:Wire (Virtual - CRB)**
 
 ```json
 {
@@ -220,28 +220,166 @@ The response will include the following fields:
 }
 ```
 
-**Example Request (Hong Kong - USD)**
+
+
+**Example Request 120/121/125/126: Wire (CPN)/CIPS (CPN)/BANK-TRANSFER(CPN)/PESONET(CPN)**
 
 ```json
 {
     "merchantId": 15123,
-    "paymentId": 115,
-    "country": "Hong Kong",
+    "paymentId": 120,
+    "country": "United States",
     "fiat": "USD",
     "realName": "Tom",
-    "fieldJson": {       
-        "Account Owner Type": "individual", //account type[individual/business]
-        "Bank Name": "Bank of Nowhere", //bank name
-        "Beneficiary Name": "Tom", //name
-        "Date of birth or formation": "2020-01-01", //date of birth or formation
-        "Id Number": "123456", //id number
-        "Account Number": "123456789", //account number
-        "Swift Code": "ICEKHKHK001", //swift code
-        "Street Line1": "789 street", //street
-        "City": "Hong Kong", //city
-        "State": "HK", //state code
-        "Postal Code": "999077", //postal code
-        "Purpose Of Payment": "invoice_payments" ////purpose of payment[invoice_payments/payment_for_services/payment_for_imported_goods/travel_services/transfer_to_own_account/repayment_of_loans/payroll/payment_of_property_rental/information_service_charges/advertising_and_public_relations/royalty_and_ip_fees/financial_service_fees/advisory_and_consulting_fees/representative_office_expenses/tax_payment/transportation_fees/construction_costs/insurance_premium/offline_goods_trade/insurance_claims/remittance_to_family_or_friends/education_expenses/medical_treatment/donations/currency_exchange/advance_payment_for_goods/merchant_settlement/repatriation_fund_settlement]
+    "fieldJson": { 
+        "beneficiaryName": "Tom", //name
+				"country": "US", //nationality
+				"stateProvince": "US-AK", //country and province code of the address location
+				"city": "Alaska", //city
+				"street": "789 street", //street
+				"postalCode": "10001", //postal code
+				"dateOfBirth": "1990-01-01", //Date of Birth or Date of Registration				
+				"idNumber": "123456", //ID Number
+			  "idExpirationDate": "2099-01-01", //expiration date
+				"useCase": "B2B", //usd case
+				"reasonForPayment": "PMT001", //reason for payment
+				"bankName": "Bank of Nowhere", //bank name
+				"bankCountry": "US", //bank country 
+				"swiftCode": "NACKUSAK001", //swift code
+				"accountNumber": "123456" //account number      
+    },
+    "remark": "Preferred payment method"
+}
+```
+
+**Example Request  (Hong Kong - HKD) 122: FPS (CPN)**
+
+```json
+{
+    "merchantId": 15123,
+    "paymentId": 122,
+    "country": "Hong Kong",
+    "fiat": "HKD",
+    "realName": "Tom",
+    "fieldJson": { 
+       	"beneficiaryName": "Tom", //name
+				"country": "HK", //nationality
+				"stateProvince": "HK-HK", //country and province code of the address location
+				"city": "Hong Kong", //city
+				"street": "789 street", //street
+				"postalCode": "999077", //postal code
+				"dateOfBirth": "1990-01-01", //Date of Birth or Date of Registration	
+				"idNumber": "123456", //ID Number
+				"idExpirationDate": "2099-01-01", //expiration date
+				"useCase": "B2B", //usd case
+				"reasonForPayment": "PMT001", //reason for payment
+				"recipientEmail": "tom@gmail.com", //recipient email
+				"recipientPhoneNumber": "123456", //recipient phone number
+				"fpsId": "123321", //fps id
+				"bankCode": "999077", //bank code
+				"accountNumber": "123456"  //account number       
+    },
+    "remark": "Preferred payment method"
+}
+```
+
+**Example Request (Hong Kong - HKD) 123: CHATS (CPN)**
+
+```json
+{
+    "merchantId": 15123,
+    "paymentId": 123,
+    "country": "Hong Kong",
+    "fiat": "Hong Kong",
+    "realName": "Tom",
+    "fieldJson": { 
+       	"beneficiaryName": "Tom", //name
+				"country": "HK", //nationality
+				"stateProvince": "HK-HK", //country and province code of the address location
+				"city": "Hong Kong", //city
+				"street": "789 street", //street
+				"postalCode": "999077", //postal code
+				"dateOfBirth": "1990-01-01", //Date of Birth or Date of Registration	
+				"idNumber": "123456", //ID Number
+				"idExpirationDate": "2099-01-01", //expiration date
+				"useCase": "B2B", //usd case
+				"reasonForPayment": "PMT002", //reason for payment
+				"bankCode": "999077", //bank code
+				"bankName": "BANK", //bank name
+				"swiftCode": "999077", //swift code
+				"accountNumber": "123456", //account number   
+				"recipientCity": "Hong Kong", //recipient city
+				"recipientAddressStreet": "789 street", //recipient address street
+				"recipientAddressCity": "Hong Kong", //recipient address city
+				"recipientAddressCountry": "HK", //recipient address country
+				"recipientAddressStateProvince": "HK-HK", //recipient address postal code
+				"recipientAddressPostalCode": "999077" //recipient address postal code 
+    },
+    "remark": "Preferred payment method"
+}
+```
+
+**Example Request (Europe - EUR) 124: SEPA(CPN)**
+
+```json
+{
+    "merchantId": 15123,
+    "paymentId": 124,
+    "country": "Estonia",
+    "fiat": "EUR",
+    "realName": "Tom",
+    "fieldJson": { 
+       	"beneficiaryName": "Tom", //name
+				"country": "EE", //nationality
+				"stateProvince": "EE-37", //country and province code of the address location
+				"city": "Estonia", //city
+				"street": "789 street", //street
+				"postalCode": "51004", //postal code
+				"dateOfBirth": "1990-01-01", //Date of Birth or Date of Registration	
+				"idNumber": "123456", //ID Number
+				"idExpirationDate": "2099-01-01", //expiration date
+				"useCase": "B2B", //usd case
+				"reasonForPayment": "PMT001", //reason for payment
+				"bankName": "BANK", //bank name
+				"bankCountry": "EE", //bank country 
+				"swiftCode": "NACKEE37001", //swift code
+				"accountNumber": "123456" //account number   
+    },
+    "remark": "Preferred payment method"
+}
+```
+
+**Example Request (United States - USD) 127: FEDWIRE(CPN)**
+
+```json
+{
+    "merchantId": 15123,
+    "paymentId": 127,
+    "country": "France",
+    "fiat": "EUR",
+    "realName": "Tom",
+    "fieldJson": { 
+       	"beneficiaryName": "Tom", //name
+				"country": "US", //nationality
+				"stateProvince": "US-AK", //country and province code of the address location
+				"city": "Anchorage", //city
+				"street": "789 street", //street
+				"postalCode": "99508", //postal code
+				"dateOfBirth": "1990-01-01", //Date of Birth or Date of Registration	
+				"idNumber": "123456", //ID Number
+				"idExpirationDate": "2099-01-01", //expiration date
+				"useCase": "B2B", //usd case
+				"reasonForPayment": "PMT001", //reason for payment
+				"bankName": "Bank of America", //bank name
+				"bankCountry": "US", //bank country 
+				"accountNumber": "12345678", //account number   
+				"routingNumber": "11326", //routing number
+				"recipientCity": "Anchorage", //recipient city
+				"recipientAddressStreet": "789 street", //recipient address street
+				"recipientAddressCity": "Anchorage", //recipient address city
+				"recipientAddressCountry": "US", //recipient address country
+				"recipientAddressStateProvince": "US-AK", //recipient address postal code
+				"recipientAddressPostalCode": "90210" //recipient address postal code 
     },
     "remark": "Preferred payment method"
 }

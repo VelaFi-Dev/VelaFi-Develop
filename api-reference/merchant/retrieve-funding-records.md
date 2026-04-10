@@ -22,6 +22,7 @@ This endpoint provides a detailed history of your Pending Fund activity, includi
 
 The following query parameters can be used:
 
+* **txId:** (long) The ID of the funding.
 * **startTime:** (long) The start time (in milliseconds).
 * **endTime:** (long) The end time (in milliseconds).
 * **merchantId:** (int) The ID of the merchant.
@@ -58,7 +59,7 @@ The response will include the following fields:
         "total": 100,             // (number: total number of results)   
         "data": [                 // (array: list of funding records)
             {
-                "id": "1123123123",     // (number: ID of the funding)               
+                "id": "1123123123",     // (number: ID of the funding(txId))               
                 "merchantId": 3,      // (number: ID of the merchant)
                 "merchantName": "Rrturo Tellez", // (string: name of the merchant)
                 "fiat": "MXN",         // (string: name of the fiat currency) 
