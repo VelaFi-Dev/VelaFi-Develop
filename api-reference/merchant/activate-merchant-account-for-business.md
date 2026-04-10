@@ -188,7 +188,19 @@ Supported payment methods: ACH Account\_Cross River Bank, WIRE Account\_Cross Ri
 }
 ```
 
-<br>
+**For USD/CNY/HKD/EUR/SGD/NGN/PHP** **Account 03**
+
+Supported payment methods: Wire (CPN), CIPS (CPN), FPS (CPN), CHATS (CPN), SEPA(CPN), BANK-TRANSFER(CPN), PESONET(CPN), FEDWIRE(CPN)<br>
+
+```json
+{
+    "merchantId": "15126673", // (required, number: id of the merchant)
+    "fiat": "USD", // (required, string: name of the fiat currency [PEN])
+    "trench": "Circle Payment Network", //(required, string: trench)    
+}
+```
+
+
 
 #### **Example Responses**
 

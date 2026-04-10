@@ -137,7 +137,7 @@ Supported payment methods: Automated Bank Transfer(Peru)
 
 **For EUR/USD Account 01**
 
-Once activated, the EUR account supports both EUR and USD transactions. Supported payment methods: ACH\_push, ACH\_Virtual Account, WIRE, WIRE\_Virtual Account, SEPA
+Once activated, the EUR account supports both EUR and USD transactions. Supported payment methods: ACH (Reference - Lead Bank), ACH (Virtual - Lead Bank), Wire (Reference - Lead Bank), Wire (Virtual - Lead Bank), SEPA (Bridge)
 
 ```json
 {
@@ -154,7 +154,7 @@ Once activated, the EUR account supports both EUR and USD transactions. Supporte
 
 **For USD Account 02**
 
-Supported payment methods: ACH Account\_Cross River Bank, WIRE Account\_Cross River Bank, Wire - Standard Charted Bank, SWIFT Account\_Cross River Bank
+Supported payment methods: Wire (Virtual - CRB), ACH (Virtual - CRB)
 
 ```json
 {
@@ -224,6 +224,31 @@ occupation codes:
 433099:Financial clerk, other
 1320XX:Other financial specialist
 ```
+
+**For USD/CNY/HKD/EUR/SGD/NGN/PHP** **Account 03**
+
+Supported payment methods: Wire (CPN), CIPS (CPN), FPS (CPN), CHATS (CPN), SEPA(CPN), BANK-TRANSFER(CPN), PESONET(CPN), FEDWIRE(CPN)
+
+```json
+{
+    "merchantId": "15126673", // (required, number: id of the merchant)
+    "fiat": "USD", // (required, string: name of the fiat currency [PEN])
+    "trench": "Circle Payment Network", //(required, string: trench)
+    "fieldList": { // List of channel fields
+        "accountName": "Tom", // (required, string: account number)
+        "nationality": "HK", // (required, string: nationality)
+        "idNumber": "123456", // (required, string: identification number)
+        "countryStateCode": "HK-HK", // (optional, string: country and province code of the address location)
+        "city": "Hong Kong", // (required, string: city)
+        "street": "street 789", // (required, string: street)
+        "postalCode": "123456", // (required, string: postal code)
+        "dateOfBirth": "1990-01-01", // (required, string: date of birth)
+        "phoneNumber": "123456" // (required, string: phone number)       
+    }
+}
+```
+
+
 
 **Example Responses**
 
