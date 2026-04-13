@@ -20,7 +20,7 @@ This endpoint is used to activate a merchant's fiat currency payment account. Su
 
 **For MXN Account 01 (Mexico)**
 
-Supported payment methods: SPEI
+Supported payment methods: SPEI (Finco Pay)
 
 ```json
 {    
@@ -32,7 +32,7 @@ Supported payment methods: SPEI
 
 **or MXN Account 02 (Mexico)**
 
-Supported payment methods: SPEI
+Supported payment methods: SPEI (Tesored)
 
 ```json
 {    
@@ -44,7 +44,7 @@ Supported payment methods: SPEI
 
 **For ARS Account (Argentina)**
 
-Supported payment methods: Automated Bank Transfer (Argentina)
+Supported payment methods: CBU/CVU (Momentum)
 
 ```json
 {
@@ -66,7 +66,7 @@ Supported payment methods: PSE, ACH, Bre-B
 
 **For BRL Account 01 (Brazil)**
 
-Supported payment methods: Automated Pix
+Supported payment methods: Pix (Genial)
 
 ```json
 {
@@ -78,7 +78,7 @@ Supported payment methods: Automated Pix
 
 **For BRL Account 02 (Brazil)**
 
-Supported payment methods: Automated Pix
+Supported payment methods: Pix (a55)
 
 ```json
 {
@@ -90,7 +90,7 @@ Supported payment methods: Automated Pix
 
 **For PEN Account (Peru)**
 
-Supported payment methods: Automated Bank Transfer(Peru)
+Supported payment methods: Bank Transfer
 
 ```json
 {
