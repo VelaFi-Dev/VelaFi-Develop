@@ -204,7 +204,7 @@ The response will include the following fields:
         "Account Owner Type": "individual", //account type[individual/business]
         "Bank Name": "Bank of Nowhere", //bank name
         "Beneficiary Name": "Tom", //name
-        "Email": "tom@gmail.com", //emial
+        "Email": "tom@gmail.com", //email
         "National code": "1", //International area code for mobile phones
         "Phone Number": "123456", //phone number
         "Account Number": "11223344556663", //account number
