@@ -49,7 +49,8 @@ Supported payment methods: CBU/CVU (Momentum)
 ```json
 {
     "merchantId": "15126673", // (required, number: id of the merchant)
-    "fiat": "ARS" // (required, string: name of the fiat currency [ARS])
+    "fiat": "ARS", // (required, string: name of the fiat currency [ARS])
+    "trench": "CVU - Momentum" //(required, string: trench [CVU - Momentum]) 
 }
 ```
 
@@ -61,6 +62,7 @@ Supported payment methods: PSE, ACH, Bre-B
 {
     "merchantId": "15126673", // (required, number: id of the merchant)
     "fiat": "COP", // (required, string: name of the fiat currency [COP])
+    "trench": "COP Account" //(required, string: trench [COP Account]) 
 }
 ```
 
@@ -96,6 +98,7 @@ Supported payment methods: Bank Transfer
 {
     "merchantId": "15126673", // (required, number: id of the merchant)
     "fiat": "PEN", // (required, string: name of the fiat currency [PEN])
+    "trench": "PEN Account" //(required, string: trench [PEN Account]) 
 }
 ```
 

@@ -63,6 +63,7 @@ Supported payment methods: CBU/CVU (Momentum)
 {
     "merchantId": "15126673", // (required, number: id of the merchant)
     "fiat": "ARS", // (required, string: name of the fiat currency [ARS])
+    "trench": "CVU - Momentum", //(required, string: trench [CVU - Momentum]) 
     "fieldList": { // List of channel fields
         "email": "rturo@gmail.com", // (optional, string: Email, if the merchant information is not provided, it must be filled in)
         "cuit": "30708424478", // (required, string: CUIT)
@@ -80,6 +81,7 @@ Supported payment methods: PSE, ACH, Bre-B
 {
     "merchantId": "15126673", // (required, number: id of the merchant)
     "fiat": "COP", // (required, string: name of the fiat currency [COP])
+    "trench": "COP Account", //(required, string: trench [COP Account]) 
     "fieldList": { // List of channel fields
         "alias": "soc.te" // (required, string: Alias)
     }
@@ -124,6 +126,7 @@ Supported payment methods: Bank Transfer
 {
     "merchantId": "15126673", // (required, number: id of the merchant)
     "fiat": "PEN", // (required, string: name of the fiat currency [PEN])
+    "trench": "PEN Account", //(required, string: trench [PEN Account]) 
     "fieldList": { // List of channel fields
         "customerIdentificationType": "00", // (required, string: identification type[00:CC (8 digits), 01:CE (>9 digits), 02:Tax ID (11 digits), 03:PAS (>9 digits), 04:PAR, 05:LMI])
         "customerIdentification": "12345678", // (required, string: identification number)
