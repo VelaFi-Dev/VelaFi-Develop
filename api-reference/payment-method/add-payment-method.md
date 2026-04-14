@@ -102,10 +102,9 @@ The response will include the following fields:
   "country": "Argentina",
   "fiat": "ARS",
   "realName": "John Doe",
-  "fieldJson": {
-      "Bank Name": "Banco Galicia", //optional, bank name
-      "CVU/CBU Number": "0000775900000000000041", //cvu/cbu account number
-      "CUIT": "20339698693" //cuit
+  "fieldJson": {     
+      "CVU/CBU Number": "0000775900000000000041", //cvu/cbu account number, 22 digits
+      "CUIT": "20339698693" //cuit, 11 digits
   },
   "remark": "Preferred payment method"
 }
@@ -122,11 +121,11 @@ The response will include the following fields:
     "realName": "Tom",
     "fieldJson": {
         "Account Type": "cc", //enum: account type[cc: Checking Account, ch: Savings Account, dp:Electronic deposit]
-        "Full Name": "Tom", //full name
+        "Full Name": "Tom", //full name, Maximum length: 300
         "ID Document Type": "cc", //enum: Type of identification document[cc: Citizenship ID, nit: Tax Identification Number, ce: Foreigner ID,  pa: Pasaporte (Passport),  ppt: Temporary Protection Permit,  ti: Identity Card, rc: Civil Registry, te: Foreigner Card, die: Foreign Identification Document, nd: No Document]
-        "ID Document Number": "123456789", //Identification number
+        "ID Document Number": "123456789", //Identification number, Maximum length: 300
         "Bank Code": "1007", //Bank Code, The list is shown in https://docs.velafi.com/api-reference/payment-method/get-payment-templates#colombian-bank-codes
-        "Bank Account Number": "9876543210" //Bank Account Number
+        "Bank Account Number": "9876543210" //Bank Account Number, Maximum length: 300
     },
     "remark": "Preferred payment method"
 }
@@ -142,8 +141,8 @@ The response will include the following fields:
     "fiat": "BRL",
     "realName": "Tom",
     "fieldJson": {
-        "Pix Type": "EMAIL", //pix type[CPF:11 digits, CNPJ:14 digits, EMAIL:email, PHONE: 10-11 digits, RANDOM_KEY: with "-"]
-        "Pix Key": "tom@gmail.com" //pix key      
+        "Pix Type": "EMAIL", //enum: pix type[CPF:11 digits, CNPJ:14 digits, EMAIL:email, PHONE: 10-11 digits, RANDOM_KEY: with "-"]
+        "Pix Key": "tom@gmail.com" //pix key, Maximum length: 100
     },
     "remark": "Preferred payment method"
 }
@@ -159,8 +158,8 @@ The response will include the following fields:
     "fiat": "BRL",
     "realName": "Tom",
     "fieldJson": {
-        "Pix Type": "EMAIL", //pix type[CPF:11 digits, CNPJ:14 digits, EMAIL:email, PHONE: 10-11 digits, RANDOM_KEY: with "-"]
-        "Pix Key": "tom@gmail.com" //pix key      
+        "Pix Type": "EMAIL", //enum: pix type[CPF:11 digits, CNPJ:14 digits, EMAIL:email, PHONE: 10-11 digits, RANDOM_KEY: with "-"]
+        "Pix Key": "tom@gmail.com" //pix key, Maximum length: 100
     },
     "remark": "Preferred payment method"
 }
@@ -179,7 +178,7 @@ The response will include the following fields:
     "realName": "Tom",
     "fieldJson": {       
         "Bank Name": "01", //bank code, The list is shown in https://docs.velafi.com/api-reference/payment-method/get-payment-templates#peru-bank-codes
-        "Account Type": "00", //account type[00:CORRIENTE, 01:AHORROS]
+        "Account Type": "00", //enum: account type[00:CORRIENTE, 01:AHORROS]
         "Account Number": "1110333710152", //account number
         "CCI Number": "", //Payer's intermediary account(20 digits), When the Bank Name is not one of the four major banks(01-BCP, 02-Interbank, 03-BBVA, 04-Scotiabank), it must be filled in.
         "Email": "tom@gmai.com", //email
