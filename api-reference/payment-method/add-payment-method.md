@@ -55,7 +55,7 @@ The response will include the following fields:
 }
 ```
 
-#### Example Request (Mexico - MXN)  105: SPEI - FINCO PAY
+**Example Request (Mexico - MXN)  105: SPEI - FINCO PAY**
 
 ```json
 {
@@ -74,7 +74,7 @@ The response will include the following fields:
 }
 ```
 
-#### Example Request (Mexico - MXN)  72: SPEI (Tesored)
+**Example Request (Mexico - MXN)  72: SPEI (Tesored)**
 
 ```json
 {
@@ -93,7 +93,7 @@ The response will include the following fields:
 }
 ```
 
-#### Example Request (Argentina - ARS) 63: CBU/CVU (Momentum)
+**Example Request (Argentina - ARS) 63: CBU/CVU (Momentum)**
 
 ```json
 {
@@ -107,6 +107,23 @@ The response will include the following fields:
       "CUIT": "20339698693" //cuit, 11 digits
   },
   "remark": "Preferred payment method"
+}
+```
+
+**Example Request (Argentina - ARS) 137: QR Argentina**
+
+```json
+{
+    "merchantId": 15123,
+    "paymentId": 137,
+    "country": "Argentina",
+    "fiat": "ARS",
+    "realName": "John Doe",
+    "fieldJson": {
+        "cuit": "123456789", //cuit, 11 digits  
+        "cvu/cbu":"123456789" //cvu/cbu account number, 22 digits 
+    },
+    "remark": "Preferred payment method"
 }
 ```
 

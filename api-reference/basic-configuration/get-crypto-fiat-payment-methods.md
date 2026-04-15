@@ -42,7 +42,8 @@ The response will include the following fields:
             { 
                 "paymentId": 1,        // (string: Payment method template ID)
                 "fiatFee": "2.00",     // (decimal: Fiat fee amount, unit is block)
-                "paymentType": 1        // (enum: type of the payment method [0: manual, 1: automatic])
+                "paymentType": 1,      // (enum: type of the payment method [0: manual, 1: automatic])
+                "trench": "CLABE"      // (string: trench)
             }
         ]
     }

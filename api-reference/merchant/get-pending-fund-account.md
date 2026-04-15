@@ -23,7 +23,9 @@ This endpoint allows you to retrieve information about your VelaFi Pending Fund 
 * **merchantId:** (int) The merchant ID.
 * **paymentId:** (int) The payment ID. Currently supported payment IDs are：
   * 105 (SPEI (Finco Pay)) - MXN
+  * 72 (CLABE - TESORED) - MXN
   * 63 (CBU/CVU (Momentum)) - ARS
+  * 137 (QR Argentina) - ARS
   * 68 (PSE) - COP
   * 90 (Pix (Genial)) - BRL
   * 135 (Pix (a55)) - BRL
@@ -32,7 +34,7 @@ This endpoint allows you to retrieve information about your VelaFi Pending Fund 
   * 95 (Bank Transfer) - PEN
 * **fiat:** (string) Name of the fiat currency. Currently supported currencies are MXN/ARS/COP/BRL/PEN/USD/EUR.
 * **depositAlias**: (string) Alias of the virtual account (optional).
-* **amount**: (decimal) The deposit amount. When the currency is PEN, it is mandatory.
+* **amount**: (decimal) The deposit amount. When the paymetnId is 90/135/137, it is mandatory.
 
 **Response Structure**
 
@@ -43,7 +45,9 @@ The response will include the following fields:
     "code": 200,
     "msg": "SUCCESS",
     "data": {  
+        "fiat": "MXN",                  // (string: name of the fiat currency)
         "paymentMethodName": "Paypal",  // (string: name of the payment method)
+        "txId": "123456789001",         // (long: id of the funding ID, The value is only present when paymentId is 90, 135, or 137.)
         "fieldList": {                   // (object: list of fields related to the payment method)
             "fieldName1": ["value1", "value2"], // (string: array of values for fieldName1)
             "fieldName2": ["value1", "value2"]  // (string: array of values for fieldName2)
@@ -99,6 +103,23 @@ The response will include the following fields:
         "fieldList": {
              "CVU number": "0000775900000000000086",
              "CUIT": "20339698695"            
+        }
+    }
+}
+```
+
+**Example for Payment ID 137:**
+
+```json
+{
+    "code": 200,
+    "msg": "SUCCESS",
+    "data": {  
+        "fiat": "ARS",
+        "paymentMethodName": "3.0 Transfer (QR)",
+        "txId": "123456789001",
+        "fieldList": {
+             "qrCodeLink": "https://links.qrcode.co/zAOCe/3471397f291c28d19.png"                   
         }
     }
 }
@@ -178,6 +199,24 @@ The response will include the following fields:
             "Chave Pix - Random Pix": "09a3b1d1-49d6-4820-bd19-53e7f50ee13c",
             "Pix copia e cola": "00020101021126580014br.gov.bcb.pix013865755...",        
             "Pix QR Code": "https://links.qrcode.co/zAOCe/3471397f291c28d19.png"
+        }
+    }
+}
+```
+
+**Example for Payment ID 135:**
+
+```json
+{
+    "code": 200,
+    "msg": "SUCCESS",
+    "data": {  
+        "fiat": "BRL",
+        "paymentMethodName": "Pix (a55)",
+        "txId": "123456789001",
+        "fieldList": {
+             "QR Code Link": "https://links.qrcode.co/zAOCe/3471397f291c28d19.png",
+             "QR Code": "00020101021126580014br.gov.bcb.pix0138657559..."            
         }
     }
 }

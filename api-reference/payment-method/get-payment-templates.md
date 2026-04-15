@@ -28,59 +28,7 @@ This request requires authorization.
 
 #### Payment ID Lists
 
-| Payment ID | Name                            | Type      |
-| ---------- | ------------------------------- | --------- |
-| 105        | SPEI (Finco Pay)                | Automatic |
-| 72         | SPEI (Tesored)                  | Automatic |
-| 63         | CBU/CVU (Momentum)              | Automatic |
-| 68         | PSE/ACH                         | Automatic |
-| 77         | SWIFT (HK)                      | Automatic |
-| 78         | CHATS                           | Automatic |
-| 79         | FPS                             | Automatic |
-| 81         | ACH (Reference - Lead Bank)     | Automatic |
-| 82         | ACH (Virtual - Lead Bank)       | Automatic |
-| 83         | Wire (Reference - Lead Bank)    | Automatic |
-| 84         | Wire (Virtual - Lead Bank)      | Automatic |
-| 85         | SEPA (Bridge)                   | Automatic |
-| 90         | Pix (Genial)                    | Automatic |
-| 135        | Pix (a55)                       | Automatic |
-| 95         | Bank Transfer                   | Automatic |
-| 111        | Wire (Virtual - CRB)            | Automatic |
-| 113        | ACH (Virtual - CRB)             | Automatic |
-| 115        | SWIFT Account\_Cross River Bank | Automatic |
-| 120        | Wire (CPN)                      | Automatic |
-| 121        | CIPS (CPN)                      | Automatic |
-| 122        | FPS (CPN)                       | Automatic |
-| 123        | CHATS (CPN)                     | Automatic |
-| 124        | SEPA(CPN)                       | Automatic |
-| 125        | BANK-TRANSFER(CPN)              | Automatic |
-| 126        | PESONET(CPN)                    | Automatic |
-| 127        | FEDWIRE(CPN)                    | Automatic |
-| 19         | Pix                             | Manual    |
-| 27         | Bank Transfer (Brazil)          | Manual    |
-| 28         | Bank Transfer (Argentina)       | Manual    |
-| 29         | Manual Bank Transfer (Mexico)   | Manual    |
-| 36         | Mercantil                       | Manual    |
-| 37         | Bank Transfer (Venezuela)       | Manual    |
-| 38         | Banco De Venezuela              | Manual    |
-| 39         | Ubii Pagos                      | Manual    |
-| 40         | Banesco                         | Manual    |
-| 41         | Pago Movil                      | Manual    |
-| 42         | BNC Banco National De Credito   | Manual    |
-| 43         | BBVA Provincial (Venezuela)     | Manual    |
-| 44         | Bancamiga                       | Manual    |
-| 45         | Bancaribe                       | Manual    |
-| 46         | Banplus                         | Manual    |
-| 47         | Banco Activo                    | Manual    |
-| 48         | Bank Transfer (Colombia)        | Manual    |
-| 51         | 境內銀行轉賬 (台灣)                     | Manual    |
-| 52         | 街口轉賬                            | Manual    |
-| 53         | LINE Pay                        | Manual    |
-| 59         | Bank Transfer (Perú)            | Manual    |
-| 60         | Bank Transfer (Chile)           | Manual    |
-| 61         | Manual USD Payments (CHATS)     | Manual    |
-| 64         | Banque Msr UAE                  | Manual    |
-| 67         | Bank Transfer (Uruguay)         | Manual    |
+<table><thead><tr><th width="142.3333740234375">Payment ID</th><th width="241">Name</th><th width="138.2962646484375">Type</th><th width="246.354736328125">Trench</th></tr></thead><tbody><tr><td>105</td><td>SPEI (Finco Pay)</td><td>Automatic</td><td>CLABE - FINCO PAY</td></tr><tr><td>72</td><td>SPEI (Tesored)</td><td>Automatic</td><td>CLABE - TESORED</td></tr><tr><td>63</td><td>CBU/CVU (Momentum)</td><td>Automatic</td><td>CVU - Momentum</td></tr><tr><td>137</td><td>3.0 Transfer (QR)</td><td>Automatic</td><td>QR Argentina</td></tr><tr><td>68</td><td>PSE/ACH</td><td>Automatic</td><td>COP Account</td></tr><tr><td>81</td><td>ACH (Reference - Lead Bank)</td><td>Automatic</td><td>Lead Bank</td></tr><tr><td>82</td><td>ACH (Virtual - Lead Bank)</td><td>Automatic</td><td>Lead Bank</td></tr><tr><td>83</td><td>Wire (Reference - Lead Bank)</td><td>Automatic</td><td>Lead Bank</td></tr><tr><td>84</td><td>Wire (Virtual - Lead Bank)</td><td>Automatic</td><td>Lead Bank</td></tr><tr><td>85</td><td>SEPA (Bridge)</td><td>Automatic</td><td>Lead Bank</td></tr><tr><td>90</td><td>Pix (Genial)</td><td>Automatic</td><td>BANCO GENIAL</td></tr><tr><td>135</td><td>Pix (a55)</td><td>Automatic</td><td>a55</td></tr><tr><td>95</td><td>Bank Transfer</td><td>Automatic</td><td>PEN Account</td></tr><tr><td>111</td><td>Wire (Virtual - CRB)</td><td>Automatic</td><td>Cross River Bank</td></tr><tr><td>113</td><td>ACH (Virtual - CRB)</td><td>Automatic</td><td>Cross River Bank</td></tr><tr><td>115</td><td>SWIFT Account_Cross River Bank</td><td>Automatic</td><td>Cross River Bank</td></tr><tr><td>120</td><td>Wire (CPN)</td><td>Automatic</td><td>Circle Payment Network</td></tr><tr><td>121</td><td>CIPS (CPN)</td><td>Automatic</td><td>Circle Payment Network</td></tr><tr><td>122</td><td>FPS (CPN)</td><td>Automatic</td><td>Circle Payment Network</td></tr><tr><td>123</td><td>CHATS (CPN)</td><td>Automatic</td><td>Circle Payment Network</td></tr><tr><td>124</td><td>SEPA(CPN)</td><td>Automatic</td><td>Circle Payment Network</td></tr><tr><td>125</td><td>BANK-TRANSFER(CPN)</td><td>Automatic</td><td>Circle Payment Network</td></tr><tr><td>126</td><td>PESONET(CPN)</td><td>Automatic</td><td>Circle Payment Network</td></tr><tr><td>127</td><td>FEDWIRE(CPN)</td><td>Automatic</td><td>Circle Payment Network</td></tr><tr><td>19</td><td>Pix</td><td>Manual</td><td></td></tr><tr><td>27</td><td>Bank Transfer (Brazil)</td><td>Manual</td><td></td></tr><tr><td>28</td><td>Bank Transfer (Argentina)</td><td>Manual</td><td></td></tr><tr><td>29</td><td>Manual Bank Transfer (Mexico)</td><td>Manual</td><td></td></tr><tr><td>36</td><td>Mercantil</td><td>Manual</td><td></td></tr><tr><td>37</td><td>Bank Transfer (Venezuela)</td><td>Manual</td><td></td></tr><tr><td>38</td><td>Banco De Venezuela</td><td>Manual</td><td></td></tr><tr><td>39</td><td>Ubii Pagos</td><td>Manual</td><td></td></tr><tr><td>40</td><td>Banesco</td><td>Manual</td><td></td></tr><tr><td>41</td><td>Pago Movil</td><td>Manual</td><td></td></tr><tr><td>42</td><td>BNC Banco National De Credito</td><td>Manual</td><td></td></tr><tr><td>43</td><td>BBVA Provincial (Venezuela)</td><td>Manual</td><td></td></tr><tr><td>44</td><td>Bancamiga</td><td>Manual</td><td></td></tr><tr><td>45</td><td>Bancaribe</td><td>Manual</td><td></td></tr><tr><td>46</td><td>Banplus</td><td>Manual</td><td></td></tr><tr><td>47</td><td>Banco Activo</td><td>Manual</td><td></td></tr><tr><td>48</td><td>Bank Transfer (Colombia)</td><td>Manual</td><td></td></tr><tr><td>51</td><td>境內銀行轉賬 (台灣)</td><td>Manual</td><td></td></tr><tr><td>52</td><td>街口轉賬</td><td>Manual</td><td></td></tr><tr><td>53</td><td>LINE Pay</td><td>Manual</td><td></td></tr><tr><td>59</td><td>Bank Transfer (Perú)</td><td>Manual</td><td></td></tr><tr><td>60</td><td>Bank Transfer (Chile)</td><td>Manual</td><td></td></tr><tr><td>61</td><td>Manual USD Payments (CHATS)</td><td>Manual</td><td></td></tr><tr><td>64</td><td>Banque Msr UAE</td><td>Manual</td><td></td></tr><tr><td>67</td><td>Bank Transfer (Uruguay)</td><td>Manual</td><td></td></tr></tbody></table>
 
 #### Response Structure
 
@@ -146,6 +94,19 @@ Bank Code: Bank code is required to be filled in only when the account type is "
         "CVU/CBU Number": "",
         "cuit": "",
         "Bank name": ""
+    }
+}
+```
+
+**Argentina Bank (137: QR Argentina)**
+
+```json
+{
+    "code": 200,
+    "msg": "SUCCESS",
+    "data": {
+        "cuit": "",
+        "cvu/cbu":""
     }
 }
 ```

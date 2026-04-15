@@ -55,7 +55,7 @@ Supported payment methods: SPEI (Tesored)
 }
 ```
 
-**For ARS Account (Argentina)**
+**For ARS Account 01 (Argentina)**
 
 Supported payment methods: CBU/CVU (Momentum)
 
@@ -71,6 +71,22 @@ Supported payment methods: CBU/CVU (Momentum)
         "alias": "soc.te" // (optional, string: Alias)
     }
 }
+```
+
+**For ARS Account 02 (Argentina)**
+
+Supported payment methods: 3.0 Transfer (QR)
+
+```json
+{
+    "merchantId": "15126673", // (required, number: id of the merchant)
+    "fiat": "ARS", // (required, string: name of the fiat currency [ARS])
+    "trench": "QR Argentina", //(required, string: trench [QR Argentina]) 
+    "fieldList":{
+        "cuit": "123456789" //(optional,string: Additional arbitrary metabata to attach to the transaction.)
+    }   
+}
+
 ```
 
 **For COP Account (Colombia)**
