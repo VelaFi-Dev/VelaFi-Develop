@@ -20,8 +20,8 @@ This API retrieves the template details for various payment methods metamessage 
 **Field metadata description:**
 
 * **index:** (number) The sequential number identifying the field's position.
-* **indexCode:** (string) A unique code or identifier for the field. If this field is not empty, then when adding the payment method, use this field for submission.
-* **title:** (string) The display label or name of the field. When the indexCode is empty, use this field name when providing payment method information.
+* **indexCode:** (string) A unique code or identifier for the field. <mark style="color:$danger;">If this field is not empty, then when adding the payment method, use this field for submission.</mark>
+* **title:** (string) The display label or name of the field. <mark style="color:$danger;">When the indexCode is empty, use this field name when providing payment method information.</mark>
 * **textType:** (enum) Numeric code indicating the type or format of the text input.
   * **1: number** — Numeric characters only (0–9).
   * **2: letter** — Alphabetic characters only (A–Z, a–z).
@@ -31,7 +31,7 @@ This API retrieves the template details for various payment methods metamessage 
   * **6: ISO 3166‑1** — Country code (e.g., US, CN, JP).
   * **7: ISO 3166‑2** — Subdivision code (e.g., US‑CA, CN‑BJ).
   * **8: international dialing code** — Country calling code (e.g., 1, 86).
-  * **9: date (fixed format)** — Date in `yyyy‑MM‑dd` format (e.g., 2026‑04‑17).
+  * **9: date (fixed format)** — Date in `yyyy‑MM‑dd` format (e.g., 2026‑01‑01).
   * **10: dropdown list** — The field is an enumerated value presented as a dropdown. The `extendInfo` field stores a JSON string that defines the options, e.g., `[{"code":"CURP","name":"Curp type"},{"code":"RFC","name":"Rfc type"}]`.
 * **promptText:** (string) Placeholder or instructional text shown inside the input field.
 * **minLimit:** (number) Minimum allowed value or length for the field input.
@@ -51,7 +51,7 @@ The response will include the following fields:
 				"paymentName": "Wire (CPN)", // (string: payment name)
 				"paymentType": 5,	 // (string: payment type)
 				"trench": "Circle Payment Network", //(string: trench)
-				"fieldList": [{						  //(list: List of original field information)
+				"fieldList": [{	//(list: List of original field information)
 						"index": 1, 
 						"indexCode": "beneficiaryName", 
 						"textType": 4, 
