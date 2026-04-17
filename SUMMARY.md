@@ -71,6 +71,7 @@
   * [Get User Quote for Fiat/Fiat](api-reference/quote/get-user-quote-for-fiat-fiat.md)
 * [Payment Method](api-reference/payment-method/README.md)
   * [Get Payment Templates](api-reference/payment-method/get-payment-templates.md)
+  * [Get Payment Templates Metamessage](api-reference/payment-method/get-payment-templates-metamessage.md)
   * [Add Payment Method](api-reference/payment-method/add-payment-method.md)
   * [Get Payment Method](api-reference/payment-method/get-payment-method.md)
   * [Delete Payment Method](api-reference/payment-method/delete-payment-method.md)
