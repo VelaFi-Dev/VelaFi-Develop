@@ -126,7 +126,8 @@ Once activated, the EUR account supports both EUR and USD transactions. Supporte
 {
     "merchantId": "15126673", // (required, number: id of the merchant)
     "fiat": "EUR", // (required, string: name of the fiat currency [USD/EUR]) 
-    "trench": "Account_Lead Bank", //(required, string: trench [Account_Lead Bank/Wire - Standard Charted Bank]) 
+    "trench": "Account_Lead Bank", //(required, string: trench [Account_Lead Bank/Wire - Standard Charted Bank])    
+    "callbackUri": "https://localhost/home", //(string: callback address after accepting the agreement)
     "fieldList": { // List of channel fields
         "email": "rturo@gmail.com", // (optional, string: Email, if the merchant information is not provided, it must be filled in)
         "companyName": "CAPITAL SA COCOS", // (required, string: Company Name)        
