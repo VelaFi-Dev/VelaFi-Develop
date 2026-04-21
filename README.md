@@ -1,5 +1,5 @@
 ---
-cover: .gitbook/assets/Frame 427319433 (8).png
+cover: .gitbook/assets/VELAFI_R2_Coin_1_v005_TS_NoTubes_Alpha 4.png
 coverY: 0
 metaLinks:
   alternates:
