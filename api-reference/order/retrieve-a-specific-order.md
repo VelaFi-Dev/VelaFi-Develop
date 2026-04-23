@@ -58,6 +58,8 @@ When the order type is `fiat_to_crypto` and `crypto_to_fiat`, the response will 
   * **73: refunding** — The order has been refunding. It is derived from the state changes of 60.
 * **traceNumber**: (string) id of the national central bank order
 * **paymentInfo**: (object) info of the payment
+* **failCode**: (string) order failed code
+* **failReason**: (string) order failure description
 * **createTime**: (string) create time of the order
 * **completedTime**: (string) completed time of the order
 
@@ -80,6 +82,8 @@ When the order type is `fiat_to_crypto` and `crypto_to_fiat`, the response will 
         "fiatFee": "0",
         "orderStatus": 60,
         "hasRefund": 0,
+        "failCode": 0, 
+        "failReason": "",
         "traceNumber": "20241223907069062e51744c4f0e57",
         "paymentInfo": {
             "Cuenta CLABE": "706180304649761358"

@@ -156,10 +156,12 @@ metaLinks:
 \
 **Bank Errors**
 
-| Code  | Message                               | Description                                     |
-| ----- | ------------------------------------- | ----------------------------------------------- |
-| -7000 | BANK\_ORDER\_CREATE\_FAILED           | Bank order creation failed.                     |
-| -7001 | RECEIVING\_ACCOUNT\_NUMBER\_INCORRECT | Incorrect account number for receiving payment. |
-| -7002 | ORDER\_TIMEOUT                        | Order cancelled due to timeout.                 |
-| -7003 | ORDER\_REVIEW\_REJECTION              | Order review rejection.                         |
+| Code  | Message                               | Description                                           |
+| ----- | ------------------------------------- | ----------------------------------------------------- |
+| -7000 | BANK\_ORDER\_CREATE\_FAILED           | Bank order creation failed.                           |
+| -7001 | RECEIVING\_ACCOUNT\_NUMBER\_INCORRECT | Incorrect account number for receiving payment.       |
+| -7002 | ORDER\_TIMEOUT                        | Order cancelled due to timeout.                       |
+| -7003 | ORDER\_REVIEW\_REJECTION              | Order review rejection.                               |
+| -7004 | ORDER\_UNPAID\_TIMEOUT                | Order payment is overdue.                             |
+| -7005 | ACCOUNT\_INSUFFICIENT\_TIMEOUT        | Insufficient account balance and time limit exceeded. |
 
