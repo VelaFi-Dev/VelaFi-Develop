@@ -28,7 +28,7 @@ The request body should include the following parameters:
 | merchantId                                         | number  | No       | ID of the merchant                                                               |
 | crypto                                             | string  | Yes      | Name of the cryptocurrency (e.g., "USDT")                                        |
 | fiat                                               | string  | Yes      | Name of the fiat currency (e.g., "MXN")                                          |
-| cryptoAmount                                       | decimal | Yes      | Amount of fiat currency to convert (e.g., 1000.00)                               |
+| cryptoAmount                                       | decimal | Yes      | Amount of crypto currency to convert (e.g., 1000.00)                             |
 | [userPaymentId](../../guides/payment-method-id.md) | number  | Yes      | ID of the user payment method                                                    |
 | remark                                             | string  | No       | Additional remarks for the order                                                 |
 | quoteId                                            | string  | No       | QuoteId of the price                                                             |
