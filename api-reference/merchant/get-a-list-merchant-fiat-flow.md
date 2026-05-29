@@ -46,7 +46,7 @@ The response will include the following fields:
         "currentPage": 1,         // (number: current page number)
         "size": 10,               // (number: number of results per page)
         "total": 100,             // (number: total number of results)   
-        "data": [                 // (array: list of funding records)
+        "record": [                 // (array: list of funding records)
             {         
                 "id": 282,         // (number: ID of the fiat flow)                  
                 "merchantId": 3,   // (number: ID of the merchant)
