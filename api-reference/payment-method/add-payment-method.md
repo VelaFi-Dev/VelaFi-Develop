@@ -132,7 +132,7 @@ The response will include the following fields:
 ```json
 {
     "merchantId": 15123,
-    "paymentId": 58,
+    "paymentId": 68,
     "country": "Colombia",
     "fiat": "COP",
     "realName": "Tom",
@@ -143,6 +143,24 @@ The response will include the following fields:
         "ID Document Number": "123456789", //Identification number, Maximum length: 300
         "Bank Code": "1007", //Bank Code, The list is shown in https://docs.velafi.com/api-reference/payment-method/get-payment-templates#colombian-bank-codes
         "Bank Account Number": "9876543210" //Bank Account Number, Maximum length: 300
+    },
+    "remark": "Preferred payment method"
+}
+```
+
+**Example Request (Colombia - COP)** **69:** Bre-B
+
+```json
+{
+    "merchantId": 15123,
+    "paymentId": 69,
+    "country": "Colombia",
+    "fiat": "COP",
+    "realName": "Tom",
+    "fieldJson": {
+    	  "brebKey": "1100000", //breb key
+        "email": "", //email, Maximum length: 300
+        "phone": ""	//phone, Maximum length: 300
     },
     "remark": "Preferred payment method"
 }
