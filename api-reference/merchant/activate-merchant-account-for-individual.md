@@ -258,7 +258,7 @@ Supported payment methods: Wire (CPN), CIPS (CPN), FPS (CPN), CHATS (CPN), SEPA(
         "accountName": "Tom", // (required, string: account number)
         "nationality": "HK", // (required, string: nationality)
         "idNumber": "123456", // (required, string: identification number)
-        "countryStateCode": "HK-HK", // (optional, string: country and province code of the address location)
+        "countryStateCode": "HK-HK", // (required, string: country and province code of the address location)
         "city": "Hong Kong", // (required, string: city)
         "street": "street 789", // (required, string: street)
         "postalCode": "123456", // (required, string: postal code)
