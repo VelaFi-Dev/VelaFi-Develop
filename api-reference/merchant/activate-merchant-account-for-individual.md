@@ -116,24 +116,6 @@ Supported payment methods:  Pix (Genial)
 }
 ```
 
-**For BRL Account 02 (Brazil)**
-
-Supported payment methods:  Pix (a55)
-
-```json
-{
-    "merchantId": "15126673", // (required, number: id of the merchant)
-    "fiat": "BRL", // (required, string: name of the fiat currency [BRL])
-    "trench": "a55", //(required, string: trench [a55])   
-    "fieldList":{
-        "payerDocOrTaxId":"123.456.789-09", //(required,string: The payer's tax identification number must meet the CNPJ or CPF format requirements.)
-        "payerName":"Tom", //(required, string: Name of the payer)
-        "toPayerMessage":"", //(optional,string: Message or instruction presented to the payer.)
-        "extraDescription":"", //(optional,string: Additional arbitrary metabata to attach to the transaction.)
-    }      
-}
-```
-
 **For PEN Account (Peru)**
 
 Supported payment methods: Bank Transfer

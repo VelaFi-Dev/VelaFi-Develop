@@ -28,13 +28,12 @@ This endpoint allows you to retrieve information about your VelaFi Pending Fund 
   * 137 (QR Argentina) - ARS
   * 68 (PSE) - COP
   * 90 (Pix (Genial)) - BRL
-  * 135 (Pix (a55)) - BRL
   * 81/82/83/84 (ACH\_push/ACH\_Virtual Accoun/WIRE/WIRE\_Virtual Account) - USD
   * 85 (SEPA (Bridge)) - EUR
   * 95 (Bank Transfer) - PEN
 * **fiat:** (string) Name of the fiat currency. Currently supported currencies are MXN/ARS/COP/BRL/PEN/USD/EUR.
 * **depositAlias**: (string) Alias of the virtual account (optional).
-* **amount**: (decimal) The deposit amount. When the paymetnId is 90/135/137, it is mandatory.
+* **amount**: (decimal) The deposit amount. When the paymetnId is 95/137, it is mandatory.
 
 **Response Structure**
 
@@ -199,24 +198,6 @@ The response will include the following fields:
             "Chave Pix - Random Pix": "09a3b1d1-49d6-4820-bd19-53e7f50ee13c",
             "Pix copia e cola": "00020101021126580014br.gov.bcb.pix013865755...",        
             "Pix QR Code": "https://links.qrcode.co/zAOCe/3471397f291c28d19.png"
-        }
-    }
-}
-```
-
-**Example for Payment ID 135:**
-
-```json
-{
-    "code": 200,
-    "msg": "SUCCESS",
-    "data": {  
-        "fiat": "BRL",
-        "paymentMethodName": "Pix (a55)",
-        "txId": "123456789001",
-        "fieldList": {
-             "QR Code Link": "https://links.qrcode.co/zAOCe/3471397f291c28d19.png",
-             "QR Code": "00020101021126580014br.gov.bcb.pix0138657559..."            
         }
     }
 }
