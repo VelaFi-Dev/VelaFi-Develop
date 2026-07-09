@@ -46,7 +46,7 @@ The request body should include the following fields:
     "depositAlias": "alias",                         // (string: alias of The virtual account)
     "bankWebhookInfo": "{}",                         // (json: bank webhook info of the entity sending funds, see Bank Webhook Info Detaials)
     "failCode": "",                                  // (string: order failed code)
-	  "failReason": ""                                 // (string: order failure description)
+    "failReason": ""                                 // (string: order failure description)
 }
 ```
 

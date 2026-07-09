@@ -50,6 +50,7 @@ The response will include the following fields:
             {         
                 "id": 282,         // (number: ID of the fiat flow)                  
                 "merchantId": 3,   // (number: ID of the merchant)
+                "settingsId": 3,   // (number: ID of the merchant account)
                 "txId": "573901321954934784", // (number: ID of the funding) 
                 "category": "TRADE",          // (enum: flow type[TRADE/FEE/TRANSFER])
                 "flowType": "DEPOSIT",        // (enum: flow type[BUY_CRYPTO/BUY_CRYPTO_ROLLBACK/REFUND/REFUND_ROLLBACK/DEPOSIT/WITHDRAW/WITHDRAW_ROLLBACK/TRANSFER_IN/TRANSFER_OUT])
@@ -79,6 +80,7 @@ The response will include the following fields:
            {
                 "id": 282,                      
                 "merchantId": 3,  
+                "settingsId": 3,
                 "txId": 573901321954934784,
                 "category": "TRADE",   
                 "flowType": "DEPOSIT", 
