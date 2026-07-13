@@ -11,7 +11,7 @@ To meet compliance requirements, **VelaFi** applies different transaction and wi
 After successfully creating a **Merchant**, VelaFi automatically provisions a **crypto custody wallet** for that merchant.
 
 * The wallet is activated upon creation.
-* The default **monthly withdrawal limit** is **USD 15,000**.
+* The default **monthly withdrawal limit** is **USD 10,000,000,000**.
 
 ### 2. Individual Users
 
@@ -25,11 +25,11 @@ VelaFi classifies individual users into two categories — **Consumers** and **P
 
 | Country       | Monthly Trade Limit (USD) |
 | ------------- | ------------------------- |
-| 🇲🇽Mexico    | 3,000                     |
-| 🇧🇷Brazil    | 3,000                     |
-| 🇨🇴Colombia  | 3,000                     |
-| 🇵🇪Peru      | 3,000                     |
-| 🇦🇷Argentina | 2,400                     |
+| 🇲🇽Mexico    | 10,000,000,000            |
+| 🇧🇷Brazil    | 10,000,000,000            |
+| 🇨🇴Colombia  | 10,000,000,000            |
+| 🇵🇪Peru      | 10,000,000,000            |
+| 🇦🇷Argentina | 10,000,000,000            |
 
 #### Professionals
 
@@ -45,13 +45,13 @@ For business merchants, limits are applied per country once the corresponding fi
 
 | Country           | Monthly Limit (USD) |
 | ----------------- | ------------------- |
-| 🇲🇽Mexico        | 10,000              |
-| 🇨🇴Colombia      | 10,000              |
-| 🇦🇷Argentina     | 10,000              |
-| 🇧🇷Brazil        | 10,000              |
-| 🇵🇪Peru          | 10,000              |
-| 🇺🇸United States | 10,000              |
-| 🇭🇰Hong Kong     | 50,000              |
+| 🇲🇽Mexico        | 10,000,000,000      |
+| 🇨🇴Colombia      | 10,000,000,000      |
+| 🇦🇷Argentina     | 10,000,000,000      |
+| 🇧🇷Brazil        | 10,000,000,000      |
+| 🇵🇪Peru          | 10,000,000,000      |
+| 🇺🇸United States | 10,000,000,000      |
+| 🇭🇰Hong Kong     | 10,000,000,000      |
 
 ***
 
