@@ -22,7 +22,7 @@ This section walks you through the complete onboarding process with VelaFi, incl
 
     * Submit detailed merchant information to initiate the KYC/KYB verification process.
     * Once approved, the platform will assign a unique **Merchant ID (MID)** to you or your client.
-    * Upon successful creation, a **crypto custody wallet** will be automatically provisioned for the merchant with an initial monthly withdrawal limit of **USD 15,000.**
+    * Upon successful creation, a **crypto custody wallet** will be automatically provisioned for the merchant with an initial monthly withdrawal limit of **USD 10,000,000,000.**
 
 
 3.  [**Create API Key**](creating-api-key/)\
