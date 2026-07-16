@@ -11,12 +11,16 @@ This section provides information about the various currencies supported by the 
 
 ### **Crypto Currencies**
 
-| Currency Name  | Currency Code | Decimals | Protocol                     |
-| -------------- | ------------- | -------- | ---------------------------- |
-| Bitcoin        | BTC           | 8        | Bitcoin, Base                |
-| Moneta Digital | MMXN          | 2        | ERC20, TRC20                 |
-| USD Coin       | USDC          | 2        | ERC20, TRC20, BEP20, Polygon |
-| Tether USD     | USDT          | 2        | ERC20, TRC20, BEP20, Polygon |
+| Currency Name             | Currency Code | Decimals | Protocol                        |
+| ------------------------- | ------------- | -------- | ------------------------------- |
+| Bitcoin                   | BTC           | 8        | BTC                             |
+| Moneta Digital            | MMXN          | 2        | ERC20, TRC20                    |
+| USD Coin                  | USDC          | 2        | ERC20, POL, SPL20               |
+| Tether USD                | USDT          | 2        | BEP20, ERC20, POL, SPL20, TRC20 |
+| BRL1                      | BRL1          | 4        | POL                             |
+| CAD Coin                  | CADC          | 5        | Base                            |
+| MXNB                      | MXNB          | 5        | Arbitrum                        |
+| Colombian Peso Stablecoin | COPM          | 4        | POL                             |
 
 ### **Fiat Currencies**
 
