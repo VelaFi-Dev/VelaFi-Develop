@@ -49,8 +49,7 @@ The response will include the following fields:
         "totalAmount": 22.00,     // (decimal: total fiat amount)
         "amount": 20.00,          // (decimal: actual fiat amount)
         "fee": 2.00,              // (decimal: amount of the fee)
-        "userPaymentId": 91,      // (number: ID of the user payment method) 
-        "status": 1,              // (enum: status [1: pending, 2: completed, 3: canceled])       
+        "userPaymentId": 91,      // (number: ID of the user payment method)              
         "createTime": "1737452292000" // (string: timestamp of the create time in milliseconds) 
     }
 }
@@ -82,8 +81,7 @@ The response will include the following fields:
         "totalAmount": 22.00, 
         "amount": 20.00, 
         "fee": 2.00, 
-        "userPaymentId": 91,
-        "status": 1,    
+        "userPaymentId": 91,       
         "createTime": "1737452292000"
     }
 }
