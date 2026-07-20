@@ -27,6 +27,7 @@ The request body should include the following fields:
     "webhookId": "ebab8a9663704e7cbbebe672c7c67912",  // (number: ID of the webhook)
     "eventType": "FUNDING_WEBHOOK",                  // (string: event type [FUNDING_WEBHOOK: merchant funding event])
     "txId": "1123123123",                            // (number: ID of the fiat claim)
+    "clientId": "cleint123456",                      // (string: ID of the client)
     "merchantId": "3",                               // (number: ID of the merchant)
     "merchantName": "Rrturo Tellez",                 // (string: name of the merchant)
     "fiat": "ARS",                                   // (string: name of the fiat currency)
@@ -67,6 +68,7 @@ The response will include the following fields:
     "webhookId": "ebab8a9663704e7cbbebe672c7c67912",
     "eventType": "FUNDING_WEBHOOK",
     "txId": "1123123123",
+    "clientId": "cleint123456", 
     "merchantId": "3",
     "merchantName": "Rrturo Tellez",
     "fiat": "ARS",
