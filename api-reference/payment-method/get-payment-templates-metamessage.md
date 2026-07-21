@@ -27,7 +27,7 @@ This API retrieves the template details for various payment methods metamessage 
   * **2: letter** — Alphabetic characters only (A–Z, a–z).
   * **3: alphanumeric** — Letters and numbers only.
   * **4: string** — Any free‑text string.
-  * **5: image** — Image data or a reference to an image.
+  * **5: image** — Image data or a reference to an image. This type of field needs to be uploaded through the `/v2/base/file/upload` interface, and the returned relative path should be submitted as a parameter.
   * **6: ISO 3166‑1** — Country code (e.g., US, CN, JP).
   * **7: ISO 3166‑2** — Subdivision code (e.g., US‑CA, CN‑BJ).
   * **8: international dialing code** — Country calling code (e.g., 1, 86).
