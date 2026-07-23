@@ -18,6 +18,7 @@ This API allows you to upload invoices for a specific order.
 Form **Parameters**
 
 * **orderId**: (number) The ID of the order for which the invoice is being uploaded.
+* **orderType**: (string) The type of the order, `fiat_to_crypto crypto_to_fiat fiat_to_fiat`
 * **files**: (file) Upload multiple files. The maximum number of uploaded files is 5, with each file limited to 5 MB in size. Supported formats are \[jpg, png, jpeg, pdf].
 
 **Response Structure**
