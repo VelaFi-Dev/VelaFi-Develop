@@ -207,36 +207,6 @@ The response will include the following fields:
 }
 ```
 
-**Example Request (United States - USD) 111:Wire (Virtual - CRB)**
-
-```json
-{
-    "merchantId": 15123,
-    "paymentId": 111,
-    "country": "United States",
-    "fiat": "USD",
-    "realName": "Tom",        
-    "fieldJson": {       
-        "Account Owner Type": "individual", //account type[individual/business]
-        "Bank Name": "Bank of Nowhere", //bank name
-        "Beneficiary Name": "Tom", //name
-        "Email": "tom@gmail.com", //email
-        "National code": "1", //International area code for mobile phones
-        "Phone Number": "123456", //phone number
-        "Account Number": "11223344556663", //account number
-        "Routing Number": "123456795", //routing Number
-        "Street Line1": "street example", //street
-        "City": "New City", //city
-        "State": "AL", //state code
-        "Postal Code": "123456", //postal code
-        "Purpose Of Payment": "invoice_payments" //purpose of payment[invoice_payments/payment_for_services/payment_for_imported_goods/travel_services/transfer_to_own_account/repayment_of_loans/payroll/payment_of_property_rental/information_service_charges/advertising_and_public_relations/royalty_and_ip_fees/financial_service_fees/advisory_and_consulting_fees/representative_office_expenses/tax_payment/transportation_fees/construction_costs/insurance_premium/offline_goods_trade/insurance_claims/remittance_to_family_or_friends/education_expenses/medical_treatment/donations/currency_exchange/advance_payment_for_goods/merchant_settlement/repatriation_fund_settlement]
-    },
-    "remark": "Preferred payment method"
-}
-```
-
-
-
 **Example Request 120/121/125/126: Wire (CPN)/CIPS (CPN)/BANK-TRANSFER(CPN)/PESONET(CPN)**
 
 ```json
