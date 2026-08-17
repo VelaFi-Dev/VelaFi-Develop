@@ -28,12 +28,15 @@ This endpoint allows you to retrieve information about your VelaFi Pending Fund 
   * 137 (QR Argentina) - ARS
   * 68 (PSE) - COP
   * 90 (Pix (Genial)) - BRL
+  * 92 (Pix - Woovi) - BRL
   * 81/82/83/84 (ACH\_push/ACH\_Virtual Accoun/WIRE/WIRE\_Virtual Account) - USD
   * 85 (SEPA (Bridge)) - EUR
   * 95 (Bank Transfer) - PEN
 * **fiat:** (string) Name of the fiat currency. Currently supported currencies are MXN/ARS/COP/BRL/PEN/USD/EUR.
 * **depositAlias**: (string) Alias of the virtual account (optional).
-* **amount**: (decimal) The deposit amount. When the paymetnId is 95/137, it is mandatory.
+* **amount**: (decimal) The deposit amount.&#x20;
+  * When the paymetnId is 95/137, it is mandatory.
+  * When the paymetnId is 92, it is optional.
 
 **Response Structure**
 
@@ -193,11 +196,29 @@ The response will include the following fields:
     "msg": "SUCCESS",
     "data": {   
         "fiat": "BRL",
-        "paymentMethodName": "Automated Pix",       
+        "paymentMethodName": "Pix (Genial)",       
         "fieldList": {  
             "Chave Pix - Random Pix": "09a3b1d1-49d6-4820-bd19-53e7f50ee13c",
             "Pix copia e cola": "00020101021126580014br.gov.bcb.pix013865755...",        
             "Pix QR Code": "https://links.qrcode.co/zAOCe/3471397f291c28d19.png"
+        }
+    }
+}
+```
+
+**Example for Payment ID 92:**
+
+```json
+{
+    "code": 200,
+    "msg": "SUCCESS",
+    "data": {   
+        "fiat": "BRL",
+        "paymentMethodName": "Pix - Woovi",       
+        "fieldList": {  
+            "pixKey": "09a3b1d1-49d6-4820-bd19-53e7f50ee13c",
+            "qrCode": "00020101021126580014br.gov.bcb.pix013865755...",        
+            "qrCodeLink": "https://links.qrcode.co/zAOCe/3471397f291c28d19.png"
         }
     }
 }

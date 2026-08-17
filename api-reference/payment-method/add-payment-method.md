@@ -183,6 +183,23 @@ The response will include the following fields:
 }
 ```
 
+**Example Request (Brazil - BRL)  92: Pix - Woovi**
+
+```json
+{
+    "merchantId": 15123,
+    "paymentId": 92,
+    "country": "Brazil",
+    "fiat": "BRL",
+    "realName": "Tom",
+    "fieldJson": {
+        "pixType": "EMAIL", //enum: pix type[CPF:11 digits, CNPJ:14 digits, EMAIL:email, PHONE: 10-11 digits, RANDOM_KEY: with "-"]
+        "pixKey": "tom@gmail.com" //pix key, Maximum length: 100
+    },
+    "remark": "Preferred payment method"
+}
+```
+
 **Example Request (Peru - PEN)  95: Bank Transfer**
 
 ```json

@@ -116,6 +116,14 @@ Supported payment methods:  Pix (Genial)
 }
 ```
 
+**For BRL Account 02 (Brazil)**
+
+Supported payment methods:  Pix - Woovi
+
+Contact the business department to activate this channel offline.
+
+
+
 **For PEN Account (Peru)**
 
 Supported payment methods: Bank Transfer
