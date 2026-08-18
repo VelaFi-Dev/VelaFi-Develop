@@ -214,7 +214,8 @@ The response will include the following fields:
     "msg": "SUCCESS",
     "data": {   
         "fiat": "BRL",
-        "paymentMethodName": "Pix - Woovi",       
+        "paymentMethodName": "Pix - Woovi",  
+        "txId": "123456789001",     
         "fieldList": {  
             "pixKey": "09a3b1d1-49d6-4820-bd19-53e7f50ee13c",
             "qrCode": "00020101021126580014br.gov.bcb.pix013865755...",        
