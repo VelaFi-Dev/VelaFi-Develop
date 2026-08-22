@@ -21,17 +21,18 @@ This section provides information about the crypto to fiat off-ramp process, all
 
 The request body should include the following parameters:
 
-| Parameter                                          | Type    | Required | Description                                                                      |
-| -------------------------------------------------- | ------- | -------- | -------------------------------------------------------------------------------- |
-| country                                            | string  | Yes      | Name of the country (e.g., "Mexico")                                             |
-| clientId                                           | string  | No       | An order ID that you may define and will be returned to you in a Get Order call. |
-| merchantId                                         | number  | No       | ID of the merchant                                                               |
-| crypto                                             | string  | Yes      | Name of the cryptocurrency (e.g., "USDT")                                        |
-| fiat                                               | string  | Yes      | Name of the fiat currency (e.g., "MXN")                                          |
-| cryptoAmount                                       | decimal | Yes      | Amount of crypto currency to convert (e.g., 1000.00)                             |
-| [userPaymentId](../../guides/payment-method-id.md) | number  | Yes      | ID of the user payment method                                                    |
-| remark                                             | string  | No       | Additional remarks for the order                                                 |
-| quoteId                                            | string  | No       | QuoteId of the price                                                             |
+| Parameter                                          | Type    | Required | Description                                                                                                       |
+| -------------------------------------------------- | ------- | -------- | ----------------------------------------------------------------------------------------------------------------- |
+| country                                            | string  | Yes      | Name of the country (e.g., "Mexico")                                                                              |
+| clientId                                           | string  | No       | An order ID that you may define and will be returned to you in a Get Order call.                                  |
+| merchantId                                         | number  | No       | ID of the merchant                                                                                                |
+| crypto                                             | string  | Yes      | Name of the cryptocurrency (e.g., "USDT")                                                                         |
+| fiat                                               | string  | Yes      | Name of the fiat currency (e.g., "MXN")                                                                           |
+| cryptoAmount                                       | decimal | No       | Place the order in crypto format, or choose from fiatAmount. Amount of crypto currency to convert (e.g., 1000.00) |
+| fiatAmount                                         | decimal | No       | Place the order in fiat currency or choose from cryptoAmount. Amount of fiat currency to convert (e.g., 1000.00)  |
+| [userPaymentId](../../guides/payment-method-id.md) | number  | Yes      | ID of the user payment method                                                                                     |
+| remark                                             | string  | No       | Additional remarks for the order                                                                                  |
+| quoteId                                            | string  | No       | QuoteId of the price                                                                                              |
 
 **Request Example**
 

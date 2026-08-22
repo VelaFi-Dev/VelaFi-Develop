@@ -68,7 +68,9 @@ The response will include the following fields:
                 "fee": 2.00,           // (decimal: amount of the fee)
                 "userPaymentId": 91,   // (number: ID of the user payment method) 
                 "type": "DEPOSIT",     // (enum: transaction type)
-                "status": 1,           // (enum: status [1: pending, 2: completed, 3: canceled])               
+                "status": 1,           // (enum: status [1: pending, 2: completed, 3: canceled])
+                "webhookInfo": "{}",   //(json: bank webhook info of the entity sending funds, see Bank Webhook Info Detaials)
+                "completedTime": "1737452344000", // (string: timestamp of complete in milliseconds)               
                 "createTime": "1737452292000", // (string: timestamp of creation in milliseconds)
                 "updateTime": "1737452344000"  // (string: timestamp of update in milliseconds)
             }
@@ -100,6 +102,7 @@ The response will include the following fields:
                 "userPaymentId": 91,
                 "type": "DEPOSIT",
                 "status": 1, 
+                "completedTime": "1737452344000",
                 "createTime": "1737452292000", 
                 "updateTime": "1737452344000"
             }
