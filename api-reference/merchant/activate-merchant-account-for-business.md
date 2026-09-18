@@ -98,7 +98,55 @@ Supported payment methods: Pix (Genial)
 
 Supported payment methods:  Pix - Woovi
 
-Contact the business department to activate this channel offline.
+```json
+{
+	"merchantId": "15126673", // (required, number: id of the merchant)
+	"fiat": "BRL", // (required, string: name of the fiat currency [BRL])
+	"trench": "Pix - Woovi", //(required, string: trench [Pix - Woovi]) 
+	"fieldList": {
+		"companyInfo": {
+			"companyName": "AURORA SANDBOX TECNOLOGIA LTDA.", // (required, string: Company legal name)
+			"companyDescription": "test desc", // (required, string: Company Description)
+			"countryStateOfIncorporation": "BR-SP", // (required, string: The country of residence - The state/province of residence)
+			"website": "1234.com", // (required, string: Website)
+			"socialMedia": "social media", // (required, string: Social Media)
+			"street1": "Avenida Paulista, 1000", // (required, string: Company address, first line (max 256 chars))
+			"street2": "fda", // (Optional, string: Company address, second line.)
+			"city": "São Paulo", // (required, string: Company city (max 256 chars).)
+			"countryStateCode": "BR-SP", // (required, string: // (required, string: The country of residence - The state/province of residence))
+			"postcode": "01310-100", // (required, string: Company postal code (max 256 chars).)
+			"reasonForAccountOpening": "ecommerce_retail_payments", // (required, enum: charitable_donations, ecommerce_retail_payments, investment_purposes, other, payments_to_friends_or_family_abroad, payroll, personal_or_living_expenses, protect_wealth, purchase_goods_and_services, receive_payments_for_goods_and_services, tax_optimization, third_party_money_transmission, treasury_management)
+			"sourceOfFunds": "grants", // (required, enum: business_loans, grants, inter_company_funds, investment_proceeds, legal_settlement, owners_capital, pension_retirement, sale_of_assets, sales_of_goods_and_services, third_party_funds, treasury_reserves)
+			"numberOfEmployees": "11-50", // (required, enum: 1-10, 11-50, 51-200, 201-500, 501-1000, 1001+)
+			"estimatedAnnualRevenueUsd": "less_than_100k", // (required, enum: less_than_100k, 100k_to_1m, 1m_to_10m, 10m_to_50m, 50m_to_100m, more_than_100m)
+			"estimatedMonthlyVolumeUsd": 10000, // (required, number: Positive integer as string (e.g. "2000"))
+			"companyRegistrationNumber": "42731085000167", // (required, string: Company registration number.)
+			"taxIdentificationNumberTin": "10000000316452", // (required, string: Company TIN/CNPJ.)
+			"taxIdentificationDocumentUrl": "https://files.r2.smallpdf.com/7252fd2f0af7225fd617479a5da271b4.pdf", // (required, string: Certificate of Incorporation, The document must be in PDF format.)
+			"certificateOfIncorporationDocumentUrl": "https://files.r2.smallpdf.com/dffcd8e4dfdfa43c55580df208489960.pdf" // (required, string: Tax Identification Document, The document must be in PDF format.)
+		},
+		"companyUbosInfo": [{
+			"personType": "CEO", // (required, string: Website)
+			"firstName": "tom", // (required, string: First Name)
+			"lastName": "tom", // (Optional, string: Last Name)
+			"email": "11@qq.com", // (required, string: UBO contact email)
+			"phone": "+14151231234", // (required, string: UBO contact phone)
+			"percentageOfOwnership": 1, // (required, string: Percentage of Ownership,0.01 - 1)
+			"nationality": "CN", // (required, string: Nationality)
+			"taxIdentificationNumber": "432524199612188018", // (required, string: Tax identification number. For BRA a valid CPF is required; for USA a 9-digit number is required.)
+			"dateOfBirth": "1999-05-13", // (required, string: YYYY-MM-DD. Minimum age 18.)
+			"street1": "789 street", // (required, string: Street address, first line (max 256 chars).)
+			"street2": "123", // (required, string: Street address, second line.)
+			"city": "Shanghai", // (required, string: City of residence. )
+			"countryStateCode": "CN-SH", // (required, string: The country of residence - The state/province of residence)
+			"postcode": "200001", // (required, string: Postal code.)
+			"idType": "1", // (required, string: gender Only Support [1, 2, 3],[1: ID_CARD,2: DRIVERS ,3: PASSPORT])
+			"govIdCountryAbbr": "CN", // (required, string: Gov ID Country)
+			"govIdFrontUrl": "https://i.ibb.co/v6nTV8z1/me-id-front-png.jpg" // (required, string: ID Document Front,identification documents accept image/png or image/jpeg)
+		}]
+	}
+}
+```
 
 
 

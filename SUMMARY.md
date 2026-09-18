@@ -66,6 +66,7 @@
   * [Get Crypto Deposit Address](api-reference/merchant/get-crypto-deposit-address.md)
   * [Crypto Transfer](api-reference/merchant/crypto-transfer.md)
   * [Query Crypto Transfers](api-reference/merchant/query-crypto-transfers.md)
+  * [Get Woovi liveness URL](api-reference/merchant/get-woovi-liveness-url.md)
 * [Quote](api-reference/quote/README.md)
   * [Get User Quote for Crypto/Fiat](api-reference/quote/get-user-quote-for-crypto-fiat.md)
   * [Get User Quote for Fiat/Fiat](api-reference/quote/get-user-quote-for-fiat-fiat.md)

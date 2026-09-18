@@ -15,10 +15,11 @@ This endpoint allows you to retrieve information about your VelaFi Virtual Accou
 
 * **merchantId:** (int) The merchant ID.
 * **paymentId:** (int) The payment ID. Currently supported payment IDs are：
-  * 105 (SPEI - FINCO PAY) - MXN
-  * 63 (Automated Bank Transfer (Argentina)) - ARS
+  * 105 (SPEI (Finco Pay)) - MXN
+  * 63 (CBU/CVU (Momentum)) - ARS
   * 68 (PSE) - COP
-  * 90 (Automated Pix) - BRL
+  * 90 (Pix (Genial)) - BRL
+  * 92 (Pix - Woovi) - BRL
 * **fiat:** (string) Name of the fiat currency. Currently supported currencies are MXN/ARS/COP/BRL.
 * **depositAlias**: (string) Alias of the virtual account (optional).
 * **currentPage**: (int) The current page number (optional).
@@ -191,6 +192,25 @@ The response will include the following fields:
                  "Pix QR Code": "https://links.qrcode.co/zAOCe/3471397f291c28d19.png" 
             }
         ]
+    }
+}
+```
+
+**Example for Payment ID 92:**
+
+```json
+{
+    "code": 200,
+    "msg": "SUCCESS",
+    "data": {   
+        "fiat": "BRL",
+        "paymentMethodName": "Pix - Woovi",  
+        "txId": "123456789001",     
+        "fieldList": {  
+            "pixKey": "09a3b1d1-49d6-4820-bd19-53e7f50ee13c",
+            "qrCode": "00020101021126580014br.gov.bcb.pix013865755...",        
+            "qrCodeLink": "https://links.qrcode.co/zAOCe/3471397f291c28d19.png"
+        }
     }
 }
 ```

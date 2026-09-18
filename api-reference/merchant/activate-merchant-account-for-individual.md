@@ -120,7 +120,31 @@ Supported payment methods:  Pix (Genial)
 
 Supported payment methods:  Pix - Woovi
 
-Contact the business department to activate this channel offline.
+```json
+{
+	"merchantId": "15126673", // (required, number: id of the merchant)
+	"fiat": "BRL", // (required, string: name of the fiat currency [BRL])
+	"trench": "Pix - Woovi", //(required, string: trench [Pix - Woovi]) 
+	"fieldList": {
+		"personalInfo": {
+			"firstName": "LUISA MARGARITA", // (required, string: The first name of the individual)
+			"lastName": "PINEDA GARCIA", // (optional, string: The last name of the individual) 
+			"email": "luisapineda830@gmail.com", // (required, string: The email address)
+			"taxIdentificationNumber": "10000246603", // (required, string: The tax identification number)
+			"nationality": "BR", // (required, string: The country where the tax identification number was issued)
+			"dateOfBirth": "1978-11-17", // (required, string: The date of birth (Format: YYYY-MM-DD))
+			"street1": "xxx", // (required, string: The street address)
+			"city": "23", // (required, string: The city of residence)
+			"countryStateCode": "BR-AL", // (required, string: The country of residence - The state/province of residence)
+			"postcode": "123", // (required, string: The postal code)
+			"idType": "1", // (required, string: gender Only Support [1, 2, 3],[1: ID_CARD,2: DRIVERS ,3: PASSPORT])
+			"govIdCountryAbbr": "BR", // (required, string: Gov ID Country)
+			"govIdFrontUrl": "https://static.mexo.vip/bhop/image/1mRLozHTku6Uroj9Nz5tEziq9NBnlTTpiTgeVHVwkdM.png", // (required, string: ID Document Front,identification documents accept image/png or image/jpeg)
+			"govIdBackUrl": "https://static.mexo.vip/bhop/image/1mRLozHTku6Uroj9Nz5tEziq9NBnlTTpiTgeVHVwkdM.png" // (required, string: ID Document Back,identification documents accept image/png or image/jpeg)
+		}
+	}
+}
+```
 
 
 
