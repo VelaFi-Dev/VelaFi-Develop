@@ -5,9 +5,9 @@ metaLinks:
       https://app.gitbook.com/s/V9hKdCChTHquQ6LtTGc9/api-reference/payment-method/add-payment-method
 ---
 
-# Add Payment Method
+# Add Beneficiary
 
-This API allows you to add a new payment method for a merchant.
+This API allows you to add a new beneficiary for a merchant.
 
 #### Endpoint Information
 
@@ -31,7 +31,7 @@ The request body should include the following fields:
   "fieldJson": {            // (object: field JSON of the payment template)
        [string]: [string]   // (key-value pairs as per the payment template)
   },
-  "remark": ""              // (string: remark about the payment method)
+  "remark": ""              // (string: remark about the beneficiary)
 }
 ```
 
@@ -70,7 +70,7 @@ The response will include the following fields:
       "Beneficiary Name": "John Doe", //beneficiary name
       "Bank Code": "" //bank code, Only fill in when the account type is "debit", The list is shown in https://docs.velafi.com/api-reference/payment-method/get-payment-templates#mexico-finco-pay-bank-codes
   },
-  "remark": "Preferred payment method"
+  "remark": "Preferred beneficiary"
 }
 ```
 
@@ -89,7 +89,7 @@ The response will include the following fields:
       "Bank Account Number": "123456789012345678", //account number
       "Bank Code": "" //bank code, Only fill in when the account type is "spei_card", The list is shown in https://docs.velafi.com/api-reference/payment-method/get-payment-templates#mexico-tesored-bank-codes
   },
-  "remark": "Preferred payment method"
+  "remark": "Preferred beneficiary"
 }
 ```
 
@@ -106,7 +106,7 @@ The response will include the following fields:
       "CVU/CBU Number": "0000775900000000000041", //cvu/cbu account number, 22 digits
       "CUIT": "20339698693" //cuit, 11 digits
   },
-  "remark": "Preferred payment method"
+  "remark": "Preferred beneficiary"
 }
 ```
 
@@ -123,7 +123,7 @@ The response will include the following fields:
         "cuit": "123456789", //cuit, 11 digits  
         "cvu/cbu":"123456789" //cvu/cbu account number, 22 digits 
     },
-    "remark": "Preferred payment method"
+    "remark": "Preferred beneficiary"
 }
 ```
 
@@ -144,7 +144,7 @@ The response will include the following fields:
         "Bank Code": "1007", //Bank Code, The list is shown in https://docs.velafi.com/api-reference/payment-method/get-payment-templates#colombian-bank-codes
         "Bank Account Number": "9876543210" //Bank Account Number, Maximum length: 300
     },
-    "remark": "Preferred payment method"
+    "remark": "Preferred beneficiary"
 }
 ```
 
@@ -162,7 +162,7 @@ The response will include the following fields:
         "email": "", //email, Maximum length: 300
         "phone": ""	//phone, Maximum length: 300
     },
-    "remark": "Preferred payment method"
+    "remark": "Preferred beneficiary"
 }
 ```
 
@@ -179,7 +179,7 @@ The response will include the following fields:
         "Pix Type": "EMAIL", //enum: pix type[CPF:11 digits, CNPJ:14 digits, EMAIL:email, PHONE: 10-11 digits, RANDOM_KEY: with "-"]
         "Pix Key": "tom@gmail.com" //pix key, Maximum length: 100
     },
-    "remark": "Preferred payment method"
+    "remark": "Preferred beneficiary"
 }
 ```
 
@@ -196,7 +196,7 @@ The response will include the following fields:
         "pixType": "EMAIL", //enum: pix type[CPF:11 digits, CNPJ:14 digits, EMAIL:email, PHONE: 10-11 digits, RANDOM_KEY: with "-"]
         "pixKey": "tom@gmail.com" //pix key, Maximum length: 100
     },
-    "remark": "Preferred payment method"
+    "remark": "Preferred beneficiary"
 }
 ```
 
@@ -220,7 +220,7 @@ The response will include the following fields:
         "Name": "Tom", //user name
         "Phone Number": "975728895" //user phone number (9 digits)
     },
-    "remark": "Preferred payment method"
+    "remark": "Preferred beneficiary"
 }
 ```
 
@@ -250,7 +250,7 @@ The response will include the following fields:
 				"swiftCode": "NACKUSAK001", //swift code
 				"accountNumber": "123456" //account number      
     },
-    "remark": "Preferred payment method"
+    "remark": "Preferred beneficiary"
 }
 ```
 
@@ -281,7 +281,7 @@ The response will include the following fields:
 				"bankCode": "999077", //bank code
 				"accountNumber": "123456"  //account number       
     },
-    "remark": "Preferred payment method"
+    "remark": "Preferred beneficiary"
 }
 ```
 
@@ -317,7 +317,7 @@ The response will include the following fields:
 				"recipientAddressStateProvince": "HK-HK", //recipient address postal code
 				"recipientAddressPostalCode": "999077" //recipient address postal code 
     },
-    "remark": "Preferred payment method"
+    "remark": "Preferred beneficiary"
 }
 ```
 
@@ -347,7 +347,7 @@ The response will include the following fields:
 				"swiftCode": "NACKEE37001", //swift code
 				"accountNumber": "123456" //account number   
     },
-    "remark": "Preferred payment method"
+    "remark": "Preferred beneficiary"
 }
 ```
 
@@ -383,7 +383,7 @@ The response will include the following fields:
 				"recipientAddressStateProvince": "US-AK", //recipient address postal code
 				"recipientAddressPostalCode": "90210" //recipient address postal code 
     },
-    "remark": "Preferred payment method"
+    "remark": "Preferred beneficiary"
 }
 ```
 

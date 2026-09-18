@@ -5,9 +5,9 @@ metaLinks:
       https://app.gitbook.com/s/V9hKdCChTHquQ6LtTGc9/api-reference/payment-method/get-payment-method
 ---
 
-# Get Payment Method
+# Get Beneficiary
 
-This API retrieves payment methods based on various query parameters.
+This API retrieves beneficiary based on various query parameters.
 
 #### Endpoint Information
 
@@ -18,7 +18,7 @@ This API retrieves payment methods based on various query parameters.
 
 #### Query Parameters
 
-* **country**: (string) The country for which to retrieve payment methods.
+* **country**: (string) The country for which to retrieve beneficiary.
 * **status**: (int) The status of the payment method \[0: all (default), 1: valid, 2: authenticating, 3: authentication failed].
 * **fiat**: (string) The fiat currency.
 * **merchantId**: (int) The ID of the merchant id.
@@ -107,5 +107,5 @@ The response will include the following fields:
 
 #### Notes
 
-* The `record` array contains details about each payment method that matches the query parameters.
+* The `record` array contains details about each beneficiary that matches the query parameters.
 * Ensure that valid authorization tokens are included in the request headers for successful execution.

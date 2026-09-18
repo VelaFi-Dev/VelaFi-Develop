@@ -110,7 +110,7 @@ Review the following Support articles to see our supported currencies and region
 [View supported cryptocurrencies & fiat currencies](pair.md)<br>
 
 Before initiating a transaction, please ensure that the merchant has successfully activated their fiat account.\
-For example, if Merchant Alice wants to perform an **USDT → ARS** transaction, she must first activate her **ARS fiat account And added** [**payment methods**](../api-reference/payment-method/add-payment-method.md)**.**\
+For example, if Merchant Alice wants to perform an **USDT → ARS** transaction, she must first activate her **ARS fiat account And added** [**payment methods**](../api-reference/beneficiary/add-beneficiary.md)**.**\
 <br>
 
 #### 1.[ Create a Crypto to Fiat Order](../api-reference/order/create-a-crypto-to-fiat-order.md)
@@ -143,7 +143,7 @@ For example, if merchant **Alice** intends to perform a **USD → ARS** transact
 2. Select sender [Merchant](../api-reference/merchant/)
 3. Retrieve [payment methods](payment-method-id.md)
 4. Select recipient [Merchant](../api-reference/merchant/)
-5. Configure recipient [payment method](../api-reference/payment-method/)
+5. Configure recipient [payment method](../api-reference/beneficiary/)
 6. [Create fiat to fiat order via API](../api-reference/order/create-a-fiat-to-fiat-order.md)
 7. Order execution completed
 8. Recipient fiat funds received

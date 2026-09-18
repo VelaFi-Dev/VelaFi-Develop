@@ -1,6 +1,30 @@
 ---
 cover: .gitbook/assets/VELAFI_R2_Coin_1_v005_TS_NoTubes_Alpha 4.png
 coverY: 0
+layout:
+  width: default
+  cover:
+    visible: true
+    size: full
+    mask: none
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
+  anchors:
+    visible: true
 metaLinks:
   alternates:
     - >-
@@ -25,16 +49,16 @@ The VelaFi API uses [RESTful](https://en.wikipedia.org/wiki/REST) architecture t
 
 Explore detailed documentation and resources to address your payment and conversion needs:
 
-{% content-ref url="/broken/pages/EOdwnemFEXYcCD5xYT5k" %}
-[Broken link](/broken/pages/EOdwnemFEXYcCD5xYT5k)
+{% content-ref url="https://app.gitbook.com/s/kcqCFfOVAdQbR1YyMZUY/" %}
+[📖  Guides](https://app.gitbook.com/s/kcqCFfOVAdQbR1YyMZUY/)
 {% endcontent-ref %}
 
 **Step-by-step instructions for managing transfers and conversions.**
 
 
 
-{% content-ref url="/broken/pages/nU8LdsvLdidgiEORkqE6" %}
-[Broken link](/broken/pages/nU8LdsvLdidgiEORkqE6)
+{% content-ref url="https://app.gitbook.com/s/kcqCFfOVAdQbR1YyMZUY/api-reference" %}
+[📗  API Reference](https://app.gitbook.com/s/kcqCFfOVAdQbR1YyMZUY/api-reference)
 {% endcontent-ref %}
 
 **Detailed descriptions of endpoints, parameters, and responses.**<br>

@@ -6,9 +6,9 @@ metaLinks:
       https://app.gitbook.com/s/V9hKdCChTHquQ6LtTGc9/guides/creating-payment-method
 ---
 
-# Creating Payment Method
+# Creating Beneficiary
 
-This guide provides detailed information about managing payment methods, including how to retrieve payment method templates and add new payment methods.&#x20;
+This guide provides detailed information about managing beneficiary, including how to retrieve payment method templates and add new beneficiary.&#x20;
 
 ## **I. Get Payment Method Templates**
 
@@ -165,7 +165,7 @@ Bank Country/Region is ISO 3166-1
 
 ```
 
-## **II. Add Payment Method**
+## **II. Add** Beneficiary
 
 #### Endpoint Information
 
@@ -190,7 +190,7 @@ The request body should include the following parameters:
 | fiat       | string | Yes      | Name of the fiat currency                                           |
 | realName   | string | No       | Real name of the account holder                                     |
 | fieldJson  | object | Yes      | Field JSON of the payment template, format `{ [string]: [string] }` |
-| remark     | string | No       | Additional remarks for the payment method                           |
+| remark     | string | No       | Additional remarks for the  beneficiary                             |
 
 **Request Example**
 
@@ -226,6 +226,6 @@ The response will contain the following fields:
 
 ### Notes
 
-* Ensure to provide valid parameters for successful creation of payment methods.
+* Ensure to provide valid parameters for successful creation of beneficiary.
 * The `merchantId` and `paymentId` must correspond to existing configurations in the system.
 * Pay attention to the status and failure reason in the response for troubleshooting.

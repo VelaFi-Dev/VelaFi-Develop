@@ -5,9 +5,9 @@ metaLinks:
       https://app.gitbook.com/s/V9hKdCChTHquQ6LtTGc9/api-reference/payment-method/delete-payment-method
 ---
 
-# Delete Payment Method
+# Delete Beneficiary
 
-This API allows you to delete a specific payment method using its user payment ID.
+This API allows you to delete a specific beneficiary using its user payment ID.
 
 #### Endpoint Information
 
@@ -18,7 +18,7 @@ This API allows you to delete a specific payment method using its user payment I
 
 #### Path Parameters
 
-* **userPaymentId**: (int) The ID of the user payment method you want to delete.
+* **userPaymentId**: (int) The ID of the user beneficiary you want to delete.
 
 #### Authorization
 
@@ -38,7 +38,7 @@ The response will include the following fields:
 
 #### Example Request
 
-To delete a payment method with `userPaymentId` of `123`:
+To delete a beneficiary with `userPaymentId` of `123`:
 
 ```
 DELETE /v2/payments/123
