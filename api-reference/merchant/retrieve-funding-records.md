@@ -67,7 +67,7 @@ The response will include the following fields:
                 "amount": 20.00,       // (decimal: actual fiat amount)
                 "fee": 2.00,           // (decimal: amount of the fee)
                 "refundedAmount": 0,   // (decimal: refunded fiat amount)
-                "paymentId": "63",     // (number: ID of the payment ID)
+                "paymentId": 63,       // (number: ID of the payment ID)
                 "userPaymentId": 91,   // (number: ID of the user payment method) 
                 "type": "DEPOSIT",     // (enum: transaction type)
                 "status": 1,           // (enum: status [1: pending, 2: completed, 3: canceled])
