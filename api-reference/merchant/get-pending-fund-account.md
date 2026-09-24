@@ -147,13 +147,79 @@ The response will include the following fields:
     "msg": "SUCCESS",
     "data": {   
         "fiat": "COP",
-        "paymentMethodName": "PSE",       
+        "paymentMethodName": "Payment Link",       
         "fieldList": {
             "alias": "soc.ce",
             "paymentLink": "https://links.velaif.co/zAOCe"
         }
     }
 }
+```
+
+**Example for Payment ID 69:**
+
+```json
+{
+    "code": 200,
+    "msg": "SUCCESS",
+    "data": {   
+        "fiat": "COP",
+        "paymentMethodName": "Bre-B",       
+        "fieldList": {
+            "brebKey": "@MOCKBREB1026"          
+        }
+    }
+}
+```
+
+**Example for Payment ID 141/142:**
+
+```json
+{
+    "code": 200,
+    "msg": "SUCCESS",
+    "data": {   
+        "fiat": "COP",
+        "paymentMethodName": "PSE",  
+        "txId": "123456789001",     
+        "fieldList": {
+            "paymentLink": "https://links.velaif.co/zAOCe"        
+        }
+    }
+}
+```
+
+**Example for Payment ID 143:** This method requires making the payment through the Nequi APP.
+
+```json
+{
+    "code": 200,
+    "msg": "SUCCESS",
+    "data": {   
+        "fiat": "COP",
+        "paymentMethodName": "Nequi",  
+        "txId": "123456789001",     
+        "fieldList": {
+            "paymentLink": "Please check your Nequi APP"        
+        }
+    }
+}
+```
+
+**Example for Payment ID 144:**
+
+```json
+{
+    "code": 200,
+    "msg": "SUCCESS",
+    "data": {   
+        "fiat": "COP",
+        "paymentMethodName": "QR Bre-B",  
+        "txId": "123456789001",     
+        "fieldList": {
+            "qrCode": "https://links.velaif.co/test..."        
+        }
+    }
 ```
 
 **Example for Payment ID 81/82/83/84:**
@@ -164,8 +230,7 @@ The response will include the following fields:
     "msg": "SUCCESS",
     "data": {
         "fiat": "USD",
-        "paymentMethodName": "ACH_push",
-        "realName": "",
+        "paymentMethodName": "ACH_push",      
         "fieldList": {
             "Deposit Message": "BRGJT5PNSZX636P9EC2D",
             "Bank Account Number": "11223344556672",
@@ -186,8 +251,7 @@ The response will include the following fields:
     "msg": "SUCCESS",
     "data": {
         "fiat": "EUR",
-        "paymentMethodName": "SEPA",
-        "realName": "",
+        "paymentMethodName": "SEPA",       
         "fieldList": {
             "Deposit Message": "BRGJT5PNSZX636P9EC2D",
             "BIC/Swift Code": "123456790",
