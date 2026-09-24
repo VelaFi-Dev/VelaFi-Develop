@@ -7,7 +7,7 @@ metaLinks:
 
 # Add Beneficiary
 
-This API allows you to add a new beneficiary for a merchant.
+This API allows you to add a new beneficiary for a merchant. Under the same MID and paymentId, the same receiving account can only have one valid status.
 
 #### Endpoint Information
 
@@ -45,12 +45,13 @@ The response will include the following fields:
 
 ```json
 {
-  "code": 0,                            // (number: response code)
+  "code": 0,                             // (number: response code)
   "msg": "",                             // (string: message)
   "data": {                              // (object: result data)
-      "id": 0,                           // (number: user payment ID)
-      "status": 0,                       // (number: status [1: valid, 2: authenticating, 3: authentication failed])
-      "failReason": ""                   // (string: reason for authentication failure)
+      "id": 100,                         // (number: user payment ID)
+      "status": 1,                       // (number: status [1: valid, 2: authenticating, 3: authentication failed])
+      "failReason": "",                  // (string: reason for authentication failure)
+      "sameAccountNumberId": 100,        // (number: There are user payment id with the same receiving account. Only when the status is 3, do we need to pay attention to this value.)
   }
 }
 ```
@@ -387,7 +388,7 @@ The response will include the following fields:
 }
 ```
 
-#### Example Response
+#### Success Example Response
 
 ```json
 {
@@ -396,7 +397,25 @@ The response will include the following fields:
   "data": {
       "id": 456,
       "status": 1,
-      "failReason": ""
+      "failReason": "",
+      "sameAccountNumberId": 456
+  }
+}
+```
+
+#### Account duplication Example Response
+
+The "sameAccountNumberId" indicates that the current receiving account number corresponds to the valid "userPaymentId" value.
+
+```json
+{
+  "code": 200,
+  "msg": "SUCCESS",
+  "data": {
+      "id": 0,
+      "status": 3,
+      "failReason": "account already exists",
+      "sameAccountNumberId": 100
   }
 }
 ```
