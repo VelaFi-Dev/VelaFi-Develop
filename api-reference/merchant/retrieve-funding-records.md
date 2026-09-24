@@ -66,13 +66,16 @@ The response will include the following fields:
                 "totalAmount": 22.00,  // (decimal: total fiat amount)
                 "amount": 20.00,       // (decimal: actual fiat amount)
                 "fee": 2.00,           // (decimal: amount of the fee)
+                "paymentId": "63",     // (number: ID of the payment ID)
                 "userPaymentId": 91,   // (number: ID of the user payment method) 
                 "type": "DEPOSIT",     // (enum: transaction type)
                 "status": 1,           // (enum: status [1: pending, 2: completed, 3: canceled])
                 "webhookInfo": "{}",   //(json: bank webhook info of the entity sending funds, see Bank Webhook Info Detaials)
                 "completedTime": "1737452344000", // (string: timestamp of complete in milliseconds)               
                 "createTime": "1737452292000", // (string: timestamp of creation in milliseconds)
-                "updateTime": "1737452344000"  // (string: timestamp of update in milliseconds)
+                "updateTime": "1737452344000", // (string: timestamp of update in milliseconds)
+                "failCode": "",                // (string: order failed code)
+                "failReason": ""               // (string: order failure description)
             }
             // Additional funding records may be included
         ]

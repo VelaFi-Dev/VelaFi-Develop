@@ -158,9 +158,9 @@ The response will include the following fields:
     "fiat": "COP",
     "realName": "Tom",
     "fieldJson": {
-    	  "brebKey": "1100000", //breb key
+        "brebKey": "1100000", //breb key
         "email": "", //email, Maximum length: 300
-        "phone": ""	//phone, Maximum length: 300
+        "phone": "" //phone, Maximum length: 300
     },
     "remark": "Preferred beneficiary"
 }
@@ -224,7 +224,7 @@ The response will include the following fields:
 }
 ```
 
-**Example Request 120/121/125/126: Wire (CPN)/CIPS (CPN)/BANK-TRANSFER(CPN)/PESONET(CPN)**
+**Example Request 120: Wire (CPN)**
 
 ```json
 {
@@ -235,20 +235,20 @@ The response will include the following fields:
     "realName": "Tom",
     "fieldJson": { 
         "beneficiaryName": "Tom", //name
-				"country": "US", //nationality
-				"stateProvince": "US-AK", //country and province code of the address location
-				"city": "Alaska", //city
-				"street": "789 street", //street
-				"postalCode": "10001", //postal code
-				"dateOfBirth": "1990-01-01", //Date of Birth or Date of Registration				
-				"idNumber": "123456", //ID Number
-			  "idExpirationDate": "2099-01-01", //expiration date
-				"useCase": "B2B", //usd case
-				"reasonForPayment": "PMT001", //reason for payment
-				"bankName": "Bank of Nowhere", //bank name
-				"bankCountry": "US", //bank country 
-				"swiftCode": "NACKUSAK001", //swift code
-				"accountNumber": "123456" //account number      
+        "country": "US", //nationality
+        "stateProvince": "US-AK", //country and province code of the address location
+        "city": "Alaska", //city
+        "street": "789 street", //street
+        "postalCode": "10001", //postal code
+        "dateOfBirth": "1990-01-01", //Date of Birth or Date of Registration				
+        "idNumber": "123456", //ID Number
+        "idExpirationDate": "2099-01-01", //expiration date
+        "useCase": "B2B", //usd case
+        "reasonForPayment": "PMT001", //reason for payment
+        "bankName": "Bank of Nowhere", //bank name
+        "bankCountry": "US", //bank country 
+        "swiftCode": "NACKUSAK001", //swift code
+        "accountNumber": "123456" //account number   
     },
     "remark": "Preferred beneficiary"
 }
@@ -264,22 +264,22 @@ The response will include the following fields:
     "fiat": "HKD",
     "realName": "Tom",
     "fieldJson": { 
-       	"beneficiaryName": "Tom", //name
-				"country": "HK", //nationality
-				"stateProvince": "HK-HK", //country and province code of the address location
-				"city": "Hong Kong", //city
-				"street": "789 street", //street
-				"postalCode": "999077", //postal code
-				"dateOfBirth": "1990-01-01", //Date of Birth or Date of Registration	
-				"idNumber": "123456", //ID Number
-				"idExpirationDate": "2099-01-01", //expiration date
-				"useCase": "B2B", //usd case
-				"reasonForPayment": "PMT001", //reason for payment
-				"recipientEmail": "tom@gmail.com", //recipient email
-				"recipientPhoneNumber": "123456", //recipient phone number
-				"fpsId": "123321", //fps id
-				"bankCode": "999077", //bank code
-				"accountNumber": "123456"  //account number       
+        "beneficiaryName": "Tom", //name
+        "country": "HK", //nationality
+        "stateProvince": "HK-HK", //country and province code of the address location
+        "city": "Hong Kong", //city
+        "street": "789 street", //street
+        "postalCode": "999077", //postal code
+        "dateOfBirth": "1990-01-01", //Date of Birth or Date of Registration	
+        "idNumber": "123456", //ID Number
+        "idExpirationDate": "2099-01-01", //expiration date
+        "useCase": "B2B", //usd case
+        "reasonForPayment": "PMT001", //reason for payment
+        "recipientEmail": "tom@gmail.com", //recipient email
+        "recipientPhoneNumber": "123456", //recipient phone number
+        "fpsId": "123321", //fps id
+        "bankCode": "999077", //bank code
+        "accountNumber": "123456" //account number   
     },
     "remark": "Preferred beneficiary"
 }
@@ -295,27 +295,27 @@ The response will include the following fields:
     "fiat": "Hong Kong",
     "realName": "Tom",
     "fieldJson": { 
-       	"beneficiaryName": "Tom", //name
-				"country": "HK", //nationality
-				"stateProvince": "HK-HK", //country and province code of the address location
-				"city": "Hong Kong", //city
-				"street": "789 street", //street
-				"postalCode": "999077", //postal code
-				"dateOfBirth": "1990-01-01", //Date of Birth or Date of Registration	
-				"idNumber": "123456", //ID Number
-				"idExpirationDate": "2099-01-01", //expiration date
-				"useCase": "B2B", //usd case
-				"reasonForPayment": "PMT002", //reason for payment
-				"bankCode": "999077", //bank code
-				"bankName": "BANK", //bank name
-				"swiftCode": "999077", //swift code
-				"accountNumber": "123456", //account number   
-				"recipientCity": "Hong Kong", //recipient city
-				"recipientAddressStreet": "789 street", //recipient address street
-				"recipientAddressCity": "Hong Kong", //recipient address city
-				"recipientAddressCountry": "HK", //recipient address country
-				"recipientAddressStateProvince": "HK-HK", //recipient address postal code
-				"recipientAddressPostalCode": "999077" //recipient address postal code 
+        "beneficiaryName": "Tom", //name
+        "country": "HK", //nationality
+        "stateProvince": "HK-HK", //country and province code of the address location
+        "city": "Hong Kong", //city
+        "street": "789 street", //street
+        "postalCode": "999077", //postal code
+        "dateOfBirth": "1990-01-01", //Date of Birth or Date of Registration	
+        "idNumber": "123456", //ID Number
+        "idExpirationDate": "2099-01-01", //expiration date
+        "useCase": "B2B", //usd case
+        "reasonForPayment": "PMT002", //reason for payment
+        "bankCode": "999077", //bank code
+        "bankName": "BANK", //bank name
+        "swiftCode": "999077", //swift code
+        "accountNumber": "123456", //account number   
+        "recipientCity": "Hong Kong", //recipient city
+        "recipientAddressStreet": "789 street", //recipient address street
+        "recipientAddressCity": "Hong Kong", //recipient address city
+        "recipientAddressCountry": "HK", //recipient address country
+        "recipientAddressStateProvince": "HK-HK", //recipient address postal code
+        "recipientAddressPostalCode": "999077" //recipient address postal code
     },
     "remark": "Preferred beneficiary"
 }
@@ -331,21 +331,21 @@ The response will include the following fields:
     "fiat": "EUR",
     "realName": "Tom",
     "fieldJson": { 
-       	"beneficiaryName": "Tom", //name
-				"country": "EE", //nationality
-				"stateProvince": "EE-37", //country and province code of the address location
-				"city": "Estonia", //city
-				"street": "789 street", //street
-				"postalCode": "51004", //postal code
-				"dateOfBirth": "1990-01-01", //Date of Birth or Date of Registration	
-				"idNumber": "123456", //ID Number
-				"idExpirationDate": "2099-01-01", //expiration date
-				"useCase": "B2B", //usd case
-				"reasonForPayment": "PMT001", //reason for payment
-				"bankName": "BANK", //bank name
-				"bankCountry": "EE", //bank country 
-				"swiftCode": "NACKEE37001", //swift code
-				"accountNumber": "123456" //account number   
+        "beneficiaryName": "Tom", //name
+        "country": "EE", //nationality
+        "stateProvince": "EE-37", //country and province code of the address location
+        "city": "Estonia", //city
+        "street": "789 street", //street
+        "postalCode": "51004", //postal code
+        "dateOfBirth": "1990-01-01", //Date of Birth or Date of Registration	
+        "idNumber": "123456", //ID Number
+        "idExpirationDate": "2099-01-01", //expiration date
+        "useCase": "B2B", //usd case
+        "reasonForPayment": "PMT001", //reason for payment
+        "bankName": "BANK", //bank name
+        "bankCountry": "EE", //bank country 
+        "swiftCode": "NACKEE37001", //swift code
+        "accountNumber": "123456" //account number       	 
     },
     "remark": "Preferred beneficiary"
 }
@@ -361,27 +361,27 @@ The response will include the following fields:
     "fiat": "EUR",
     "realName": "Tom",
     "fieldJson": { 
-       	"beneficiaryName": "Tom", //name
-				"country": "US", //nationality
-				"stateProvince": "US-AK", //country and province code of the address location
-				"city": "Anchorage", //city
-				"street": "789 street", //street
-				"postalCode": "99508", //postal code
-				"dateOfBirth": "1990-01-01", //Date of Birth or Date of Registration	
-				"idNumber": "123456", //ID Number
-				"idExpirationDate": "2099-01-01", //expiration date
-				"useCase": "B2B", //usd case
-				"reasonForPayment": "PMT001", //reason for payment
-				"bankName": "Bank of America", //bank name
-				"bankCountry": "US", //bank country 
-				"accountNumber": "12345678", //account number   
-				"routingNumber": "11326", //routing number
-				"recipientCity": "Anchorage", //recipient city
-				"recipientAddressStreet": "789 street", //recipient address street
-				"recipientAddressCity": "Anchorage", //recipient address city
-				"recipientAddressCountry": "US", //recipient address country
-				"recipientAddressStateProvince": "US-AK", //recipient address postal code
-				"recipientAddressPostalCode": "90210" //recipient address postal code 
+        "beneficiaryName": "Tom", //name
+        "country": "US", //nationality
+        "stateProvince": "US-AK", //country and province code of the address location
+        "city": "Anchorage", //city
+        "street": "789 street", //street
+        "postalCode": "99508", //postal code
+        "dateOfBirth": "1990-01-01", //Date of Birth or Date of Registration	
+        "idNumber": "123456", //ID Number
+        "idExpirationDate": "2099-01-01", //expiration date
+        "useCase": "B2B", //usd case
+        "reasonForPayment": "PMT001", //reason for payment
+        "bankName": "Bank of America", //bank name
+        "bankCountry": "US", //bank country 
+        "accountNumber": "12345678", //account number   
+        "routingNumber": "11326", //routing number
+        "recipientCity": "Anchorage", //recipient city
+        "recipientAddressStreet": "789 street", //recipient address street
+        "recipientAddressCity": "Anchorage", //recipient address city
+        "recipientAddressCountry": "US", //recipient address country
+        "recipientAddressStateProvince": "US-AK", //recipient address postal code
+        "recipientAddressPostalCode": "90210" //recipient address postal code       	
     },
     "remark": "Preferred beneficiary"
 }
