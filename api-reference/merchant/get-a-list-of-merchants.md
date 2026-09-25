@@ -36,7 +36,7 @@ The response will include the following fields:
         "currentPage": 1,                  // (number: current page number)
         "size": 10,                         // (number: number of results per page)
         "total": 100,                       // (number: total number of results)
-        "data": [                           // (array: list of merchants)
+        "record": [                           // (array: list of merchants)
             {    
                 "merchantId": 1,            // (number: id of the merchant)
                 "country": "Mexico",        // (string: name of the country)
