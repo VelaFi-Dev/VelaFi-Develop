@@ -115,7 +115,7 @@ The response will include the following fields:
         "fiat": "ARS",
         "paymentMethodName": "Automated Bank Transfer (Argentina)",
         "fieldList": {
-             "CVU number": "0000775900000000000086",
+             "CVU Number": "0000775900000000000086",
              "CUIT": "20339698695"            
         }
     }
