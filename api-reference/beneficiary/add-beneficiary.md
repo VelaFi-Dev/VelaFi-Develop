@@ -214,7 +214,7 @@ The response will include the following fields:
         "Bank Name": "01", //bank code, The list is shown in https://docs.velafi.com/api-reference/payment-method/get-payment-templates#peru-bank-codes
         "Account Type": "00", //enum: account type[00:CORRIENTE, 01:AHORROS]
         "Account Number": "1110333710152", //account number
-        "CCI Number": "", //Payer's intermediary account(20 digits), When the Bank Name is not one of the four major banks(01-BCP, 02-Interbank, 03-BBVA, 04-Scotiabank), it must be filled in.
+        "CCI Number": "", //Payer's intermediary account(20 digits), When the Bank Name is not one of the four major banks(002-Banco de Crédito del Perú, 003-Interbank, 009-Scotiabank Perú S.A.A., 011-BBVA Continental Perú), it must be filled in.
         "Email": "tom@gmai.com", //email
         "Identification Type": "00", //identification type[00:CC (8 digits), 01:CE (>9 digits), 02:Tax ID (11 digits), 03:PAS (>9 digits), 04:PAR, 05:LMI]
         "Identification Number": "12345678", //identification number
