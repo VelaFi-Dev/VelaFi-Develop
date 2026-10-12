@@ -7,7 +7,7 @@ metaLinks:
 
 # Query Crypto Transfers
 
-### This API allows you to query internal transfer orders between merchants.
+This API allows you to query internal transfer orders between merchants.
 
 #### Endpoint Information
 

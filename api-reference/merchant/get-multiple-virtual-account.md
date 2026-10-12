@@ -37,7 +37,7 @@ The response will include the following fields:
         "currentPage": 1,                  //(number: current page number)
         "size": 10,                        //(number: number of results per page)
         "total": 50,                       //(number: total number of results)
-        "record": {  
+        "record": [{  
             "fiat": "MXN",
             "depositAlias": "mx001", //(string: alias)
             "paymentMethodName": "Paypal",  //(string: name of the payment method)
@@ -46,7 +46,7 @@ The response will include the following fields:
                 "fieldName1": ["value1", "value2"], // (string: array of values for fieldName1)
                 "fieldName2": ["value1", "value2"]  // (string: array of values for fieldName2)
             }
-        ]
+        }]
     }
 }
 
@@ -64,7 +64,7 @@ The response will include the following fields:
         "currentPage": 1, 
         "size": 10,
         "total": 50,
-        "record": {  
+        "record": [{  
             "fiat": "MXN",
             "depositAlias": "alias",
             "paymentMethodName": "Paypal",
@@ -73,7 +73,7 @@ The response will include the following fields:
                 "Cuenta CLABE": "706180304649761358",          
                 "Beneficiary Name": "Rrturo Tellez"
             }
-        ]
+        }]
     }
 }
 ```
@@ -88,7 +88,7 @@ The response will include the following fields:
         "currentPage": 1, 
         "size": 10,
         "total": 50,
-        "record": {  
+        "record": [{  
             "fiat": "MXN",
             "depositAlias": "alias",
             "paymentMethodName": "SPEI - FINCO PAY",
@@ -96,7 +96,7 @@ The response will include the following fields:
             "fieldList": {
                 "Cuenta CLABE": "706180304649761358"              
             }
-        ]
+        }]
     }
 }
 ```
@@ -112,7 +112,7 @@ The response will include the following fields:
         "currentPage": 1, 
         "size": 10,
         "total": 50,
-        "record": {  
+        "record": [{  
             "fiat": "ARS",
             "depositAlias": "alias",
             "paymentMethodName": "Automated Bank Transfer (Argentina)",
@@ -121,7 +121,7 @@ The response will include the following fields:
                  "CVU number": "0000775900000000000086",
                  "CUIT": "20339698695"             
             }
-        ]
+        }]
     }
 }
 ```
@@ -136,7 +136,7 @@ The response will include the following fields:
         "currentPage": 1, 
         "size": 10,
         "total": 50,
-        "record": {  
+        "record": [{  
             "fiat": "COP",
             "depositAlias": "alias",
             "paymentMethodName": "PSE",
@@ -145,7 +145,7 @@ The response will include the following fields:
                  "alias": "alias",
                  "paymentLink": "https://links.velaif.co/zAOCe"       
             }
-        ]
+        }]
     }
 }
 ```
@@ -157,17 +157,22 @@ The response will include the following fields:
     "code": 200,
     "msg": "SUCCESS",
     "data": {
-        "fiat": "USD",
-        "paymentMethodName": "ACH_push",
-        "realName": "",
-        "fieldList": {
-            "Deposit Message": "BRGJT5PNSZX636P9EC2D",
-            "Bank Account Number": "11223344556672",
-            "Bank Routing Number": "123456790",
-            "Bank Beneficiary Name": "Ventures Inc",
-            "Bank Name": "Bank of Nowhere",
-            "Bank Address": "1800 North Pole St., Orlando, FL 32803"
-        }
+         "currentPage": 1, 
+        "size": 10,
+        "total": 50,
+        "record": [{
+            "fiat": "USD",
+            "paymentMethodName": "ACH_push",
+            "realName": "",
+            "fieldList": {
+                "Deposit Message": "BRGJT5PNSZX636P9EC2D",
+                "Bank Account Number": "11223344556672",
+                "Bank Routing Number": "123456790",
+                "Bank Beneficiary Name": "Ventures Inc",
+                "Bank Name": "Bank of Nowhere",
+                "Bank Address": "1800 North Pole St., Orlando, FL 32803"
+            }
+        }]
     }
 }
 ```
@@ -182,7 +187,7 @@ The response will include the following fields:
         "currentPage": 1, 
         "size": 10,
         "total": 50,
-        "record": {  
+        "record": [{  
             "fiat": "BRL",
             "depositAlias": "alias",
             "paymentMethodName": "Automated Pix",
@@ -191,7 +196,7 @@ The response will include the following fields:
                  "Pix copia e cola": "00020101021126580014br.gov.bcb.pix013865755...",   
                  "Pix QR Code": "https://links.qrcode.co/zAOCe/3471397f291c28d19.png" 
             }
-        ]
+        }]
     }
 }
 ```
@@ -202,15 +207,20 @@ The response will include the following fields:
 {
     "code": 200,
     "msg": "SUCCESS",
-    "data": {   
-        "fiat": "BRL",
-        "paymentMethodName": "Pix - Woovi",  
-        "txId": "123456789001",     
-        "fieldList": {  
-            "pixKey": "09a3b1d1-49d6-4820-bd19-53e7f50ee13c",
-            "qrCode": "00020101021126580014br.gov.bcb.pix013865755...",        
-            "qrCodeLink": "https://links.qrcode.co/zAOCe/3471397f291c28d19.png"
-        }
+    "data": {
+         "currentPage": 1, 
+        "size": 10,
+        "total": 50,
+        "record": [{    
+            "fiat": "BRL",
+            "paymentMethodName": "Pix - Woovi",  
+            "txId": "123456789001",     
+            "fieldList": {  
+                "pixKey": "09a3b1d1-49d6-4820-bd19-53e7f50ee13c",
+                "qrCode": "00020101021126580014br.gov.bcb.pix013865755...",        
+                "qrCodeLink": "https://links.qrcode.co/zAOCe/3471397f291c28d19.png"
+            }
+        }]
     }
 }
 ```
