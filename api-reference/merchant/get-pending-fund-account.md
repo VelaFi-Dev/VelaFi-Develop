@@ -30,7 +30,6 @@ This endpoint allows you to retrieve information about your VelaFi Pending Fund 
     * 69 (Bre-B) - COP
     * 141 (PSE（Link）) - COP
     * 142 (BanColombia Link）) - COP
-    * 143 (Nequi) - COP
     * 144 (Qr Bre-b) - COP
   * 90 (Pix (Genial)) - BRL
   * 92 (Pix - Woovi) - BRL

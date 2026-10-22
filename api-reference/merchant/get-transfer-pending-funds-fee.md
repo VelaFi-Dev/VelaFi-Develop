@@ -21,7 +21,7 @@ Endpoint Information
 \
 Parameters
 
-* `fiat`: (Required, String) - Fiat currency, Currently supports MXN and ARS
+* `fiat`: (Required, String) - Fiat currency, Currently supports \[MXN/ARS/BRL/COP/PEN]
 
 #### Response Structure
 
