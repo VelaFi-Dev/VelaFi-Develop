@@ -43,7 +43,7 @@ This endpoint allows you to retrieve information about your VelaFi Pending Fund 
   * When the paymetnId is 92, it is optional.
 * **bank**: (enum) The bank code.  When the paymetnId is 141, it is mandatory. \
   bank list: [https://docs.velafi.com/api-reference/beneficiary/get-payment-templates#colombian-bank-codes-1](https://docs.velafi.com/api-reference/beneficiary/get-payment-templates#colombian-bank-codes-1)
-*   **type**: (enum) The type enum\[alias, emailAddress]. Only transmitted during the first acquisition.
+*   **type**: (enum) The type enum\[alias, emailAddress]. When the paymetnId is 69, it is mandatory, Only transmitted during the first acquisition.
 
 
 
